@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>מערכת תורנויות</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='fonts/fontawesome.css') }}">
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename='css/libraries/bootstrap.min.css') }}" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="{{ url_for('static', filename='css/libraries/mdb/mdb.css') }}" rel="stylesheet">
+  <!-- The main table styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/libraries/mdb/datatables.css') }}">
+  <!-- Calender styles -->
+  <link href="{{ url_for('static', filename='css/libraries/calender.css') }}" rel="stylesheet">
+  <!-- My styles -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body dir="rtl">
+  <div class="text-center container mb-2">
+    <!-- the logo -->
+    <img id="logo" src="{{ url_for('static', filename='img/logo.png') }}">
+    <div class="wrapper-modal-editor">
+   
+      <div class="row d-flex justify-content-center modalWrapper">
+        <!--
+        =========================================
+                    ADD a soldier
+        =========================================
+        --> 
+        <div class="modal fade addNewInputs" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="modalAdd"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+
+                <h4 class="modal-title w-100 font-weight-bold text-primary ml-5">הוסף חייל חדש</h4>
+                <button type="button" class="close text-primary" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                  <input type="number" maxlength="7" id="inputId" class="form-control validate">
+                  <label data-error="wrong" data-success="right" for="inputId">מספר  אישי</label>
+                </div>
+                <div class="md-form mb-5">
+                  <input type="text" id="inputName" class="form-control validate">
+                  <label data-error="wrong" data-success="right" for="inputName">שם מלא</label>
+                </div>
+                <div class="md-form mb-5">
+                  <p data-error="wrong" data-success="right" for="inputUnit">אגף</p>
+                  <select id="inputUnit" class="form-control match-content">
+                      <option value="מודיעין">מודיעין</option>
+                      <option value='חימוש'>חימוש</option>
+                      <option value='מחנה'>מחנה</option>
+                      <option value='קשר'>קשר</option>
+                      <option value='אגם'>אגם</option>
+                      <option value='מקשאפ'>מקשאפ </option>
+                      <option value='5410'>5410</option>
+                      <option value='בם'>בם</option>
+                      <option value='רפואה'>רפואה</option>
+                      <option value='תקציבים'>תקציבים</option>
+                      <option value='שלישות'>שלישות</option>
+                      <option value='לוגיסטיקה'>לוגיסטיקה</option>
+                      <option value='אביב'>ענ אביב</option>
+                      <option value='אבן יקרה'>אבן יקרה</option>
+                  </select>
+                </div>
+                <div class="md-form mb-5">
+                    <details>
+                     <summary><p data-error="wrong" data-success="right" for="inputP1">פטור שמירות אמצ"ש </p></summary>
+                         <input type="date" maxlength="7" id="inputP1" class="form-control validate">
+                    </details>
+                </div>
+                <div class="md-form mb-5">
+                 <details>
+                   <summary><p data-error="wrong" data-success="right" for="inputP2">פטור שמירות סופ"ש  </p></summary>
+                    <input type="date" maxlength="7" id="inputP2" class="form-control validate">
+                  </details>
+                </div>
+                <div class="md-form mb-5">
+                  <details>
+                  <summary><p data-error="wrong" data-success="right" for="inputP3">פטור מטבחים אמצ"ש   </p></summary>
+                    <input type="date" maxlength="7" id="inputP3" class="form-control validate">
+                </details>
+                </div>
+                <div class="md-form mb-5">
+                 <details>
+                  <summary><p data-error="wrong" data-success="right" for="inputP4">פטור מטבחים סופ"ש   </p></summary>
+                    <input type="date" maxlength="7" id="inputP4" class="form-control validate">
+                 </details>
+                </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center buttonAddFormWrapper">
+                <button class="btn btn-outline-primary btn-block buttonAdd" data-dismiss="modal">הוסף חייל
+                  <i class="far fa-paper-plane ml-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center wrapperToBtnModalAdd">
+          <a href="" class="btn btn-info btn-rounded btn-sm btnToModalAdd" data-toggle="modal" data-target="#modalAdd">הוסף<i
+              class="fas fa-plus-square ml-1"></i></a>
+        </div>
+        <!--
+        =========================================
+                    EDIT a soldier
+        =========================================
+        --> 
+        <div class="modal fade modalEditClass" id="modalEdit" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold text-secondary ml-5">ערוך חייל</h4>
+                <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body mx-3 modal-inputs" id="editInputs">
+                <div class="md-form mb-5">
+                  <input type="number" maxlength="7" id="inputId" class="form-control validate">
+                  <label data-error="wrong" data-success="right" for="inputId">מספר  אישי</label>
+                </div>
+                <div class="md-form mb-5">
+                  <input type="text" id="inputName" class="form-control validate">
+                  <label data-error="wrong" data-success="right" for="inputName">שם מלא</label>
+                </div>
+                <div class="md-form mb-5">
+                  <p data-error="wrong" data-success="right" for="inputUnit">אגף</p>
+                  <select id="inputUnit" class="form-control match-content">
+                      <option value="מודיעין">מודיעין</option>
+                      <option value='חימוש'>חימוש</option>
+                      <option value='מחנה'>מחנה</option>
+                      <option value='קשר'>קשר</option>
+                      <option value='אגם'>אגם</option>
+                      <option value='מקשאפ'>מקשאפ </option>
+                      <option value='5410'>5410</option>
+                      <option value='בם'>בם</option>
+                      <option value='רפואה'>רפואה</option>
+                      <option value='תקציבים'>תקציבים</option>
+                      <option value='שלישות'>שלישות</option>
+                      <option value='לוגיסטיקה'>לוגיסטיקה</option>
+                      <option value='אביב'>ענ אביב</option>
+                      <option value='אבן יקרה'>אבן יקרה</option>
+                  </select>
+                </div>
+              <div class="md-form mb-5">
+                    <details>
+                     <summary><p data-error="wrong" data-success="right" for="inputP1">פטור שמירות אמצ"ש </p></summary>
+                         <input type="date" maxlength="7" id="inputP1" class="form-control validate" title='פטור שמירות אמצ"ש'>
+                    </details>
+                </div>
+                <div class="md-form mb-5">
+                 <details>
+                   <summary><p data-error="wrong" data-success="right" for="inputP2">פטור שמירות סופ"ש  </p></summary>
+                    <input type="date" maxlength="7" id="inputP2" class="form-control validate" title='פטור שמירות סופ"ש'>
+                  </details>
+                </div>
+                <div class="md-form mb-5">
+                  <details>
+                  <summary><p data-error="wrong" data-success="right" for="inputP3">פטור מטבחים אמצ"ש   </p></summary>
+                    <input type="date" maxlength="7" id="inputP3" class="form-control validate" title='פטור מטבחים אמצ"ש'>
+                </details>
+                </div>
+                <div class="md-form mb-5">
+                 <details>
+                  <summary><p data-error="wrong" data-success="right" for="inputP4">פטור מטבחים סופ"ש   </p></summary>
+                    <input type="date" maxlength="7" id="inputP4" class="form-control validate" title='פטור מטבחים סופ"ש'>
+                 </details>
+                </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center editInsideWrapper">
+                <button id="edit" class="btn btn-outline-secondary btn-block editInside" data-dismiss="modal">ערוך חייל
+                  <i class="far fa-paper-plane ml-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center buttonEditWrapper">
+          <button class="btn btn-info btn-rounded btn-sm buttonEdit" onclick="getPtorim()" data-toggle="modal" data-target="#modalEdit"
+            disabled>ערוך<i class="fas fa-pen-square ml-1"></i></a>
+        </div>
+        <!--
+        =========================================
+                    REMOVE a soldier
+        =========================================
+        --> 
+        <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modalDelete" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold ml-5 text-danger">הסר חייל</h4>
+                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body mx-3">
+                <p class="text-center h4">האם אתה בטוח שברצונך להסיר את החייל?</p>
+              </div>
+              <div class="modal-footer d-flex justify-content-center deleteButtonsWrapper">
+                <button type="button" class="btn btn-outline-danger btnYesClass" id="btnYes" data-dismiss="modal">כן
+                  <i class="far fa-paper-plane ml-1"></i>
+                </button>
+                <button type="button" class="btn btn-outline-primary btnNoClass" id="btnNo" data-dismiss="modal">לא
+                  <i class="far fa-paper-plane ml-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <button class="btn btn-danger btn-sm btn-rounded buttonDelete" data-toggle="modal" disabled data-target="#modalDelete"
+                  disabled>מחק<i class="fas fa-times ml-1"></i></a>
+      </div>
+<!--
+=========================================
+      The TABLE of all the soldiers
+=========================================
+--> 
+
+     <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+         <tr>
+            <th class="th-sm">מספר אישי</th>
+            <th class="th-sm">שם מלא</th>
+            <th class="th-sm">אגף</th>
+            <th class="th-sm">פטורים</th>
+          </tr>
+        </thead>
+        <tbody>
+<!-- {{users|safe}} -->
+
+    {% for user in users %}
+        <tr>
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.unit }}</td>
+          <td> {% for ptor, date in user.ptorim.items() %}{% if date|length %}{{ ptor }} ({{ date }})<br>{% endif %}{% endfor %}</td>
+        </tr>
+    {% endfor %}
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+<!--
+=========================================
+              The CALANDER
+=========================================
+--> 
+    <div class="container">
+          <div class="calendar-section">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="calendar calendar-first" id="calendar_first">
+                  <div class="calendar_header">
+                    <button class="switch-month switch-left">
+                        <i class="fas fa-arrow-left"></i> 
+                    </button>
+                    <h2></h2>
+                    <button class="switch-month switch-right">
+                      <i class="fas fa-arrow-right"></i>  
+                    </button>
+                  </div>
+                  <div class="calendar_weekdays"></div>
+                  <div class="calendar_content"></div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="calendar calendar-second" id="calendar_second">
+                  <div class="calendar_header">
+                    <button class="switch-month switch-left">
+                      <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <h2></h2>
+                    <button class="switch-month switch-right">
+                      <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </div>
+                  <div class="calendar_weekdays"></div>
+                  <div class="calendar_content"></div>
+                </div>            
+              </div>
+
+            </div>
+          </div> 
+    </div> <!-- End Container -->
+
+  <img id="download_icon" src="{{ url_for('static', filename='img/excel.png') }}">
+<!--
+=========================================
+              SCRIPTS
+=========================================
+-->   
+  <!-- JQuery -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/jquery-3.3.1.min.js') }}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/popper.min.js') }}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/bootstrap.min.js') }}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/mdb/mdb.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/mdb/datatables.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/mdb/mdb-editor.js') }}"></script>
+  <!-- Sweetalert JavaScript -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/sweetalert.min.js') }}"></script>
+  <!-- Calender JavaScript -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/calender.js') }}"></script>
+  <!-- my JavaScript -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/myscript.js') }}"></script>
+
+</body>
+</html>

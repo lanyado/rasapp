@@ -1,0 +1,108 @@
+.calendar-section {
+  margin-bottom: 20px;
+}
+.calendar, .calendar_weekdays,
+.calendar_content {
+  max-width: 585px;
+}
+.calendar {
+  /*float: left;*/
+  margin: auto;
+  min-width: 320px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.calendar_weekdays {
+	color: #aaa;
+	font-weight: lighter;
+}
+.calendar_weekdays div {
+  display:inline-block;
+  vertical-align:top;
+}
+.calendar_content, .calendar_weekdays, .calendar_header {
+  position: relative;
+}
+.calendar_content:after, .calendar_weekdays:after, .calendar_header:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
+.calendar_weekdays div, .calendar_content div {
+  /*border: 1px dotted #999;*/
+  width: 14.28571%;
+  height: 68px;
+  line-height: 69px;  
+  overflow: hidden;
+  text-align: center;
+  background-color: transparent;
+}
+
+.calendar_content .today {
+	color: #3B8FC7;
+}
+.calendar_content div {
+  float: left;
+	margin-left: -1px;
+	margin-top: -1px;
+  border: 1px solid transparent;
+}
+.calendar_content div:hover {
+  border: 1px solid #777;
+  /*line-height: 68px;*/
+  cursor: pointer;
+}
+
+.calendar_content div.blank:hover {
+  cursor: default;
+  border: none;
+}
+
+.calendar_content div.past-date {
+	cursor: initial;
+  color: #d5d5d5;
+}
+.calendar_content div.today{
+  font-weight: bold;
+  font-size: 18px;
+  color: #409EDD;
+}
+.calendar_content div.selected {
+  background-color: rgba(153, 153, 161, .2); /*rgba(170, 170, 176, .5) #aaaab0*/
+  border: 1px solid white;
+}
+.calendar_header {
+  width: 100%;
+  text-align: center;
+}
+.calendar_header h2 {
+  float:left;
+  width:70%;
+  margin-top: 10px;
+  padding: 0 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #FFFFFF;
+}
+button.switch-month {
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+  border: none;
+  line-height: 52px;
+  height: 55px;
+  float: left;
+  width:15%;
+  transition: color .2s;
+}
+button.switch-month:hover {
+  color: #5EADE2;
+}
+button.switch-month:active {
+  background-color: rgba(113, 113, 125, .4);
+}
+.calendar_header h2 {
+  color: #409EDD;
+  line-height: 1.7;
+}

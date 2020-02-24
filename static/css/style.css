@@ -1,0 +1,39 @@
+body {
+    direction: rtl !important;
+    text-align: right !important;
+}
+details summary::-webkit-details-marker {
+  display:none;
+}
+details > summary:first-of-type {
+    list-style-type: none;
+}
+.tr-color-selected{
+    background-color: hsla(196, 77%, 55%, 0.3) !important;
+    transition: all .2s ease-in;
+}
+#logo {
+    width: 30%;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#download_icon {
+    width: 10%;
+    height: 10%;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#download_icon:hover {
+    opacity: 0.8;
+}
