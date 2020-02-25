@@ -6,14 +6,7 @@ $('#usersTable').bind('DOMSubtreeModified',function(){
     $.post("/postmethod", {
       javascript_data: $('#usersTable').html()
     });
-  }, 25);//הכנסתי דיליי קטן, שהשינויים יכנסו לתוקף
-
-})
-
-$('#download_icon').on('click',function(){
-   $.post( "/giveExcel", {
-        javascript_data: JSON.stringify(window.dates)
-   });
+  }, 25);
 })
 
 function getPtorim(){
@@ -30,3 +23,9 @@ function getPtorim(){
           });
     }, 25);
 }
+
+$('#download_icon').on('click',function(){
+   $.post( "/giveExcel", {
+        javascript_data: JSON.stringify(window.dates)
+   });
+})
