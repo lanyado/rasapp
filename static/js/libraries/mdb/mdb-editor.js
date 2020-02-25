@@ -1,5 +1,45 @@
 'use strict';
 
+function add_user($table, $newRow){
+  for(var i=0;i<3;i++){ // chack that all all the must input are full
+     if($newRow[i] === "" || $newRow[i] === null) {
+          swal("שגיאה", "יש למלא את כל השדות", "error");
+          return 1;
+     }
+  }
+  $table.row.add($newRow).draw();
+  setTimeout(() => {
+      $.post( "/addUser", {
+          javascript_data: $newRow.toString()
+      });
+  }, 25);
+}
+
+function edit_user(){
+    var id = $($('.modal-content').find('#inputId')[1]).val();
+    var name = $($('.modal-content').find('#inputName')[1]).val();
+    var unit = $($('.modal-content').find('#inputUnit')[1]).val();
+
+    var p1 = $($('.modal-content').find('#inputP1')[1]).val();
+    var p2 = $($('.modal-content').find('#inputP2')[1]).val();
+    var p3 = $($('.modal-content').find('#inputP3')[1]).val();
+    var p4 = $($('.modal-content').find('#inputP4')[1]).val();
+
+    var final_user = id +','+ name+','+ unit+','+ p1+','+ p2+','+ p3+','+ p4;
+
+    $.post( "/editUser", {
+        javascript_data: final_user
+    });
+}
+
+function remove_user(trInTableToRremove){
+     $.post( "/removeUser", {
+          javascript_data: $(trInTableToRremove).children()[0].textContent
+     });
+
+    $table.row($(trInTableToRremove)).remove().draw();
+}
+
 (function ($) {
 
   $.fn.mdbEditor = function () {
@@ -31,26 +71,8 @@
         for (var _i = 0; _i < $wrapperModalEditor.find('.addNewInputs input, .addNewInputs select').length; _i++) {
             $newRow.push($wrapperModalEditor.find('.addNewInputs input, .addNewInputs select').eq(_i).val());
         }
-        console.log($newRow)
 
-        var isError=false
-        for(var i=0;i<3;i++){ // chack that all all the must input are full
-           if($newRow[i] === "" || $newRow[i] === null) {
-                isError = true
-                swal("שגיאה", "יש למלא את כל השדות", "error");
-           }
-       }
-
-           if(!isError){
-                $table.row.add($newRow).draw();
-                setTimeout(() => {
-                    $.post( "/addUser", {
-                        javascript_data: $newRow.toString()
-                    });
-                }, 25);
-           }
-
-
+        add_user($table, $newRow);
 
       },
           btnToModalAdd = function btnToModalAdd(e) {
@@ -91,22 +113,7 @@
         return $('.modalEditClass label').addClass('active');
       },
           buttonEditInside = function buttonEditInside(e) {
-
-     //edit user
-        var id = $($('.modal-content').find('#inputId')[1]).val()
-        var name = $($('.modal-content').find('#inputName')[1]).val()
-        var unit = $($('.modal-content').find('#inputUnit')[1]).val()
-
-        var p1 = $($('.modal-content').find('#inputP1')[1]).val()
-        var p2 = $($('.modal-content').find('#inputP2')[1]).val()
-        var p3 = $($('.modal-content').find('#inputP3')[1]).val()
-        var p4 = $($('.modal-content').find('#inputP4')[1]).val()
-
-        var final_user = id +','+ name+','+  unit+','+  p1+','+ p2+','+ p3+','+  p4
-
-        $.post( "/editUser", {
-            javascript_data: final_user
-        });
+            edit_user();
 
         for (var _i3 = 0; _i3 < $(e.target).closest('.wrapper-modal-editor').find('thead tr').children().length; _i3++) {
 
@@ -127,22 +134,13 @@
         $table.draw(false);
       },
           buttonDeleteYes = function buttonDeleteYes() {
- 
 
-       $.post( "/removeUser", {
-            javascript_data: $(trColorSelected).children()[0].textContent
-       });
-      setTimeout(() => {
-
-        $buttonEdit.prop('disabled', true);
-        $buttonDelete.prop('disabled', true);
-        $createShowP.html('0 row selected');
-        $table.row($(trColorSelected)).remove().draw();
-        //DELETE A USER
-                    }, 20);
-
-    
-
+             setTimeout(() => {
+                remove_user(trColorSelected);
+                $buttonEdit.prop('disabled', true);
+                $buttonDelete.prop('disabled', true);
+                $createShowP.html('0 row selected');
+            }, 20);
       },
           bindEvents = function bindEvents() {
 
