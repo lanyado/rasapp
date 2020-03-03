@@ -10,3 +10,6 @@ EXEMPTS_SHABBAT = {
     'shmirot1': "פטור שמירות סופ\"ש",
     'shmirot2': "פטור שמירות סופ\"ש"
 }
+
+MIN_DAYS__BETWEEN_TORANUTS = 2
+MIN_DAYS__BETWEEN_TORANUTS_SOFASH = 4

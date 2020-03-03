@@ -33,12 +33,15 @@ def writes_to_json(data_written, edited_file):
 
 
 def was_toran_yesterday(the_date, user):
-    delta = datetime.datetime.strptime(the_date, '%Y-%m-%d') - datetime.datetime.strptime(user['last_toranut'],
+    delta = datetime.datetime.strptime(the_date, '%Y-%m-%d')\
+     - datetime.datetime.strptime(user['last_toranut'],
                                                                                           '%Y-%m-%d')
-    sofash_delta = datetime.datetime.strptime(the_date, '%Y-%m-%d') - datetime.datetime.strptime(user['last_shabbat'],
+    sofash_delta = datetime.datetime.strptime(the_date, '%Y-%m-%d')\
+     - datetime.datetime.strptime(user['last_shabbat'],
                                                                                           '%Y-%m-%d')
     print(delta, sofash_delta)
-    return (delta.days < 2) or (sofash_delta.days < 4)
+    return (delta.days < cnf.MIN_DAYS__BETWEEN_TORANUTS)\
+    or (sofash_delta.days < cnf.MIN_DAYS__BETWEEN_TORANUTS_SOFASH)
 
 
 def get_dates_list(dates):
@@ -243,8 +246,8 @@ def giveExcel():
     day_of_week_list = day_of_week(dates_list)
     table_content = {'dates': dates_list, 'day_of_week': day_of_week_list, 'day_status': dates_status_list}
     final_csv = pd.DataFrame(table_content,
-                             columns=['dates', 'day_of_week', 'day_status', 'kitchen1', 'kitchen2', 'shmirot1',
-                                      'shmirot2'])
+                             columns=['dates', 'day_of_week', 'day_status',\
+                              'kitchen1', 'kitchen2', 'shmirot1', 'shmirot2'])
     final_csv = gives_toran(final_csv)
     file_name = str(dates_list[0]) + '-' + str(dates_list[-1]) + '.csv'
     final_csv.to_csv(file_name, index=False, header=True, encoding='utf_8-sig')
