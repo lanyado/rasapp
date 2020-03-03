@@ -1,0 +1,3 @@
+1. put the numbers in 1. js functions will send a dict to the server instead of a long toString
+2. change the users saving method from json to csv using pandad
+3. add the ptorim ui like https://codepen.io/kanhasahu/pen/yeKLPJ
