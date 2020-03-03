@@ -14,8 +14,8 @@ from log import getLog
 current_dir = os.path.dirname(os.path.realpath(__file__))
 app = Flask(__name__, template_folder=os.path.join(current_dir, 'static'))  # Runs the HTML from the static folder
 users_file = os.path.join(current_dir, 'db/users.json')
-soldiers_df = pd.read_json('db/users.json', encoding='utf-8-sig')
-soldiers_df['id'] = soldiers_df['id'].astype('str')
+users_df = pd.read_json('db/users.json', encoding='utf-8-sig')
+users_df['id'] = users_df['id'].astype('str')
 
 site_log = getLog('Website')
 xlsx_log = getLog('XLSX')
@@ -32,10 +32,10 @@ def writes_to_json(data_written, edited_file):
         json.dump(data_written, json_file, ensure_ascii=False, indent=1)
 
 
-def was_toran_yesterday(the_date, soldier):
-    delta = datetime.datetime.strptime(the_date, '%Y-%m-%d') - datetime.datetime.strptime(soldier['last_toranut'],
+def was_toran_yesterday(the_date, user):
+    delta = datetime.datetime.strptime(the_date, '%Y-%m-%d') - datetime.datetime.strptime(user['last_toranut'],
                                                                                           '%Y-%m-%d')
-    sofash_delta = datetime.datetime.strptime(the_date, '%Y-%m-%d') - datetime.datetime.strptime(soldier['last_shabbat'],
+    sofash_delta = datetime.datetime.strptime(the_date, '%Y-%m-%d') - datetime.datetime.strptime(user['last_shabbat'],
                                                                                           '%Y-%m-%d')
     print(delta, sofash_delta)
     return (delta.days < 2) or (sofash_delta.days < 4)
@@ -72,20 +72,20 @@ def weekday_or_weekend(dates_list):
     return dates_type
 
 
-def updates_last_toranut(new_date, soldier_id, is_weekday):
+def updates_last_toranut(new_date, user_id, is_weekday):
     if is_weekday:
-        soldiers_df.loc[soldiers_df['id'] == soldier_id, ['last_toranut']] = str(new_date)
+        users_df.loc[users_df['id'] == user_id, ['last_toranut']] = str(new_date)
     else:
-        soldiers_df.loc[soldiers_df['id'] == soldier_id, ['last_shabbat']] = str(new_date)
+        users_df.loc[users_df['id'] == user_id, ['last_shabbat']] = str(new_date)
 
 
-def is_exempt(toranut, soldiers_data, is_week_day, date):
-    """Receives kind of toranut, if its weekday or not, and all of the soldiers and
-    returns only the eligible soldiers"""
-    available_df = soldiers_data
-    for index in range(soldiers_data.shape[0]):
+def is_exempt(toranut, users_data, is_week_day, date):
+    """Receives kind of toranut, if its weekday or not, and all of the users and
+    returns only the eligible users"""
+    available_df = users_data
+    for index in range(users_data.shape[0]):
         # recieves a row
-        exemptions = soldiers_data.iloc[index]['ptorim']
+        exemptions = users_data.iloc[index]['ptorim']
         if is_week_day:
             exemption = cnf.EXEMPTS_REGULAR[toranut]  # type string
         else:
@@ -96,13 +96,13 @@ def is_exempt(toranut, soldiers_data, is_week_day, date):
 
         validation_date = datetime.datetime.strptime(dating, '%Y-%m-%d')
         toranut_date = datetime.datetime.strptime(str(date), '%Y-%m-%d')
-        if validation_date > toranut_date or was_toran_yesterday(str(date), soldiers_data.iloc[index]):
+        if validation_date > toranut_date or was_toran_yesterday(str(date), users_data.iloc[index]):
             available_df = available_df.drop(index=index)
     return available_df
 
 
 def get_oldest_toranim(availables, is_weekday):
-    """Receives all of the available soldiers and returns the one who had the most time without this toranut"""
+    """Receives all of the available users and returns the one who had the most time without this toranut"""
     if is_weekday:
         last_date = 'last_toranut'
     else:
@@ -112,31 +112,31 @@ def get_oldest_toranim(availables, is_weekday):
 
 def gives_day_toran():
     for toranut_name in ['kitchen1', 'kitchen2', 'shmirot1', 'shmirot2']:
-        availables = is_exempt(toranut_name, soldiers_df, True, row['dates'])
-        chosen_soldier = get_oldest_toranim(availables, True)
+        availables = is_exempt(toranut_name, users_df, True, row['dates'])
+        chosen_user = get_oldest_toranim(availables, True)
         # writes into sheet
-        final_csv.loc[final_csv['dates'] == row['dates'], [toranut_name]] = chosen_soldier['name'].values[0]
-        updates_last_toranut(row['dates'], str(list(chosen_soldier['id'])[0]), True)
+        final_csv.loc[final_csv['dates'] == row['dates'], [toranut_name]] = chosen_user['name'].values[0]
+        updates_last_toranut(row['dates'], str(list(chosen_user['id'])[0]), True)
 
 def gives_weekend_toran():
     for toranut_name in ['kitchen1', 'shmirot1']:
-        available = is_exempt(toranut_name, soldiers_df, False, row['dates'])
+        available = is_exempt(toranut_name, users_df, False, row['dates'])
 
         if index > 0:
             yesterday = final_csv.iloc[index - 1]
             today = final_csv.iloc[index]
 
             if yesterday['day_status'] == 'אמצע שבוע' and today['day_status'] != 'אמצע שבוע':
-                chosen_soldier = get_oldest_toranim(available, False)
-                final_csv.loc[final_csv['dates'] == row['dates'], [toranut_name]] = chosen_soldier['name'].values[0]
-                updates_last_toranut(row['dates'], str(list(chosen_soldier['id'])[0]), False)
+                chosen_user = get_oldest_toranim(available, False)
+                final_csv.loc[final_csv['dates'] == row['dates'], [toranut_name]] = chosen_user['name'].values[0]
+                updates_last_toranut(row['dates'], str(list(chosen_user['id'])[0]), False)
 
             elif yesterday['day_status'] != 'אמצע שבוע' and today['day_status'] != 'אמצע שבוע':
                 final_csv.loc[index: index, [toranut_name]] = yesterday[toranut_name]
-                # update soldier last shabbat
+                # update user last shabbat
                 new_date = row['dates']
                 id = str(yesterday[toranut_name])
-                soldiers_df.loc[soldiers_df['id'] == id, ['last_shabbat']] = str(new_date)
+                users_df.loc[users_df['id'] == id, ['last_shabbat']] = str(new_date)
 
 def gives_toran(final_csv):
     for index, row in final_csv.iterrows():
@@ -235,7 +235,7 @@ def getPtorim():
 # =========================== Give final excel ========================
 @app.route('/giveExcel', methods=['POST'])
 def giveExcel():
-    soldiers_df['id'] = soldiers_df['id'].astype('str')
+    users_df['id'] = users_df['id'].astype('str')
     dates = json.loads(request.form['javascript_data'])
     dates_list = get_dates_list(dates)
     dates_status_list = weekday_or_weekend(dates_list)
@@ -247,8 +247,8 @@ def giveExcel():
     final_csv = gives_toran(final_csv)
     file_name = str(dates_list[0]) + '-' + str(dates_list[-1]) + '.csv'
     final_csv.to_csv(file_name, index=False, header=True, encoding='utf_8-sig')
-    soldiers_df['id'] = soldiers_df['id'].astype('str')
-    # edit_last_json(soldiers_df)''
+    users_df['id'] = users_df['id'].astype('str')
+    # edit_last_json(users_df)''
     xlsx_log.info(f'Function name: {get_func_name()} | message: created an excel file')
     return '', 204
 
