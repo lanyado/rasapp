@@ -1,0 +1,62 @@
+2020-03-03 22:57:52,971 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 22:57:52,976 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 22:58:10,515 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-03 22:58:10,517 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 22:58:11,217 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 22:58:11,223 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 22:58:28,916 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/config.py', reloading
+2020-03-03 22:58:29,000 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 22:58:29,612 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 22:58:29,617 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 22:59:03,805 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-03 22:59:03,894 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 22:59:45,370 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-03 22:59:45,371 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 22:59:46,118 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 22:59:46,128 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 22:59:51,711 - INFO - Website - Function name: hello | message: got users
+2020-03-03 22:59:51,731 - INFO - werkzeug - 127.0.0.1 - - [03/Mar/2020 22:59:51] "GET / HTTP/1.1" 200 -
+2020-03-03 23:02:28,962 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-03 23:02:29,065 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 23:02:30,460 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 23:02:30,467 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 23:02:49,152 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-03 23:02:49,245 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 23:02:49,885 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 23:02:49,896 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 23:03:07,571 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-03 23:03:07,658 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 23:03:08,460 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 23:03:08,472 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 23:03:09,581 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-03 23:03:09,684 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 23:03:10,311 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 23:03:10,316 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 23:03:25,886 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-03 23:03:25,976 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 23:03:26,978 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 23:03:26,987 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 23:03:48,886 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-03 23:03:48,984 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 23:03:49,573 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 23:03:49,579 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 23:03:56,909 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-03 23:03:57,003 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 23:03:57,631 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 23:03:57,636 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 23:04:55,679 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-03 23:04:55,775 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 23:04:57,319 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 23:04:57,330 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 23:05:45,058 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/log.py', reloading
+2020-03-03 23:05:45,149 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 23:05:46,392 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 23:05:46,399 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 23:09:53,862 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-03 23:09:53,958 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 23:09:55,240 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 23:09:55,256 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-03 23:10:20,178 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-03 23:10:20,272 - INFO - werkzeug -  * Restarting with stat
+2020-03-03 23:10:21,397 - WARNING - werkzeug -  * Debugger is active!
+2020-03-03 23:10:21,403 - INFO - werkzeug -  * Debugger PIN: 281-623-865

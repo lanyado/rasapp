@@ -33,7 +33,6 @@ details > summary:first-of-type {
     margin: 0 auto;
     cursor: pointer;
 }
-
 #download_icon:hover {
     opacity: 0.8;
 }

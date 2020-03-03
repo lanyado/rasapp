@@ -25,13 +25,13 @@
     <!-- the logo -->
     <img id="logo" src="{{ url_for('static', filename='img/logo.png') }}">
     <div class="wrapper-modal-editor">
-   
+
       <div class="row d-flex justify-content-center modalWrapper">
         <!--
         =========================================
-                    ADD a soldier
+                    ADD a user
         =========================================
-        --> 
+        -->
         <div class="modal fade addNewInputs" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="modalAdd"
           aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -110,9 +110,9 @@
         </div>
         <!--
         =========================================
-                    EDIT a soldier
+                    EDIT a user
         =========================================
-        --> 
+        -->
         <div class="modal fade modalEditClass" id="modalEdit" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -184,14 +184,14 @@
           </div>
         </div>
         <div class="text-center buttonEditWrapper">
-          <button class="btn btn-info btn-rounded btn-sm buttonEdit" onclick="getPtorim()" data-toggle="modal" data-target="#modalEdit"
+          <button class="btn btn-info btn-rounded btn-sm buttonEdit" onclick="get_ptorim()" data-toggle="modal" data-target="#modalEdit"
             disabled>ערוך<i class="fas fa-pen-square ml-1"></i></a>
         </div>
         <!--
         =========================================
-                    REMOVE a soldier
+                    REMOVE a user
         =========================================
-        --> 
+        -->
         <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modalDelete" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -220,9 +220,9 @@
       </div>
 <!--
 =========================================
-      The TABLE of all the soldiers
+      The TABLE of all the users
 =========================================
---> 
+-->
 
      <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
         <thead>
@@ -253,7 +253,7 @@
 =========================================
               The CALANDER
 =========================================
---> 
+-->
     <div class="container">
           <div class="calendar-section">
             <div class="row">
@@ -261,11 +261,11 @@
                 <div class="calendar calendar-first" id="calendar_first">
                   <div class="calendar_header">
                     <button class="switch-month switch-left">
-                        <i class="fas fa-arrow-left"></i> 
+                        <i class="fas fa-arrow-left"></i>
                     </button>
                     <h2></h2>
                     <button class="switch-month switch-right">
-                      <i class="fas fa-arrow-right"></i>  
+                      <i class="fas fa-arrow-right"></i>
                     </button>
                   </div>
                   <div class="calendar_weekdays"></div>
@@ -286,26 +286,25 @@
                   </div>
                   <div class="calendar_weekdays"></div>
                   <div class="calendar_content"></div>
-                </div>            
+                </div>
               </div>
-
             </div>
-          </div> 
-    </div> <!-- End Container -->
+          </div>
+    </div>
 
   <img id="download_icon" src="{{ url_for('static', filename='img/excel.png') }}">
 <!--
 =========================================
               SCRIPTS
 =========================================
--->   
+-->
   <!-- JQuery -->
   <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/jquery-3.3.1.min.js') }}"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/popper.min.js') }}"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/bootstrap.min.js') }}"></script>
-  <!-- MDB core JavaScript -->
+  <!-- MDB JavaScript -->
   <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/mdb/mdb.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/mdb/datatables.min.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/mdb/mdb-editor.js') }}"></script>
