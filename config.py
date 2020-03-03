@@ -10,5 +10,3 @@ EXEMPTS_SHABBAT = {
     'shmirot1': "פטור שמירות סופ\"ש",
     'shmirot2': "פטור שמירות סופ\"ש"
 }
-import inspect
-FUNC_NAME = inspect.currentframe().f_back.f_code.co_name
