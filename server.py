@@ -168,10 +168,10 @@ def hello():
 @app.route('/addUser', methods=['POST'])  # from mdb-editor2.js
 def addUser():
     jsdata = request.form['javascript_data']
-    newuser = jsdata.split(',')
-    user = {"id": str(newuser[0]), "name": newuser[1], "unit": newuser[2], "last_toranut": '2000-01-01',
-            "last_shabbat": '2000-01-01', "ptorim": {'פטור שמירות אמצ"ש': newuser[3], 'פטור שמירות סופ"ש': newuser[4],
-                                                     'פטור מטבחים אמצ"ש': newuser[5], 'פטור מטבחים סופ"ש': newuser[6]}}
+    new_user = jsdata.split(',')
+    user = {"id": str(new_user[0]), "name": new_user[1], "unit": new_user[2], "last_toranut": '2000-01-01',
+            "last_shabbat": '2000-01-01', "ptorim": {'פטור שמירות אמצ"ש': new_user[3], 'פטור שמירות סופ"ש': new_user[4],
+                                                     'פטור מטבחים אמצ"ש': new_user[5], 'פטור מטבחים סופ"ש': new_user[6]}}
     new_data = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
     new_data.append(user)
     writes_to_json(new_data, users_file)
@@ -198,16 +198,17 @@ def removeUser():
 # =========================== edit user ===============================
 @app.route('/editUser', methods=['POST']) # from mdb-editor2.js
 def editUser():
-    user = request.form['javascript_data']
-    newuser = user.split(',')
-    user = {"id": newuser[0], "name": newuser[1], "unit": newuser[2],
-            "ptorim": {'פטור שמירות אמצ"ש': newuser[3], 'פטור שמירות סופ"ש': newuser[4],
-                       'פטור מטבחים אמצ"ש': newuser[5], 'פטור מטבחים סופ"ש': newuser[6]}}
+    original_id = request.form['original_id']
+    new_user = request.form['new_user']
+    new_user = new_user.split(',')
+    user = {"id": new_user[0], "name": new_user[1], "unit": new_user[2],
+            "ptorim": {'פטור שמירות אמצ"ש': new_user[3], 'פטור שמירות סופ"ש': new_user[4],
+                       'פטור מטבחים אמצ"ש': new_user[5], 'פטור מטבחים סופ"ש': new_user[6]}}
 
     data = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
     new_data = []
     for line in data:
-        if line['id'] != user["id"]:
+        if line['id'] != original_id:
             new_data.append(line)
         else:
             user["last_toranut"] = line["last_toranut"]

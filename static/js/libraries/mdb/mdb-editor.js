@@ -15,7 +15,8 @@ function add_user($table, $newRow){
   }, 25);
 }
 
-function edit_user(){
+function edit_user(row){
+
     var id = $($('.modal-content').find('#inputId')[1]).val();
     var name = $($('.modal-content').find('#inputName')[1]).val();
     var unit = $($('.modal-content').find('#inputUnit')[1]).val();
@@ -28,7 +29,8 @@ function edit_user(){
     var final_user = id +','+ name+','+ unit+','+ p1+','+ p2+','+ p3+','+ p4;
 
     $.post( "/editUser", {
-        javascript_data: final_user
+        original_id = $(row).children()[0].textContent,
+        new_user: final_user
     });
 }
 
@@ -113,7 +115,7 @@ function remove_user(trInTableToRremove){
         return $('.modalEditClass label').addClass('active');
       },
           buttonEditInside = function buttonEditInside(e) {
-            edit_user();
+            edit_user($selectedRow);
 
         for (var _i3 = 0; _i3 < $(e.target).closest('.wrapper-modal-editor').find('thead tr').children().length; _i3++) {
 
