@@ -29,7 +29,7 @@ function edit_user(row){
     var final_user = id +','+ name+','+ unit+','+ p1+','+ p2+','+ p3+','+ p4;
 
     $.post( "/editUser", {
-        original_id = $(row).children()[0].textContent,
+        original_id : $(row).children()[0].textContent,
         new_user: final_user
     });
 }
