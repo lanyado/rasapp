@@ -1,26 +1,26 @@
 ﻿# coding=utf-8
 import config as cnf
-from lib.log import getLog
+from lib.log import get_log, log_message
 
 import os
 import json
 import codecs
-import inspect
+import time
 
 from lib.dates import get_dates, get_day_of_week, get_date_type
 from get_toranim import add_toranim
 
 from flask import Flask, render_template, request, jsonify
-#import pandas as pd
-import modin.pandas as pd
+import pandas as pd
+#import modin.pandas as pd
 #from typing import Any
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 app = Flask(__name__, template_folder=os.path.join(current_dir, 'static'))  # Runs the HTML from the static folder
 users_file = os.path.join(current_dir, 'db/users.json')
 
-site_log = getLog('Website')
-xlsx_log = getLog('XLSX')
+site_log = get_log('Website')
+xlsx_log = get_log('XLSX')
 
 
 def get_func_name():
@@ -43,7 +43,7 @@ def edit_last_json(csv):
 def hello():
     usersFile = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
 
-    site_log.info(f'Function name: {get_func_name()} | message: got users')
+    site_log.info(log_message('got users'))
     return render_template('index.html', users=usersFile)
 
 # =========================== Add User ================================
@@ -58,7 +58,7 @@ def addUser():
     new_data.append(user)
     writes_to_json(new_data, users_file)
 
-    site_log.info(f'Function name: {get_func_name()} | message: added user to json')
+    site_log.info(log_message('added user to json'))
     return '', 204
 
 # =========================== Remove User =============================
@@ -72,9 +72,8 @@ def removeUser():
             new_data.append(line)
     writes_to_json(new_data, users_file)
 
-    site_log.info(f'Function name: {get_func_name()} | message: removed user from json')
+    site_log.info(log_message('removed user from json'))
     return '', 204
-
 
 # =========================== Edit user ===============================
 @app.route('/editUser', methods=['POST']) # from mdb-editor2.js
@@ -98,9 +97,8 @@ def editUser():
 
     writes_to_json(new_data, users_file)
 
-    site_log.info(f'Function name: {get_func_name()} | message: updated user in json')
+    site_log.info(log_message('updated user in json'))
     return '', 204
-
 
 # =========================== get Exemptions =========================
 @app.route('/getPtorim', methods=['POST'])
@@ -109,14 +107,15 @@ def getPtorim():
     data = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
     for line in data:
         if line['id'] == id:
-            site_log.info(f'Function name: {get_func_name()} | message: got ptorim')
+            site_log.info(log_message('got ptorim'))
             return jsonify({'ptorim': line['ptorim']})
             # return dict(line['ptorim'])
-
 
 # =========================== Give final excel ========================
 @app.route('/giveExcel', methods=['POST'])
 def giveExcel():
+    first_time = time.time()
+
     dates = get_dates(json.loads(request.form['javascript_data']))
     final_csv = pd.DataFrame({'date': dates,\
                             'day_of_week': get_day_of_week(dates),\
@@ -126,9 +125,9 @@ def giveExcel():
     file_name = str(dates[0]) + '-' + str(dates[-1]) + '.csv'
     final_csv.to_csv(file_name, index=False, header=True, encoding='utf_8-sig')
     # edit_last_json(users_df)''
-    xlsx_log.info(f'Function name: {get_func_name()} | message: created an excel file')
+    xlsx_log.info(log_message('created an excel file'))
+    print(f'it took {time.time()-first_time} seconds')
     return '', 204
-
 
 if __name__ == "__main__":
     app.run(debug=True)
