@@ -22,10 +22,6 @@ users_file = os.path.join(current_dir, 'db/users.json')
 site_log = get_log('Website')
 xlsx_log = get_log('XLSX')
 
-
-def get_func_name():
-    return inspect.currentframe().f_back.f_code.co_name
-
 def writes_to_json(data_written, edited_file):
     """Takes data to write and puts it in the file"""
     with open(edited_file, "w", encoding='utf-8') as json_file:
@@ -117,9 +113,9 @@ def giveExcel():
     first_time = time.time()
 
     dates = get_dates(json.loads(request.form['javascript_data']))
-    final_csv = pd.DataFrame({'date': dates,\
-                            'day_of_week': get_day_of_week(dates),\
-                            'date_type': get_date_type(dates),\
+    final_csv = pd.DataFrame({'date': map(str, dates),\
+                            'day_of_week': map(str, get_day_of_week(dates)),\
+                            'date_type': map(str, get_date_type(dates)),\
                             'kitchen1': '', 'kitchen2': '', 'shmirot1': '', 'shmirot2': ''})
     final_csv = add_toranim(final_csv)
     file_name = str(dates[0]) + '-' + str(dates[-1]) + '.csv'

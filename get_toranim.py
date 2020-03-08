@@ -11,17 +11,19 @@ import pandas as pd
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
-xlsx_log = getLog('XLSX')
+xlsx_log = get_log('XLSX')
 
-users_df = pd.read_json('db/users.json', encoding='utf-8-sig')
-users_df['id'] = users_df['id'].astype('str')
+users_df = pd.read_json('db/users.json', encoding='utf-8-sig',\
+                        dtype={'id':'str', 'name':'str', 'unit':'str',\
+                               'ptorim': 'list', 'last_toranut': 'str',
+                               'last_weekend': 'str'})
 
 def writes_to_json(data_written, edited_file):
     """Takes data to write and puts it in the file"""
     with open(edited_file, "w", encoding='utf-8') as json_file:
         json.dump(data_written, json_file, ensure_ascii=False, indent=1)
 
-def was_toran_yesterday(date, user):
+def was_toran_yesterday(date, user) -> bool:
     weekday_delta = datetime.datetime.strptime(date,'%Y-%m-%d')\
     - datetime.datetime.strptime(user['last_toranut'],'%Y-%m-%d')
 
@@ -33,9 +35,9 @@ def was_toran_yesterday(date, user):
 
 def update_last_toranut(new_date, user_id, is_weekday):
     if is_weekday:
-        users_df.loc[users_df['id'] == user_id, ['last_toranut']] = str(new_date)
+        users_df.loc[users_df['id'] == user_id, ['last_toranut']] = new_date
     else:
-        users_df.loc[users_df['id'] == user_id, ['last_weekend']] = str(new_date)
+        users_df.loc[users_df['id'] == user_id, ['last_weekend']] = new_date
 
 def is_exempt(possible_exemptions, user_exemptions, toranut_date):
     exemption_date = user_exemptions[possible_exemptions]  # type: string
@@ -46,15 +48,14 @@ def is_exempt(possible_exemptions, user_exemptions, toranut_date):
     toranut_date = datetime.datetime.strptime(toranut_date, '%Y-%m-%d')
     return exemption_date > toranut_date
 
-def get_available_toranim(toranut, users_df, is_week_day, toranut_date):
+def get_available_toranim(toranut_name:str, users_df:pd.DataFrame, is_week_day:bool, toranut_date:str):
     """Receives kind of toranut, if its weekday or not, and all of the users and
     returns only the eligible users"""
     available_df = users_df
-    toranut_date = str(toranut_date)
     if is_week_day:
-        possible_exemptions = cnf.EXEMPTS_WEEKDAY[toranut]  # type string
+        possible_exemptions = cnf.EXEMPTS_WEEKDAY[toranut_name]  # type string
     else:
-        possible_exemptions = cnf.EXEMPTS_WEEKEND[toranut]  # type: string
+        possible_exemptions = cnf.EXEMPTS_WEEKEND[toranut_name]  # type: string
 
     for index, user in users_df.iterrows():
         # recieves a row
@@ -82,7 +83,7 @@ def get_oldest_toranim(availables, is_weekday):
 
 def gives_day_toran(final_csv, index, row):
     for toranut_name in ['kitchen1', 'kitchen2', 'shmirot1', 'shmirot2']:
-        availables = get_available_toranim(toranut=toranut_name, users_df=users_df,\
+        availables = get_available_toranim(toranut_name=toranut_name, users_df=users_df,\
                                             is_week_day=True, toranut_date=row['date'])
         chosen_user = get_oldest_toranim(availables, True)
         # writes into sheet
@@ -92,7 +93,7 @@ def gives_day_toran(final_csv, index, row):
 
 def give_weekend_toran(final_csv, index, row):
     for toranut_name in ['kitchen1', 'shmirot1']:
-        available = get_available_toranim(toranut=toranut_name, users_df=users_df,\
+        available = get_available_toranim(toranut_name=toranut_name, users_df=users_df,\
                                             is_week_day=False, toranut_date=row['date'])
 
         if index > 0:
@@ -108,8 +109,8 @@ def give_weekend_toran(final_csv, index, row):
                 final_csv.loc[index: index, [toranut_name]] = yesterday[toranut_name]
                 # update user last weekend
                 new_date = row['date']
-                id = str(yesterday[toranut_name])
-                users_df.loc[users_df['id'] == id, ['last_weekend']] = str(new_date)
+                id = yesterday[toranut_name]
+                users_df.loc[users_df['id'] == id, ['last_weekend']] = new_date
 
 def add_toranim(final_csv):
     for index, row in final_csv.iterrows():

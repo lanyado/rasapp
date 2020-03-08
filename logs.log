@@ -804,3 +804,76 @@
 2020-03-08 01:03:12,023 - INFO - werkzeug -  * Restarting with stat
 2020-03-08 01:03:14,505 - WARNING - werkzeug -  * Debugger is active!
 2020-03-08 01:03:14,523 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:25:23,802 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-08 16:25:23,805 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:25:24,904 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:25:24,913 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:25:32,678 - INFO - werkzeug - 127.0.0.1 - - [08/Mar/2020 16:25:32] "POST /giveExcel HTTP/1.1" 500 -
+2020-03-08 16:26:16,386 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-08 16:26:16,490 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:26:17,674 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:26:17,684 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:26:20,166 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-08 16:26:20,167 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:26:20,897 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:26:20,904 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:26:20,930 - INFO - werkzeug - 127.0.0.1 - - [08/Mar/2020 16:26:20] "POST /giveExcel HTTP/1.1" 500 -
+2020-03-08 16:27:32,896 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-08 16:27:33,016 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:27:34,079 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:27:34,086 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:28:21,300 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-08 16:28:21,400 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:28:22,462 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:28:22,467 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:28:24,148 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-08 16:28:24,149 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:28:24,749 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:28:24,762 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:28:26,547 - INFO - werkzeug - 127.0.0.1 - - [08/Mar/2020 16:28:26] "POST /giveExcel HTTP/1.1" 500 -
+2020-03-08 16:29:13,170 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-08 16:29:13,279 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:29:14,444 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:29:14,450 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:29:19,602 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-08 16:29:19,710 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:29:20,889 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:29:20,896 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:29:28,159 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-08 16:29:28,267 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:29:30,840 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-08 16:29:30,842 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:29:31,554 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:29:31,560 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:29:34,473 - INFO - werkzeug - 127.0.0.1 - - [08/Mar/2020 16:29:34] "POST /giveExcel HTTP/1.1" 500 -
+2020-03-08 16:29:34,736 - INFO - werkzeug - 127.0.0.1 - - [08/Mar/2020 16:29:34] "POST /giveExcel HTTP/1.1" 500 -
+2020-03-08 16:29:56,215 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-08 16:29:56,318 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:29:57,396 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:29:57,411 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:30:09,980 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-08 16:30:09,980 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:30:10,687 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:30:10,694 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:30:10,713 - INFO - werkzeug - 127.0.0.1 - - [08/Mar/2020 16:30:10] "POST /giveExcel HTTP/1.1" 500 -
+2020-03-08 16:32:08,116 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-08 16:32:08,211 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:32:09,415 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:32:09,423 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:32:12,484 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-08 16:32:12,485 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:32:13,278 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:32:13,284 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:32:16,699 - INFO - werkzeug - 127.0.0.1 - - [08/Mar/2020 16:32:16] "POST /giveExcel HTTP/1.1" 500 -
+2020-03-08 16:32:28,762 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-08 16:32:28,866 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:32:29,533 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:32:29,538 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:32:33,508 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-08 16:32:33,509 - INFO - werkzeug -  * Restarting with stat
+2020-03-08 16:32:34,169 - WARNING - werkzeug -  * Debugger is active!
+2020-03-08 16:32:34,177 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-08 16:32:34,209 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-08 16:32:34,209 - INFO - werkzeug - 127.0.0.1 - - [08/Mar/2020 16:32:34] "POST /giveExcel HTTP/1.1" 204 -
+2020-03-08 16:37:37,494 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-08 16:37:37,496 - INFO - werkzeug - 127.0.0.1 - - [08/Mar/2020 16:37:37] "POST /giveExcel HTTP/1.1" 204 -

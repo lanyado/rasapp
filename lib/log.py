@@ -4,7 +4,7 @@ import inspect
 
 logging.basicConfig(level=logging.INFO, filename='logs.log', format='%(asctime)s - %(levelname)s - %(name)s - %(message)s')
 
-def get_log(name):
+def get_log(name: str):
     """
     Get logger with name as Test123
 
@@ -14,6 +14,6 @@ def get_log(name):
     logger = logging.getLogger(name)
     return logger
 
-def log_message(message):
+def log_message(message: str) -> str:
     calling_function_name = inspect.currentframe().f_back.f_code.co_name
     return f'Function name: {calling_function_name} | message: {message}'
