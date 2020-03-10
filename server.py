@@ -74,17 +74,13 @@ def removeUser():
 # =========================== Edit user ===============================
 @app.route('/editUser', methods=['POST']) # from mdb-editor2.js
 def editUser():
-    original_id = request.form['original_id']
-    new_user = request.form['new_user']
-    new_user = new_user.split(',')
-    user = {"id": new_user[0], "name": new_user[1], "unit": new_user[2],
-            "ptorim": {'פטור שמירות אמצ"ש': new_user[3], 'פטור שמירות סופ"ש': new_user[4],
-                       'פטור מטבחים אמצ"ש': new_user[5], 'פטור מטבחים סופ"ש': new_user[6]}}
+    user_fields = request.form.to_dict()
+    user_fields = {k: v for k, v in user_fields.items() if v}
 
     data = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
     new_data = []
     for line in data:
-        if line['id'] != original_id:
+        if line['id'] != user_fields['original_id']:
             new_data.append(line)
         else:
             user["last_toranut"] = line["last_toranut"]

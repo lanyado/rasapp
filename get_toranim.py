@@ -58,7 +58,7 @@ def get_available_toranim(toranut_name:str, users_df:pd.DataFrame, is_week_day:b
         possible_exemptions = cnf.EXEMPTS_WEEKEND[toranut_name]  # type: string
 
     for index, user in users_df.iterrows():
-        # recieves a row
+        # user is a row in users_df
         user_exemptions = user['ptorim']
 
         if is_exempt(possible_exemptions, user_exemptions, toranut_date)\
@@ -81,7 +81,7 @@ def get_oldest_toranim(availables, is_weekday):
     else:
         print('no available toranim')
 
-def gives_day_toran(final_csv, index, row):
+def set_day_toran(final_csv, index, row):
     for toranut_name in ['kitchen1', 'kitchen2', 'shmirot1', 'shmirot2']:
         availables = get_available_toranim(toranut_name=toranut_name, users_df=users_df,\
                                             is_week_day=True, toranut_date=row['date'])
@@ -91,7 +91,7 @@ def gives_day_toran(final_csv, index, row):
         update_last_toranut(new_date=row['date'],\
                             user_id=str(list(chosen_user['id'])[0]), is_weekday=True)
 
-def give_weekend_toran(final_csv, index, row):
+def set_weekend_toran(final_csv, index, row):
     for toranut_name in ['kitchen1', 'shmirot1']:
         available = get_available_toranim(toranut_name=toranut_name, users_df=users_df,\
                                             is_week_day=False, toranut_date=row['date'])
@@ -115,7 +115,7 @@ def give_weekend_toran(final_csv, index, row):
 def add_toranim(final_csv):
     for index, row in final_csv.iterrows():
         if row['date_type'] == 'אמצע שבוע':
-            gives_day_toran(final_csv, index, row)
+            set_day_toran(final_csv, index, row)
         else:  # סוף שבוע
-            give_weekend_toran(final_csv, index, row)
+            set_weekend_toran(final_csv, index, row)
     return final_csv

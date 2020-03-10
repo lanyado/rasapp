@@ -1,5 +1,6 @@
 'use strict';
 
+
 function add_user($table, $newRow){
   for(var i=0;i<3;i++){ // chack that all all the must input are full
      if($newRow[i] === "" || $newRow[i] === null) {
@@ -15,6 +16,28 @@ function add_user($table, $newRow){
   }, 25);
 }
 
+function sendSearchString(){
+	var type = $.trim($($('.option:checked')[0]).val())
+	if (type=='או')
+		operator = "or";
+	else
+		operator = "and";
+	var searchString = $.trim($('#searchBar').val());
+	searchString = searchString.replace(/\s\s+/g, ' ');
+	if (searchString.length>0){
+		runLoadingAnimation();
+		$.get('/results',{
+			search_string: searchString,
+	    	operator: operator
+	   }, function(data) {
+	        document.open('text/html');
+	        document.write(data);
+	        document.close();
+	    })
+	}
+}
+
+
 function edit_user(row){
 
     var id = $($('.modal-content').find('#inputId')[1]).val();
@@ -26,11 +49,16 @@ function edit_user(row){
     var p3 = $($('.modal-content').find('#inputP3')[1]).val();
     var p4 = $($('.modal-content').find('#inputP4')[1]).val();
 
-    var final_user = id +','+ name+','+ unit+','+ p1+','+ p2+','+ p3+','+ p4;
-
+    var original_id = $(row).children()[0].textContent;
     $.post( "/editUser", {
-        original_id : $(row).children()[0].textContent,
-        new_user: final_user
+        original_id : original_id,
+        id: id,
+        name: name,
+        unit: unit,
+        p1: p1,
+        p2: p2,
+        p3: p3,
+        p4: p4
     });
 }
 
