@@ -234,16 +234,16 @@
           </tr>
         </thead>
         <tbody>
-<!-- {{users|safe}} -->
 
-    {% for user in users %}
-        <tr>
-          <td>{{ user.id }}</td>
-          <td>{{ user.name }}</td>
-          <td>{{ user.unit }}</td>
-          <td> {% for ptor, date in user.ptorim.items() %}{% if date|length %}{{ ptor }} ({{ date }})<br>{% endif %}{% endfor %}</td>
-        </tr>
-    {% endfor %}
+    <!-- {{users|safe}} -->
+        {% for user in users %}
+            <tr>
+              <td>{{ user.id }}</td>
+              <td>{{ user.name }}</td>
+              <td>{{ user.unit }}</td>
+              <td> {% for exemption, date in user.exemptions.items() %}{% if date|length %}{{ exemption }} ({{ date }})<br>{% endif %}{% endfor %}</td>
+            </tr>
+        {% endfor %}
 
         </tbody>
       </table>

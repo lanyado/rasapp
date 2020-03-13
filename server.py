@@ -18,6 +18,7 @@ import pandas as pd
 current_dir = os.path.dirname(os.path.realpath(__file__))
 app = Flask(__name__, template_folder=os.path.join(current_dir, 'static'))  # Runs the HTML from the static folder
 users_file = os.path.join(current_dir, 'db/users.json')
+#exemptions_file = os.path.join(current_dir, 'db/exemptions.csv')
 
 site_log = get_log('Website')
 xlsx_log = get_log('XLSX')
@@ -37,25 +38,48 @@ def edit_last_json(csv):
 # =========================== landing page rander ============================
 @app.route("/")  # Opens index.html when the user searches for http://127.0.0.1:5000/
 def hello():
-    usersFile = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
+    #users_df = pd.read_json(users_file)
+    #exemptions_df = pd.read_csv(exemptions_file)
+    users = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
 
     site_log.info(log_message('got users'))
-    return render_template('index.html', users=usersFile)
+    return render_template('index.html', users=users)
 
 # =========================== Add User ================================
 @app.route('/addUser', methods=['POST'])  # from mdb-editor2.js
 def addUser():
-    jsdata = request.form['javascript_data']
-    new_user = jsdata.split(',')
-    user = {"id": str(new_user[0]), "name": new_user[1], "unit": new_user[2], "last_toranut": '2000-01-01',
-            "last_weekend": '2000-01-01', "ptorim": {'פטור שמירות אמצ"ש': new_user[3], 'פטור שמירות סופ"ש': new_user[4],
-                                                     'פטור מטבחים אמצ"ש': new_user[5], 'פטור מטבחים סופ"ש': new_user[6]}}
+
+    new_user = request.form.to_dict()
+    print(f'============== {new_user}') # -> NONE
+
+    new_user = {k: v for k, v in new_user.items()}
+
+    print(f'============== {new_user}')  # -> NONE
+
+    users_df = pd.read_json(users_file)
+    if new_user['id'] not in users_df['id']:
+        try:
+            users_df.append(new_user)
+            users_df.to_json(users_file)
+            resp = {'add_successful': True,\
+                    'message': 'החייל הוסף למערכת'}
+
+        except Exception:
+            resp = {'add_successful': False,\
+                    'message': str(Exception)}
+    else:
+        resp = {'add_successful': False,\
+                'message': 'המספר האישי כבר נמצא במערכת'}
+
+    return jsonify(resp)
+
+    '''
     new_data = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
     new_data.append(user)
     writes_to_json(new_data, users_file)
-
+    '''
     site_log.info(log_message('added user to json'))
-    return '', 204
+    #return '', 204
 
 # =========================== Remove User =============================
 @app.route('/removeUser', methods=['POST']) # from mdb-editor2.js

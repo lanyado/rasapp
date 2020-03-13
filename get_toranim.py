@@ -100,12 +100,12 @@ def set_weekend_toran(final_csv, index, row):
             yesterday = final_csv.iloc[index - 1]
             today = final_csv.iloc[index]
 
-            if yesterday['date_type'] == 'אמצע שבוע' and today['date_type'] != 'אמצע שבוע':
+            if yesterday['date_type'] == 'אמצש' and today['date_type'] != 'אמצש':
                 chosen_user = get_oldest_toranim(available, False)
                 final_csv.loc[final_csv['date'] == row['date'], [toranut_name]] = chosen_user['name'].values[0]
                 update_last_toranut(row['date'], str(list(chosen_user['id'])[0]), False)
 
-            elif yesterday['date_type'] != 'אמצע שבוע' and today['date_type'] != 'אמצע שבוע':
+            elif yesterday['date_type'] != 'אמצש' and today['date_type'] != 'אמצש':
                 final_csv.loc[index: index, [toranut_name]] = yesterday[toranut_name]
                 # update user last weekend
                 new_date = row['date']
@@ -114,8 +114,8 @@ def set_weekend_toran(final_csv, index, row):
 
 def add_toranim(final_csv):
     for index, row in final_csv.iterrows():
-        if row['date_type'] == 'אמצע שבוע':
+        if row['date_type'] == 'אמצש':
             set_day_toran(final_csv, index, row)
-        else:  # סוף שבוע
+        else:  # סופש
             set_weekend_toran(final_csv, index, row)
     return final_csv

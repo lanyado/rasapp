@@ -1,0 +1,4 @@
+weekend = סופש
+weekday = אמצש
+user
+toranut

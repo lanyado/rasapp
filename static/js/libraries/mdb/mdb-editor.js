@@ -9,34 +9,43 @@ function add_user($table, $newRow){
      }
   }
   $table.row.add($newRow).draw();
-  setTimeout(() => {
-      $.post( "/addUser", {
-          javascript_data: $newRow.toString()
-      });
-  }, 25);
-}
+  console.log($newRow)
 
-function sendSearchString(){
-	var type = $.trim($($('.option:checked')[0]).val())
-	if (type=='או')
-		operator = "or";
-	else
-		operator = "and";
-	var searchString = $.trim($('#searchBar').val());
-	searchString = searchString.replace(/\s\s+/g, ' ');
-	if (searchString.length>0){
-		runLoadingAnimation();
-		$.get('/results',{
-			search_string: searchString,
-	    	operator: operator
-	   }, function(data) {
-	        document.open('text/html');
-	        document.write(data);
-	        document.close();
-	    })
-	}
-}
+  var exemptions = {'פטור שמירות אמצש': $newRow[3],
+               'פטור שמירות סופש': $newRow[4],
+               'פטור מטבחים אמצש': $newRow[5],
+               'פטור מטבחים סופש': $newRow[6]}
 
+  var new_user = new FormData();
+
+  new_user.append('id', $newRow[0])
+  new_user.append('name', $newRow[1])
+  new_user.append('unit', $newRow[2])
+  new_user.append('last_weekday', '2000-01-01')
+  new_user.append('last_weekend', '2000-01-01')
+  new_user.append('exemptions', exemptions)
+
+  $.ajax({
+      url: '/addUser',
+      type: 'POST',
+      dataType: 'json',
+      new_user: new_user,
+      processData: false,
+      cache: false,
+      contentType: false,
+  })
+      .done((response) => {
+        if (response.add_successful)
+          swal(response.message, "מעולה", "success");
+        else
+          swal(response.message, "שגיאה", "error");
+      })
+      .fail((jqXhr) => {
+
+          console.log(jqXhr.responseJSON)
+          swal('שגיאה','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
+    });
+}
 
 function edit_user(row){
 
