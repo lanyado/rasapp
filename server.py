@@ -57,7 +57,7 @@ def addUser():
     print(f'============== {new_user}')  # -> NONE
 
     users_df = pd.read_json(users_file)
-    if new_user['id'] not in users_df['id']:
+    if new_user['id'] not in users_df['id']: # if its a new id
         try:
             users_df.append(new_user)
             users_df.to_json(users_file)
@@ -130,19 +130,17 @@ def getPtorim():
 # =========================== Give final excel ========================
 @app.route('/giveExcel', methods=['POST'])
 def giveExcel():
-    first_time = time.time()
 
     dates = get_dates(json.loads(request.form['javascript_data']))
-    final_csv = pd.DataFrame({'date': map(str, dates),\
+    toranuyot_df = pd.DataFrame({'date': map(str, dates),\
                             'day_of_week': map(str, get_day_of_week(dates)),\
                             'date_type': map(str, get_date_type(dates)),\
                             'kitchen1': '', 'kitchen2': '', 'shmirot1': '', 'shmirot2': ''})
-    final_csv = add_toranim(final_csv)
+    toranuyot_df = add_toranim(toranuyot_df) # add the toranim
     file_name = str(dates[0]) + '-' + str(dates[-1]) + '.csv'
-    final_csv.to_csv(file_name, index=False, header=True, encoding='utf_8-sig')
+    toranuyot_df.to_csv(file_name, index=False, header=True, encoding='utf_8-sig')
     # edit_last_json(users_df)''
     xlsx_log.info(log_message('created an excel file'))
-    print(f'it took {time.time()-first_time} seconds')
     return '', 204
 
 if __name__ == "__main__":

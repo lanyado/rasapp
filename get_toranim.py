@@ -15,7 +15,7 @@ xlsx_log = get_log('XLSX')
 
 users_df = pd.read_json('db/users.json', encoding='utf-8-sig',\
                         dtype={'id':'str', 'name':'str', 'unit':'str',\
-                               'ptorim': 'list', 'last_toranut': 'str',
+                               'exemptions': 'list', 'last_weekday': 'str',
                                'last_weekend': 'str'})
 
 def writes_to_json(data_written, edited_file):
@@ -25,7 +25,7 @@ def writes_to_json(data_written, edited_file):
 
 def was_toran_yesterday(date, user) -> bool:
     weekday_delta = datetime.datetime.strptime(date,'%Y-%m-%d')\
-    - datetime.datetime.strptime(user['last_toranut'],'%Y-%m-%d')
+    - datetime.datetime.strptime(user['last_weekday'],'%Y-%m-%d')
 
     weekend_delta = datetime.datetime.strptime(date,'%Y-%m-%d')\
     - datetime.datetime.strptime(user['last_weekend'],'%Y-%m-%d')
@@ -33,9 +33,9 @@ def was_toran_yesterday(date, user) -> bool:
     return (weekday_delta.days < cnf.MIN_DAYS_BETWEEN_WEEKDAY_TORANUTS)\
     or (weekend_delta.days < cnf.MIN_DAYS_BETWEEN_WEEKEND_TORANUTS)
 
-def update_last_toranut(new_date, user_id, is_weekday):
+def update_last_weekday(new_date, user_id, is_weekday):
     if is_weekday:
-        users_df.loc[users_df['id'] == user_id, ['last_toranut']] = new_date
+        users_df.loc[users_df['id'] == user_id, ['last_weekday']] = new_date
     else:
         users_df.loc[users_df['id'] == user_id, ['last_weekend']] = new_date
 
@@ -70,7 +70,7 @@ def get_available_toranim(toranut_name:str, users_df:pd.DataFrame, is_week_day:b
 def get_oldest_toranim(availables, is_weekday):
     """Receives all of the available users and returns the one who had the most time without this toranut"""
     if is_weekday:
-        last_date = 'last_toranut'
+        last_date = 'last_weekday'
     else:
         last_date = 'last_weekend'
 
@@ -81,14 +81,14 @@ def get_oldest_toranim(availables, is_weekday):
     else:
         print('no available toranim')
 
-def set_day_toran(final_csv, index, row):
+def set_weekday_toran(final_csv, index, row):
     for toranut_name in ['kitchen1', 'kitchen2', 'shmirot1', 'shmirot2']:
         availables = get_available_toranim(toranut_name=toranut_name, users_df=users_df,\
                                             is_week_day=True, toranut_date=row['date'])
         chosen_user = get_oldest_toranim(availables, True)
         # writes into sheet
         final_csv.loc[final_csv['date'] == row['date'], [toranut_name]] = chosen_user['name'].values[0]
-        update_last_toranut(new_date=row['date'],\
+        update_last_weekday(new_date=row['date'],\
                             user_id=str(list(chosen_user['id'])[0]), is_weekday=True)
 
 def set_weekend_toran(final_csv, index, row):
@@ -103,7 +103,7 @@ def set_weekend_toran(final_csv, index, row):
             if yesterday['date_type'] == 'אמצש' and today['date_type'] != 'אמצש':
                 chosen_user = get_oldest_toranim(available, False)
                 final_csv.loc[final_csv['date'] == row['date'], [toranut_name]] = chosen_user['name'].values[0]
-                update_last_toranut(row['date'], str(list(chosen_user['id'])[0]), False)
+                update_last_weekday(row['date'], str(list(chosen_user['id'])[0]), False)
 
             elif yesterday['date_type'] != 'אמצש' and today['date_type'] != 'אמצש':
                 final_csv.loc[index: index, [toranut_name]] = yesterday[toranut_name]
@@ -115,7 +115,7 @@ def set_weekend_toran(final_csv, index, row):
 def add_toranim(final_csv):
     for index, row in final_csv.iterrows():
         if row['date_type'] == 'אמצש':
-            set_day_toran(final_csv, index, row)
+            set_weekday_toran(final_csv, index, row)
         else:  # סופש
             set_weekend_toran(final_csv, index, row)
     return final_csv
