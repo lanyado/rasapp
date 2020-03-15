@@ -9,26 +9,26 @@ $('#usersTable').bind('DOMSubtreeModified',function(){
   }, 25);
 })
 */
-function add_user($table, $newRow){
+function add_user(table, row){
   for(var i=0;i<3;i++){ // chack that all all the must input are full
-     if($newRow[i] === "" || $newRow[i] === null) {
+     if(row[i] === "" || row[i] === null) {
           swal("שגיאה", "יש למלא את כל השדות", "error");
           return 1;
      }
   }
 
-  console.log($newRow)
+  console.log(row)
 
-  var exemptions = {'פטור שמירות אמצש': $newRow[3],
-                    'פטור שמירות סופש': $newRow[4],
-                    'פטור מטבחים אמצש': $newRow[5],
-                    'פטור מטבחים סופש': $newRow[6]}
+  var exemptions = {'פטור שמירות אמצש': row[3],
+                    'פטור שמירות סופש': row[4],
+                    'פטור מטבחים אמצש': row[5],
+                    'פטור מטבחים סופש': row[6]}
 
   var new_user = new FormData();
 
-  new_user.append('id', $newRow[0])
-  new_user.append('name', $newRow[1])
-  new_user.append('unit', $newRow[2])
+  new_user.append('id', row[0])
+  new_user.append('name', row[1])
+  new_user.append('unit', row[2])
   new_user.append('last_weekday', '2000-01-01')
   new_user.append('last_weekend', '2000-01-01')
   new_user.append('exemptions', JSON.stringify(exemptions))
@@ -45,7 +45,8 @@ function add_user($table, $newRow){
       .done((response) => {
         if (response.add_successful){
           swal(response.message, "מעולה", "success");
-          $table.row.add($newRow).draw(); // add the new user to the users html table
+          // add the new user to the users html table
+          table.row.add(row).draw();
         }
         else
           swal(response.message, "שגיאה", "error");
@@ -56,7 +57,7 @@ function add_user($table, $newRow){
     });
 }
 
-function edit_user(row){
+function edit_user(table, row){
 
     var id = $($('.modal-content').find('#inputId')[1]).val();
     var name = $($('.modal-content').find('#inputName')[1]).val();
@@ -80,12 +81,32 @@ function edit_user(row){
     });
 }
 
-function remove_user(trInTableToRremove){
-     $.post( "/removeUser", {
-          javascript_data: $(trInTableToRremove).children()[0].textContent
-     });
+function remove_user(table, row){
+    var user_to_remove = new FormData();
+    user_to_remove.append('id', $(row).children()[0].textContent)
 
-    $table.row($(trInTableToRremove)).remove().draw();
+    $.ajax({
+        url: '/removeUser',
+        type: 'POST',
+        dataType: 'json',
+        data: user_to_remove,
+        processData: false,
+        cache: false,
+        contentType: false,
+    })
+        .done((response) => {
+          if (response.remove_successful){
+            swal(response.message, "מעולה", "success");
+            // remove the user from the users html table
+            table.row($(row)).remove().draw();
+          }
+          else
+            swal(response.message, "שגיאה", "error");
+        })
+        .fail((jqXhr) => {
+            console.log(jqXhr.responseJSON)
+            swal('שגיאה','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
+      });
 }
 
 function get_ptorim(){

@@ -30,6 +30,11 @@ def writes_to_json(data_written, edited_file):
     with open(edited_file, "w", encoding='utf-8') as json_file:
         json.dump(data_written, json_file, ensure_ascii=False, indent=1)
 
+def update_users_file(df):
+    """Takes data to write and puts it in the file"""
+    with open(users_json_file, 'w', encoding='utf-8') as users_file:
+        df.to_json(users_file, force_ascii=False, orient='records')
+
 def edit_last_json(csv):
     final_users = csv.to_dict('index')
     f2 = []
@@ -48,7 +53,7 @@ def hello():
     return render_template('index.html', users=users)
 
 # =========================== Add User ================================
-@app.route('/addUser', methods=['POST'])  # from mdb-editor2.js
+@app.route('/addUser', methods=['POST'])
 def addUser():
     new_user = request.form.to_dict()
     new_user['exemptions'] = ast.literal_eval(new_user['exemptions'])
@@ -64,7 +69,7 @@ def addUser():
             resp = {'add_successful': True,\
                     'message': 'החייל הוסף למערכת'}
 
-            site_log.info(log_message(f'added user {new_user['id']} to json'))
+            site_log.info(log_message(f"added user {new_user['id']} to json"))
 
         except Exception as e:
             print(str(e))
@@ -75,22 +80,32 @@ def addUser():
     else:
         resp = {'add_successful': False,\
                 'message': 'המספר האישי כבר נמצא במערכת'}
-        site_log.error('tried to add a user that already exist on the system')
+        site_log.error('tried to add a user that already exist on the db')
+
     return jsonify(resp)
 
 # =========================== Remove User =============================
 @app.route('/removeUser', methods=['POST']) # from mdb-editor2.js
 def removeUser():
-    jsdata = str(request.form['javascript_data'])
-    data = json.load(codecs.open(users_json_file, 'r', 'utf-8-sig'))
-    new_data = []
-    for line in data:
-        if line['id'] != str(jsdata):
-            new_data.append(line)
-    writes_to_json(new_data, users_json_file)
+    user_id = request.form.to_dict()['id']
+    print(user_id)
+    try:
+        users_df = cnf.USERS_DF
+        users_df = users_df[users_df.id != user_id]
 
-    site_log.info(log_message('removed user from json'))
-    return '', 204
+        update_users_file(users_df)
+
+        resp = {'remove_successful': True,\
+                'message': 'המשתמש נמחק בהצלחה'}
+        site_log.info(log_message('removed user from json'))
+
+    except Exception as e:
+        print(str(e))
+        resp = {'remove_successful': False,\
+                'message': str(e)}
+        site_log.error(log_message(str(e)))
+
+    return jsonify(resp)
 
 # =========================== Edit user ===============================
 @app.route('/editUser', methods=['POST']) # from mdb-editor2.js

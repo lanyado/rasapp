@@ -73,7 +73,7 @@
         return $('.modalEditClass label').addClass('active');
       },
           buttonEditInside = function buttonEditInside(e) {
-            edit_user($selectedRow);
+            edit_user($table, $selectedRow);
 
         for (var _i3 = 0; _i3 < $(e.target).closest('.wrapper-modal-editor').find('thead tr').children().length; _i3++) {
 
@@ -96,7 +96,7 @@
           buttonDeleteYes = function buttonDeleteYes() {
 
              setTimeout(() => {
-                remove_user(trColorSelected);
+                remove_user($table, trColorSelected);
                 $buttonEdit.prop('disabled', true);
                 $buttonDelete.prop('disabled', true);
                 $createShowP.html('0 row selected');
