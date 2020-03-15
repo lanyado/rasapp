@@ -5773,3 +5773,352 @@
 2020-03-16 00:36:27,518 - INFO - werkzeug -  * Restarting with stat
 2020-03-16 00:36:28,352 - WARNING - werkzeug -  * Debugger is active!
 2020-03-16 00:36:28,367 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:39:49,230 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-16 00:39:49,232 - INFO - werkzeug -  * Restarting with stat
+2020-03-16 00:39:50,450 - WARNING - werkzeug -  * Debugger is active!
+2020-03-16 00:39:50,459 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:39:50,467 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:39:50,486 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:39:50] "GET / HTTP/1.1" 200 -
+2020-03-16 00:39:51,154 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:39:51] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:39:51,529 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:39:51] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:40:12,083 - INFO - Website - Function name: addUser | message: added user 76786766765 to json
+2020-03-16 00:40:12,084 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:40:12] "POST /addUser HTTP/1.1" 200 -
+2020-03-16 00:40:29,571 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:40:29,572 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:40:29] "GET / HTTP/1.1" 200 -
+2020-03-16 00:40:30,094 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:40:30] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:40:30,107 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:40:30] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:40:39,599 - INFO - Website - Function name: removeUser | message: removed user from json
+2020-03-16 00:40:39,599 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:40:39] "POST /removeUser HTTP/1.1" 200 -
+2020-03-16 00:42:00,949 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-16 00:42:00,952 - INFO - werkzeug -  * Restarting with stat
+2020-03-16 00:42:01,745 - WARNING - werkzeug -  * Debugger is active!
+2020-03-16 00:42:01,752 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:42:01,758 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:42:01,776 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:01] "GET / HTTP/1.1" 200 -
+2020-03-16 00:42:01,829 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:01] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-03-16 00:42:01,831 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:01] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-03-16 00:42:01,832 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:01] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-03-16 00:42:01,833 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:01] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-03-16 00:42:01,833 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:01] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-03-16 00:42:01,834 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:01] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-03-16 00:42:01,843 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:01] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-03-16 00:42:01,843 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:01] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-03-16 00:42:02,002 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-03-16 00:42:02,002 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-03-16 00:42:02,004 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-03-16 00:42:02,005 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-03-16 00:42:02,007 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-03-16 00:42:02,009 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-03-16 00:42:02,018 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-03-16 00:42:02,018 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-03-16 00:42:02,019 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-03-16 00:42:02,072 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-03-16 00:42:02,072 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-03-16 00:42:02,141 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:42:02,432 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:42:02,782 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:02] "GET /favicon.ico HTTP/1.1" 404 -
+2020-03-16 00:42:05,078 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:42:05,079 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET / HTTP/1.1" 200 -
+2020-03-16 00:42:05,130 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-03-16 00:42:05,135 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-03-16 00:42:05,136 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-03-16 00:42:05,138 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-03-16 00:42:05,141 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-03-16 00:42:05,145 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-03-16 00:42:05,146 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-03-16 00:42:05,147 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-03-16 00:42:05,310 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-03-16 00:42:05,316 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-03-16 00:42:05,316 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-03-16 00:42:05,317 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-03-16 00:42:05,318 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-03-16 00:42:05,321 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-03-16 00:42:05,323 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-03-16 00:42:05,332 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-03-16 00:42:05,332 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-03-16 00:42:05,546 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-03-16 00:42:05,654 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:42:05,663 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:42:05,722 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/img/overlays/01.png HTTP/1.1" 404 -
+2020-03-16 00:42:05,723 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/img/overlays/02.png HTTP/1.1" 404 -
+2020-03-16 00:42:05,725 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/img/overlays/03.png HTTP/1.1" 404 -
+2020-03-16 00:42:05,728 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/img/overlays/04.png HTTP/1.1" 404 -
+2020-03-16 00:42:05,731 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/img/overlays/05.png HTTP/1.1" 404 -
+2020-03-16 00:42:05,732 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/img/overlays/06.png HTTP/1.1" 404 -
+2020-03-16 00:42:05,735 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/img/overlays/07.png HTTP/1.1" 404 -
+2020-03-16 00:42:05,736 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/img/overlays/08.png HTTP/1.1" 404 -
+2020-03-16 00:42:05,737 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/img/overlays/09.png HTTP/1.1" 404 -
+2020-03-16 00:42:05,751 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/img/svg/arrow_left.svg HTTP/1.1" 404 -
+2020-03-16 00:42:05,752 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:05] "GET /static/css/libraries/img/svg/arrow_right.svg HTTP/1.1" 404 -
+2020-03-16 00:42:06,075 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:06] "GET /favicon.ico HTTP/1.1" 404 -
+2020-03-16 00:42:07,024 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:07] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-03-16 00:42:16,941 - INFO - Website - Function name: addUser | message: added user 55545465 to json
+2020-03-16 00:42:16,941 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:16] "POST /addUser HTTP/1.1" 200 -
+2020-03-16 00:42:18,434 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:42:18,435 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:18] "GET / HTTP/1.1" 200 -
+2020-03-16 00:42:19,101 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:19] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:42:19,180 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:19] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:42:22,991 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:42:23,012 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:23] "POST /getExemptions HTTP/1.1" 500 -
+2020-03-16 00:42:27,822 - ERROR - Website - Function name: editUser | message: index 0 is out of bounds for axis 0 with size 0
+2020-03-16 00:42:27,822 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:42:27,823 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:42:27] "POST /editUser HTTP/1.1" 200 -
+2020-03-16 00:43:28,463 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-16 00:43:28,567 - INFO - werkzeug -  * Restarting with stat
+2020-03-16 00:43:30,008 - WARNING - werkzeug -  * Debugger is active!
+2020-03-16 00:43:30,018 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:43:50,114 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:43:50,134 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:43:50] "GET / HTTP/1.1" 200 -
+2020-03-16 00:43:50,654 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:43:50] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:43:50,656 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:43:50] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:43:54,138 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:43:54,139 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:43:54] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:43:58,724 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:43:58,724 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:43:58,724 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:43:58] "POST /editUser HTTP/1.1" 200 -
+2020-03-16 00:44:00,149 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:44:00,150 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:00] "GET / HTTP/1.1" 200 -
+2020-03-16 00:44:00,822 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:00] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:44:00,898 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:00] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:44:01,152 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:44:01,153 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:01] "GET / HTTP/1.1" 200 -
+2020-03-16 00:44:01,682 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:01] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:44:01,692 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:01] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:44:02,005 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:44:02,005 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:02] "GET / HTTP/1.1" 200 -
+2020-03-16 00:44:02,247 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:02] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:44:02,522 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:02] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:44:13,812 - INFO - Website - Function name: addUser | message: added user 889789 to json
+2020-03-16 00:44:13,814 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:13] "POST /addUser HTTP/1.1" 200 -
+2020-03-16 00:44:15,167 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:44:15,169 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:15] "GET / HTTP/1.1" 200 -
+2020-03-16 00:44:15,475 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:15] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:44:15,757 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:15] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:44:19,359 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:44:19,361 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:19] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:44:24,032 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:44:24,032 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:44:24,032 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:24] "POST /editUser HTTP/1.1" 200 -
+2020-03-16 00:44:25,447 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:44:25,448 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:25] "GET / HTTP/1.1" 200 -
+2020-03-16 00:44:25,853 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:25] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:44:25,913 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:25] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:44:41,198 - INFO - Website - Function name: addUser | message: added user 8998 to json
+2020-03-16 00:44:41,199 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:41] "POST /addUser HTTP/1.1" 200 -
+2020-03-16 00:44:42,585 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:44:42,585 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:42] "GET / HTTP/1.1" 200 -
+2020-03-16 00:44:42,897 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:42] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:44:43,196 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:43] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:44:52,741 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:44:52,741 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:52] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:44:56,704 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:44:56,705 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:56] "GET / HTTP/1.1" 200 -
+2020-03-16 00:44:56,970 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:56] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:44:57,255 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:44:57] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:45:08,550 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:45:08,550 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:45:08] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:45:13,280 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:45:13,281 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:45:13,281 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:45:13] "POST /editUser HTTP/1.1" 200 -
+2020-03-16 00:45:16,454 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:45:16,456 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:45:16] "GET / HTTP/1.1" 200 -
+2020-03-16 00:45:16,767 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:45:16] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:45:17,060 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:45:17] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:45:29,495 - INFO - Website - Function name: addUser | message: added user 111111 to json
+2020-03-16 00:45:29,495 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:45:29] "POST /addUser HTTP/1.1" 200 -
+2020-03-16 00:45:31,578 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:45:31,579 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:45:31] "GET / HTTP/1.1" 200 -
+2020-03-16 00:45:31,880 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:45:31] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:45:32,176 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:45:32] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:45:35,082 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:45:35,084 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:45:35] "GET / HTTP/1.1" 200 -
+2020-03-16 00:45:35,565 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:45:35] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:45:36,122 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:45:36] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:48:18,556 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:48:18,561 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:18] "GET / HTTP/1.1" 200 -
+2020-03-16 00:48:19,199 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:19] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:48:19,848 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:19] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:48:21,857 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:48:21,859 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:21] "GET / HTTP/1.1" 200 -
+2020-03-16 00:48:22,552 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:22] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:48:22,863 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:22] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:48:24,630 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:48:24,631 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:24] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:48:29,087 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:48:29,087 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:48:29,090 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:29] "POST /editUser HTTP/1.1" 200 -
+2020-03-16 00:48:30,643 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:48:30,645 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:30] "GET / HTTP/1.1" 200 -
+2020-03-16 00:48:31,801 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:31] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:48:31,816 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:31] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:48:40,859 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:48:40,859 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:40] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:48:46,719 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:48:46,720 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:46] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:48:51,263 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:48:51,263 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:48:51,264 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:51] "POST /editUser HTTP/1.1" 200 -
+2020-03-16 00:48:52,797 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:48:52,801 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:52] "GET / HTTP/1.1" 200 -
+2020-03-16 00:48:53,699 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:53] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:48:54,064 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:54] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:48:57,102 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:48:57,103 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:48:57] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:49:00,867 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:49:00,869 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:49:00] "GET / HTTP/1.1" 200 -
+2020-03-16 00:49:01,402 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:49:01] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:49:01,928 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:49:01] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:49:03,886 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:49:03,926 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:49:03] "POST /getExemptions HTTP/1.1" 500 -
+2020-03-16 00:49:07,851 - ERROR - Website - Function name: editUser | message: index 0 is out of bounds for axis 0 with size 0
+2020-03-16 00:49:07,851 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:49:07,852 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:49:07] "POST /editUser HTTP/1.1" 200 -
+2020-03-16 00:49:14,346 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:49:14,348 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:49:14] "GET / HTTP/1.1" 200 -
+2020-03-16 00:49:15,274 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:49:15] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:49:15,285 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:49:15] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:49:18,054 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:49:18,074 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:49:18] "POST /getExemptions HTTP/1.1" 500 -
+2020-03-16 00:49:22,315 - ERROR - Website - Function name: editUser | message: index 0 is out of bounds for axis 0 with size 0
+2020-03-16 00:49:22,315 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:49:22,316 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:49:22] "POST /editUser HTTP/1.1" 200 -
+2020-03-16 00:50:11,155 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:50:11,196 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:50:11] "POST /getExemptions HTTP/1.1" 500 -
+2020-03-16 00:50:12,894 - ERROR - Website - Function name: editUser | message: index 0 is out of bounds for axis 0 with size 0
+2020-03-16 00:50:12,894 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:50:12,895 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:50:12] "POST /editUser HTTP/1.1" 200 -
+2020-03-16 00:51:29,834 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-16 00:51:30,035 - INFO - werkzeug -  * Restarting with stat
+2020-03-16 00:51:31,891 - WARNING - werkzeug -  * Debugger is active!
+2020-03-16 00:51:31,902 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:51:50,615 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-16 00:51:50,742 - INFO - werkzeug -  * Restarting with stat
+2020-03-16 00:51:52,407 - WARNING - werkzeug -  * Debugger is active!
+2020-03-16 00:51:52,417 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:51:53,463 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-16 00:51:53,583 - INFO - werkzeug -  * Restarting with stat
+2020-03-16 00:51:55,267 - WARNING - werkzeug -  * Debugger is active!
+2020-03-16 00:51:55,276 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:53:33,883 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-16 00:53:34,004 - INFO - werkzeug -  * Restarting with stat
+2020-03-16 00:53:35,994 - WARNING - werkzeug -  * Debugger is active!
+2020-03-16 00:53:36,008 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:53:39,793 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-16 00:53:39,794 - INFO - werkzeug -  * Restarting with stat
+2020-03-16 00:53:41,456 - WARNING - werkzeug -  * Debugger is active!
+2020-03-16 00:53:41,471 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:53:41,483 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:53:41,485 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:53:41,538 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:53:41] "GET / HTTP/1.1" 200 -
+2020-03-16 00:53:41,545 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:53:41] "GET / HTTP/1.1" 200 -
+2020-03-16 00:53:43,220 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:53:43] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:53:43,225 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:53:43] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:53:47,156 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:53:47,156 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:53:47] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:53:51,414 - ERROR - Website - Function name: editUser | message: '>' not supported between instances of 'str' and 'int'
+2020-03-16 00:53:51,414 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:53:51,415 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:53:51] "POST /editUser HTTP/1.1" 200 -
+2020-03-16 00:54:09,655 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-16 00:54:09,794 - INFO - werkzeug -  * Restarting with stat
+2020-03-16 00:54:11,679 - WARNING - werkzeug -  * Debugger is active!
+2020-03-16 00:54:11,690 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:54:11,703 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:54:11,738 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:11] "GET / HTTP/1.1" 200 -
+2020-03-16 00:54:12,484 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:12] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:54:13,178 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:13] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:54:14,814 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:54:14,815 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:14] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:54:18,110 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:54:18,110 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:54:18,110 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:18] "POST /editUser HTTP/1.1" 200 -
+2020-03-16 00:54:19,423 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:54:19,425 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:19] "GET / HTTP/1.1" 200 -
+2020-03-16 00:54:20,018 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:20] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:54:20,639 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:20] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:54:23,398 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:54:23,398 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:23] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:54:27,127 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:54:27,128 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:27] "GET / HTTP/1.1" 200 -
+2020-03-16 00:54:27,598 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:27] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:54:27,750 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:27] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:54:30,026 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:54:30,028 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:30] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:54:49,464 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:54:49,466 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:49] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:54:51,761 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:54:51,762 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:51] "GET / HTTP/1.1" 200 -
+2020-03-16 00:54:54,795 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:54:54,796 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:54:54] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:55:31,097 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:55:31,100 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:55:31] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:55:35,909 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:55:35] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:55:36,014 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:55:36] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:57:02,209 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-16 00:57:02,377 - INFO - werkzeug -  * Restarting with stat
+2020-03-16 00:57:04,450 - WARNING - werkzeug -  * Debugger is active!
+2020-03-16 00:57:04,465 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:57:08,033 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:57:08,035 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:57:08] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:57:38,590 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:57:38,591 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:57:38] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:57:41,039 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:57:41,039 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:57:41] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:57:42,786 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:57:42,819 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:57:42] "GET / HTTP/1.1" 200 -
+2020-03-16 00:57:43,352 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:57:43] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:57:43,939 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:57:43] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:57:45,629 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:57:45,630 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:57:45] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:57:48,650 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:57:48,651 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:57:48] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:57:55,474 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-16 00:57:55,594 - INFO - werkzeug -  * Restarting with stat
+2020-03-16 00:57:57,505 - WARNING - werkzeug -  * Debugger is active!
+2020-03-16 00:57:57,522 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:57:58,868 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:57:58,899 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:57:58] "GET / HTTP/1.1" 200 -
+2020-03-16 00:57:59,711 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:57:59] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:58:00,231 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:00] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:58:01,786 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:58:01,787 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:01] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:58:21,492 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-16 00:58:21,615 - INFO - werkzeug -  * Restarting with stat
+2020-03-16 00:58:23,349 - WARNING - werkzeug -  * Debugger is active!
+2020-03-16 00:58:23,359 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-03-16 00:58:29,174 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:58:29,208 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:29] "GET / HTTP/1.1" 200 -
+2020-03-16 00:58:30,341 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:30] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:58:30,341 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:30] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:58:33,444 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:58:33,445 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:33] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:58:37,285 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:58:37,286 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:37] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:58:39,823 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:58:39,823 - INFO - Website - Function name: editUser | message: edited user in json
+2020-03-16 00:58:39,824 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:39] "POST /editUser HTTP/1.1" 200 -
+2020-03-16 00:58:40,914 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:58:40,916 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:40] "GET / HTTP/1.1" 200 -
+2020-03-16 00:58:42,089 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:42] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-16 00:58:42,098 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:42] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:58:44,851 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:58:44,852 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:44] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:58:54,836 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:58:54,837 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:58:54] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:59:01,886 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:59:01,887 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:59:01] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:59:07,547 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:59:07,547 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:59:07] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:59:12,765 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:59:12,766 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:59:12] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:59:20,416 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:59:20,417 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:59:20] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:59:41,889 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:59:41,892 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:59:41] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:59:51,635 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-03-16 00:59:51,636 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:59:51] "POST /getExemptions HTTP/1.1" 200 -
+2020-03-16 00:59:56,114 - INFO - Website - Function name: removeUser | message: removed user from json
+2020-03-16 00:59:56,115 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:59:56] "POST /removeUser HTTP/1.1" 200 -
+2020-03-16 00:59:58,504 - INFO - Website - Function name: hello | message: got users
+2020-03-16 00:59:58,505 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:59:58] "GET / HTTP/1.1" 200 -
+2020-03-16 00:59:59,339 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:59:59] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-16 00:59:59,504 - INFO - werkzeug - 127.0.0.1 - - [16/Mar/2020 00:59:59] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -

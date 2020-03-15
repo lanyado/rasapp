@@ -44,9 +44,10 @@ function add_user(table, row){
   })
       .done((response) => {
         if (response.success){
-          swal(response.message, "מעולה", "success");
-          // add the new user to the users html table
-          table.row.add(row).draw();
+          table.row.add(row).draw(); // add the new user to the users html table
+          swal(response.message, "מעולה", "success").then(function() {
+                  window.location = window.location;
+            });
         }
         else
           swal(response.message, "שגיאה", "error");

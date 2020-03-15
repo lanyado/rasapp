@@ -63,8 +63,7 @@ def addUser():
     if new_user['id'] not in users_df['id'].unique(): # if its a new id
         try:
             users_df = users_df.append(new_user, ignore_index = True)
-            with open(users_json_file, 'w', encoding='utf-8') as users_file:
-                users_df.to_json(users_file, force_ascii=False, orient='records')
+            update_users_file(users_df)
 
             resp = {'success': True,\
                     'message': 'החייל הוסף למערכת'}
@@ -88,7 +87,6 @@ def addUser():
 @app.route('/removeUser', methods=['POST']) # from mdb-editor2.js
 def removeUser():
     user_id = request.form.to_dict()['id']
-    print(user_id)
     try:
         users_df = cnf.USERS_DF
         users_df = users_df[users_df.id != user_id]
@@ -116,11 +114,6 @@ def editUser():
     
     original_id = form_data['original_id']
 
-    print(f'user: {user}')
-    print(f'exemptions: {exemptions}')
-    print(f'original_id: {original_id}')
-
-
     try:
         users_df = cnf.USERS_DF
         user_mask = users_df['id']==original_id
@@ -130,18 +123,21 @@ def editUser():
         #update
         for column_name in set(users_df.columns):
             if column_name not in user.keys():
-                user[column_name] = users_df[user_mask][column_name].values[0]
+                new_value = users_df[user_mask][column_name].values
+                if len(new_value)>0:
+                    new_value = new_value[0]
+                else:
+                    new_value = ""
 
-        new_df = pd.DataFrame(user)
-        print(users_df)
+                user[column_name] = new_value
+
         # delete
         users_df = users_df[users_df.id != original_id]
         # insert
         users_df = users_df.append(user, ignore_index = True)
-        print('after')
-        print(users_df)
 
         '''
+        other mathood
         for key, value in user.items():
            users_df.loc[user_mask, key]  = value
 
@@ -169,15 +165,15 @@ def editUser():
 def getExemptions():
     id = request.form['id']
     users_df = cnf.USERS_DF
-    print(id)
     user_mask = users_df['id']==id
+    time.sleep(1)
     exemptions = users_df[user_mask]['exemptions'].values
-    print(exemptions)
     if len(exemptions)> 0:
         exemptions = exemptions[0]
-    resp = {'exemptions': exemptions}
+        resp = {'exemptions': exemptions}
+    else:
+        resp = {'exemptions': {}}
 
-    print(f'exemptions exemptions {exemptions}')
 
     site_log.info(log_message('got ptorim'))
     return jsonify(resp)
