@@ -12,12 +12,14 @@ from get_toranim import add_toranim
 
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
+import ast
+
 #import modin.pandas as pd
 #from typing import Any
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 app = Flask(__name__, template_folder=os.path.join(current_dir, 'static'))  # Runs the HTML from the static folder
-users_file = os.path.join(current_dir, 'db/users.json')
+users_json_file = os.path.join(current_dir, 'db/users.json')
 #exemptions_file = os.path.join(current_dir, 'db/exemptions.csv')
 
 site_log = get_log('Website')
@@ -38,9 +40,9 @@ def edit_last_json(csv):
 # =========================== landing page rander ============================
 @app.route("/")  # Opens index.html when the user searches for http://127.0.0.1:5000/
 def hello():
-    #users_df = pd.read_json(users_file)
+    #users_df = pd.read_json(users_json_file)
     #exemptions_df = pd.read_csv(exemptions_file)
-    users = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
+    users = json.load(codecs.open(users_json_file, 'r', 'utf-8-sig'))
 
     site_log.info(log_message('got users'))
     return render_template('index.html', users=users)
@@ -48,49 +50,44 @@ def hello():
 # =========================== Add User ================================
 @app.route('/addUser', methods=['POST'])  # from mdb-editor2.js
 def addUser():
-
     new_user = request.form.to_dict()
-    print(f'============== {new_user}') # -> NONE
+    new_user['exemptions'] = ast.literal_eval(new_user['exemptions'])
 
-    new_user = {k: v for k, v in new_user.items()}
+    users_df = cnf.USERS_DF
 
-    print(f'============== {new_user}')  # -> NONE
-
-    users_df = pd.read_json(users_file)
-    if new_user['id'] not in users_df['id']: # if its a new id
+    if new_user['id'] not in users_df['id'].unique(): # if its a new id
         try:
-            users_df.append(new_user)
-            users_df.to_json(users_file)
+            users_df = users_df.append(new_user, ignore_index = True)
+            with open(users_json_file, 'w', encoding='utf-8') as users_file:
+                users_df.to_json(users_file, force_ascii=False, orient='records')
+
             resp = {'add_successful': True,\
                     'message': 'החייל הוסף למערכת'}
 
-        except Exception:
+            site_log.info(log_message(f'added user {new_user['id']} to json'))
+
+        except Exception as e:
+            print(str(e))
             resp = {'add_successful': False,\
-                    'message': str(Exception)}
+                    'message': str(e)}
+            site_log.error(log_message(str(e)))
+
     else:
         resp = {'add_successful': False,\
                 'message': 'המספר האישי כבר נמצא במערכת'}
-
+        site_log.error('tried to add a user that already exist on the system')
     return jsonify(resp)
-
-    '''
-    new_data = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
-    new_data.append(user)
-    writes_to_json(new_data, users_file)
-    '''
-    site_log.info(log_message('added user to json'))
-    #return '', 204
 
 # =========================== Remove User =============================
 @app.route('/removeUser', methods=['POST']) # from mdb-editor2.js
 def removeUser():
     jsdata = str(request.form['javascript_data'])
-    data = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
+    data = json.load(codecs.open(users_json_file, 'r', 'utf-8-sig'))
     new_data = []
     for line in data:
         if line['id'] != str(jsdata):
             new_data.append(line)
-    writes_to_json(new_data, users_file)
+    writes_to_json(new_data, users_json_file)
 
     site_log.info(log_message('removed user from json'))
     return '', 204
@@ -101,7 +98,7 @@ def editUser():
     user_fields = request.form.to_dict()
     user_fields = {k: v for k, v in user_fields.items() if v}
 
-    data = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
+    data = json.load(codecs.open(users_json_file, 'r', 'utf-8-sig'))
     new_data = []
     for line in data:
         if line['id'] != user_fields['original_id']:
@@ -111,7 +108,7 @@ def editUser():
             user["last_weekend"] = line["last_toranut"]
             new_data.append(user)
 
-    writes_to_json(new_data, users_file)
+    writes_to_json(new_data, users_json_file)
 
     site_log.info(log_message('updated user in json'))
     return '', 204
@@ -120,7 +117,7 @@ def editUser():
 @app.route('/getPtorim', methods=['POST'])
 def getPtorim():
     id = request.form['javascript_data']
-    data = json.load(codecs.open(users_file, 'r', 'utf-8-sig'))
+    data = json.load(codecs.open(users_json_file, 'r', 'utf-8-sig'))
     for line in data:
         if line['id'] == id:
             site_log.info(log_message('got ptorim'))

@@ -16,7 +16,7 @@ function add_user($table, $newRow){
           return 1;
      }
   }
-  $table.row.add($newRow).draw();
+
   console.log($newRow)
 
   var exemptions = {'פטור שמירות אמצש': $newRow[3],
@@ -31,20 +31,22 @@ function add_user($table, $newRow){
   new_user.append('unit', $newRow[2])
   new_user.append('last_weekday', '2000-01-01')
   new_user.append('last_weekend', '2000-01-01')
-  new_user.append('exemptions', exemptions)
+  new_user.append('exemptions', JSON.stringify(exemptions))
 
   $.ajax({
       url: '/addUser',
       type: 'POST',
       dataType: 'json',
-      new_user: new_user,
+      data: new_user,
       processData: false,
       cache: false,
       contentType: false,
   })
       .done((response) => {
-        if (response.add_successful)
+        if (response.add_successful){
           swal(response.message, "מעולה", "success");
+          $table.row.add($newRow).draw(); // add the new user to the users html table
+        }
         else
           swal(response.message, "שגיאה", "error");
       })

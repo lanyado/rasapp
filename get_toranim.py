@@ -15,7 +15,7 @@ xlsx_log = get_log('XLSX')
 
 users_df = pd.read_json('db/users.json', encoding='utf-8-sig',\
                         dtype={'id':'str', 'name':'str', 'unit':'str',\
-                               'exemptions': 'list', 'last_weekday': 'str',
+                               'exemptions': 'dict', 'last_weekday': 'str',
                                'last_weekend': 'str'})
 
 def writes_to_json(data_written, edited_file):
