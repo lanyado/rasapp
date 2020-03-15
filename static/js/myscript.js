@@ -43,7 +43,7 @@ function add_user(table, row){
       contentType: false,
   })
       .done((response) => {
-        if (response.add_successful){
+        if (response.success){
           swal(response.message, "מעולה", "success");
           // add the new user to the users html table
           table.row.add(row).draw();
@@ -59,26 +59,47 @@ function add_user(table, row){
 
 function edit_user(table, row){
 
-    var id = $($('.modal-content').find('#inputId')[1]).val();
-    var name = $($('.modal-content').find('#inputName')[1]).val();
-    var unit = $($('.modal-content').find('#inputUnit')[1]).val();
+    var user = {
+      'id': $($('.modal-content').find('#inputId')[1]).val(),
+      'name': $($('.modal-content').find('#inputName')[1]).val(),
+      'unit': $($('.modal-content').find('#inputUnit')[1]).val()
+    }
+    var exemptions = {'פטור שמירות אמצש': $($('.modal-content').find('#inputP1')[1]).val(),
+                        'פטור שמירות סופש': $($('.modal-content').find('#inputP2')[1]).val(),
+                        'פטור מטבחים אמצש': $($('.modal-content').find('#inputP3')[1]).val(),
+                        'פטור מטבחים סופש': $($('.modal-content').find('#inputP4')[1]).val()}
 
-    var p1 = $($('.modal-content').find('#inputP1')[1]).val();
-    var p2 = $($('.modal-content').find('#inputP2')[1]).val();
-    var p3 = $($('.modal-content').find('#inputP3')[1]).val();
-    var p4 = $($('.modal-content').find('#inputP4')[1]).val();
 
-    var original_id = $(row).children()[0].textContent;
-    $.post( "/editUser", {
-        original_id : original_id,
-        id: id,
-        name: name,
-        unit: unit,
-        p1: p1,
-        p2: p2,
-        p3: p3,
-        p4: p4
-    });
+    var form_data = new FormData();
+   
+    form_data.append('user', JSON.stringify(user))
+    form_data.append('exemptions', JSON.stringify(exemptions))
+
+    form_data.append('original_id', $(row).children()[0].textContent)
+
+    $.ajax({
+        url: '/editUser',
+        type: 'POST',
+        dataType: 'json',
+        data: form_data,
+        processData: false,
+        cache: false,
+        contentType: false
+    })
+        .done((response) => {
+          if (response.success){
+            swal(response.message, "מעולה", "success").then(function() {
+                  window.location = window.location;
+            });
+            // edit the user in the users html table
+          }
+          else
+            swal(response.message, "שגיאה", "error");
+        })
+        .fail((jqXhr) => {
+            console.log(jqXhr.responseJSON)
+            swal('שגיאה','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
+      });
 }
 
 function remove_user(table, row){
@@ -95,7 +116,7 @@ function remove_user(table, row){
         contentType: false,
     })
         .done((response) => {
-          if (response.remove_successful){
+          if (response.success){
             swal(response.message, "מעולה", "success");
             // remove the user from the users html table
             table.row($(row)).remove().draw();
@@ -109,14 +130,15 @@ function remove_user(table, row){
       });
 }
 
-function get_ptorim(){
+function get_exemptions(){
   setTimeout(() => {
-        $.post( "/getPtorim", {
-            javascript_data: $($('#editInputs').find('#inputId')).val()
+        $.post( "/getExemptions", {
+            id: $($('#editInputs').find('#inputId')).val()
           },function(response){
-                for (key in response.ptorim){
-                    if (response.ptorim[key])
-                        $($("input[title|='"+key+"']")[0]).val(response.ptorim[key])
+            console.log(response.exemptions)
+                for (key in response.exemptions){
+                    if (response.exemptions[key])
+                        $($("input[title|='"+key+"']")[0]).val(response.exemptions[key])
                     else
                         $($("input[title|='"+key+"']")[0]).val('')
                 }

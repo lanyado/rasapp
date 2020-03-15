@@ -76,7 +76,6 @@
             edit_user($table, $selectedRow);
 
         for (var _i3 = 0; _i3 < $(e.target).closest('.wrapper-modal-editor').find('thead tr').children().length; _i3++) {
-
           $table.cell($(trColorSelected).find('td').eq(_i3)).data($wrapperModalEditor.find('.modalEditClass input').eq(_i3).val());
         }
       },

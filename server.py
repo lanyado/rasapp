@@ -66,19 +66,19 @@ def addUser():
             with open(users_json_file, 'w', encoding='utf-8') as users_file:
                 users_df.to_json(users_file, force_ascii=False, orient='records')
 
-            resp = {'add_successful': True,\
+            resp = {'success': True,\
                     'message': 'החייל הוסף למערכת'}
 
             site_log.info(log_message(f"added user {new_user['id']} to json"))
 
         except Exception as e:
             print(str(e))
-            resp = {'add_successful': False,\
+            resp = {'success': False,\
                     'message': str(e)}
             site_log.error(log_message(str(e)))
 
     else:
-        resp = {'add_successful': False,\
+        resp = {'success': False,\
                 'message': 'המספר האישי כבר נמצא במערכת'}
         site_log.error('tried to add a user that already exist on the db')
 
@@ -95,13 +95,13 @@ def removeUser():
 
         update_users_file(users_df)
 
-        resp = {'remove_successful': True,\
+        resp = {'success': True,\
                 'message': 'המשתמש נמחק בהצלחה'}
         site_log.info(log_message('removed user from json'))
 
     except Exception as e:
         print(str(e))
-        resp = {'remove_successful': False,\
+        resp = {'success': False,\
                 'message': str(e)}
         site_log.error(log_message(str(e)))
 
@@ -110,34 +110,77 @@ def removeUser():
 # =========================== Edit user ===============================
 @app.route('/editUser', methods=['POST']) # from mdb-editor2.js
 def editUser():
-    user_fields = request.form.to_dict()
-    user_fields = {k: v for k, v in user_fields.items() if v}
+    form_data = request.form.to_dict()
+    user = ast.literal_eval(form_data['user']) 
+    exemptions = ast.literal_eval(form_data['exemptions']) 
+    
+    original_id = form_data['original_id']
 
-    data = json.load(codecs.open(users_json_file, 'r', 'utf-8-sig'))
-    new_data = []
-    for line in data:
-        if line['id'] != user_fields['original_id']:
-            new_data.append(line)
-        else:
-            user["last_toranut"] = line["last_toranut"]
-            user["last_weekend"] = line["last_toranut"]
-            new_data.append(user)
+    print(f'user: {user}')
+    print(f'exemptions: {exemptions}')
+    print(f'original_id: {original_id}')
 
-    writes_to_json(new_data, users_json_file)
 
-    site_log.info(log_message('updated user in json'))
-    return '', 204
+    try:
+        users_df = cnf.USERS_DF
+        user_mask = users_df['id']==original_id
+
+        user['exemptions'] = exemptions
+
+        #update
+        for column_name in set(users_df.columns):
+            if column_name not in user.keys():
+                user[column_name] = users_df[user_mask][column_name].values[0]
+
+        new_df = pd.DataFrame(user)
+        print(users_df)
+        # delete
+        users_df = users_df[users_df.id != original_id]
+        # insert
+        users_df = users_df.append(user, ignore_index = True)
+        print('after')
+        print(users_df)
+
+        '''
+        for key, value in user.items():
+           users_df.loc[user_mask, key]  = value
+
+        users_df.loc[user_mask, 'exemptions'] = str(exemptions)
+        '''
+
+        update_users_file(users_df)
+
+        resp = {'success': True,\
+                'message': 'המשתמש עודכן בהצלחה'}
+        site_log.info(log_message('edited user in json'))
+
+    except Exception as e:
+        print(str(e))
+        resp = {'success': False,\
+                'message': str(e)}
+        site_log.error(log_message(str(e)))
+
+
+    site_log.info(log_message('edited user in json'))
+    return jsonify(resp)
 
 # =========================== get Exemptions =========================
-@app.route('/getPtorim', methods=['POST'])
-def getPtorim():
-    id = request.form['javascript_data']
-    data = json.load(codecs.open(users_json_file, 'r', 'utf-8-sig'))
-    for line in data:
-        if line['id'] == id:
-            site_log.info(log_message('got ptorim'))
-            return jsonify({'ptorim': line['ptorim']})
-            # return dict(line['ptorim'])
+@app.route('/getExemptions', methods=['POST'])
+def getExemptions():
+    id = request.form['id']
+    users_df = cnf.USERS_DF
+    print(id)
+    user_mask = users_df['id']==id
+    exemptions = users_df[user_mask]['exemptions'].values
+    print(exemptions)
+    if len(exemptions)> 0:
+        exemptions = exemptions[0]
+    resp = {'exemptions': exemptions}
+
+    print(f'exemptions exemptions {exemptions}')
+
+    site_log.info(log_message('got ptorim'))
+    return jsonify(resp)
 
 # =========================== Give final excel ========================
 @app.route('/giveExcel', methods=['POST'])
