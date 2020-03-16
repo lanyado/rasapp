@@ -15,8 +15,3 @@ EXEMPTS_WEEKEND = {
 
 MIN_DAYS_BETWEEN_WEEKDAY_TORANUTS = 2
 MIN_DAYS_BETWEEN_WEEKEND_TORANUTS = 4
-
-USERS_DF = pd.read_json('db/users.json', encoding='utf-8-sig',\
-                       dtype={'id':'str', 'name':'str', 'unit':'str',\
-                              'exemptions': 'dict', 'last_weekday': 'str',
-                              'last_weekend': 'str'})

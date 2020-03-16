@@ -19,11 +19,15 @@ function add_user(table, row){
 
   console.log(row)
 
-  var exemptions = {'פטור שמירות אמצש': row[3],
-                    'פטור שמירות סופש': row[4],
-                    'פטור מטבחים אמצש': row[5],
-                    'פטור מטבחים סופש': row[6]}
+  var exemptions = {}
+  if (row.length>2){
+    for(var i=3;i<row.length-1;i=i+2){ 
+      var exemption_name = row[i];
+      var exemption_date = row[i+1];
 
+      exemptions[exemption_name] = exemption_date;
+    }
+  }
   var new_user = new FormData();
 
   new_user.append('id', row[0])
@@ -65,10 +69,20 @@ function edit_user(table, row){
       'name': $($('.modal-content').find('#inputName')[1]).val(),
       'unit': $($('.modal-content').find('#inputUnit')[1]).val()
     }
-    var exemptions = {'פטור שמירות אמצש': $($('.modal-content').find('#inputP1')[1]).val(),
-                        'פטור שמירות סופש': $($('.modal-content').find('#inputP2')[1]).val(),
-                        'פטור מטבחים אמצש': $($('.modal-content').find('#inputP3')[1]).val(),
-                        'פטור מטבחים סופש': $($('.modal-content').find('#inputP4')[1]).val()}
+    console.log(row)
+
+    
+
+$($(".TextBoxContainer").find('select')[0]).val()
+
+
+  var exemptions = {}
+    for(var i=0;i<$("#exemptions_table_warpper2" ).find('select').length;i++){ 
+      var exemption_name = $($("#exemptions_table_warpper2" ).find('select')[i]).val();
+      var exemption_date = $($("#exemptions_table_warpper2" ).find('input')[i]).val();
+
+      exemptions[exemption_name] = exemption_date;
+    }
 
 
     var form_data = new FormData();
@@ -137,10 +151,11 @@ function get_exemptions(){
             id: $($('#editInputs').find('#inputId')).val()
           },function(response){
             console.log(response.exemptions)
+            $(".TextBoxContainer").html("")
                 for (key in response.exemptions){
                     var exemption_name = key
                     var exemption_date = response.exemptions[key]
-                    add_exemption(exemption_name, exemption_date)
+                    add_exemptions(exemption_name, exemption_date)
                     if (response.exemptions[key])
                         $($("input[title|='"+key+"']")[0]).val(response.exemptions[key])
                     else
@@ -159,19 +174,34 @@ $('#download_icon').on('click',function(){
 
 /*===============*/
 function GetDynamicTextBox(name, date) {
-    return '<td><select name="" class="form-control"><option>פטור מטבחים אמצש</option><option>פטור מטבחים סופש</option><option>פטור שמירות אמצש</option><option>פטור שמירות סופש</option></select></td>'+'<td><input name = "DynamicTextBox" type="date" value = "' + date + '" class="form-control" /></td>' + '<td><button type="button" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove"></i></button></td>'
+    return '<td><select name="" class="form-control"><option>פטור מטבחים אמצש</option><option>פטור מטבחים סופש</option><option>פטור שמירות אמצש</option><option>פטור שמירות סופש</option></select></td>'+'<td><input name = "DynamicTextBox" type="date" value = "' + date + '" class="form-control" /></td>' + '<td>      <button type="button" class="btnAdd btn btn-outline-danger remove">הסר</button></td>'
 }
-function add_exemption(name, date){
+function add_exemptions(name, date){
     var tr = $("<tr />");
     tr.html(GetDynamicTextBox(name, date));
-    if (name != "")
-        $(tr).find('option[text="'+name+'"]').attr('selected','selected');
-    $("#TextBoxContainer").append(tr);
+
+     if (name != "")
+        $(tr).find('option:contains("'+name+'")').attr('selected','selected');
+
+     $(".TextBoxContainer").append(tr);
 }
 
 $(function () {
-    $("#btnAdd").bind("click", function () {
-        add_exemption('', '')
+  //  var element = $('.exemptions_table').detach();
+
+ //   $('#exemptions_table_warpper1').append(element);
+   // $('#exemptions_table_warpper2').append(element);
+
+    var element1 = $('#exemptions_table').clone();
+    $("#exemptions_table_warpper1" ).html(element1);
+    var element2 = $('#exemptions_table').clone();
+
+    $('#to_remove').remove();
+
+    $("#exemptions_table_warpper2" ).html(element2);
+
+    $(".btnAdd").bind("click", function () {
+        add_exemptions("","")
     });
     $("body").on("click", ".remove", function () {
         $(this).closest("tr").remove();

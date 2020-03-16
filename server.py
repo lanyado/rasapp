@@ -25,6 +25,12 @@ users_json_file = os.path.join(current_dir, 'db/users.json')
 site_log = get_log('Website')
 xlsx_log = get_log('XLSX')
 
+def get_users_df():
+    return pd.read_json('db/users.json', encoding='utf-8-sig',\
+                       dtype={'id':'str', 'name':'str', 'unit':'str',\
+                              'exemptions': 'dict', 'last_weekday': 'str',
+                              'last_weekend': 'str'})
+
 def writes_to_json(data_written, edited_file):
     """Takes data to write and puts it in the file"""
     with open(edited_file, "w", encoding='utf-8') as json_file:
@@ -58,13 +64,14 @@ def addUser():
     new_user = request.form.to_dict()
     new_user['exemptions'] = ast.literal_eval(new_user['exemptions'])
 
-    users_df = cnf.USERS_DF
+    users_df = get_users_df()
 
     if new_user['id'] not in users_df['id'].unique(): # if its a new id
         try:
             users_df = users_df.append(new_user, ignore_index = True)
-            update_users_file(users_df)
 
+            update_users_file(users_df)
+        
             resp = {'success': True,\
                     'message': 'החייל הוסף למערכת'}
 
@@ -88,9 +95,9 @@ def addUser():
 def removeUser():
     user_id = request.form.to_dict()['id']
     try:
-        users_df = cnf.USERS_DF
+        users_df = get_users_df()
         users_df = users_df[users_df.id != user_id]
-
+ 
         update_users_file(users_df)
 
         resp = {'success': True,\
@@ -115,7 +122,7 @@ def editUser():
     original_id = form_data['original_id']
 
     try:
-        users_df = cnf.USERS_DF
+        users_df = get_users_df()
         user_mask = users_df['id']==original_id
 
         user['exemptions'] = exemptions
@@ -164,9 +171,8 @@ def editUser():
 @app.route('/getExemptions', methods=['POST'])
 def getExemptions():
     id = request.form['id']
-    users_df = cnf.USERS_DF
+    users_df = get_users_df()
     user_mask = users_df['id']==id
-    time.sleep(1)
     exemptions = users_df[user_mask]['exemptions']
     if len(exemptions)> 0:
         exemptions = exemptions.values[0]
