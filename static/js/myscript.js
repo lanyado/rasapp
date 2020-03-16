@@ -138,6 +138,9 @@ function get_exemptions(){
           },function(response){
             console.log(response.exemptions)
                 for (key in response.exemptions){
+                    var exemption_name = key
+                    var exemption_date = response.exemptions[key]
+                    add_exemption(exemption_name, exemption_date)
                     if (response.exemptions[key])
                         $($("input[title|='"+key+"']")[0]).val(response.exemptions[key])
                     else
@@ -152,3 +155,25 @@ $('#download_icon').on('click',function(){
         javascript_data: JSON.stringify(window.dates)
    });
 })
+
+
+/*===============*/
+function GetDynamicTextBox(name, date) {
+    return '<td><select name="" class="form-control"><option>פטור מטבחים אמצש</option><option>פטור מטבחים סופש</option><option>פטור שמירות אמצש</option><option>פטור שמירות סופש</option></select></td>'+'<td><input name = "DynamicTextBox" type="date" value = "' + date + '" class="form-control" /></td>' + '<td><button type="button" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove"></i></button></td>'
+}
+function add_exemption(name, date){
+    var tr = $("<tr />");
+    tr.html(GetDynamicTextBox(name, date));
+    if (name != "")
+        $(tr).find('option[text="'+name+'"]').attr('selected','selected');
+    $("#TextBoxContainer").append(tr);
+}
+
+$(function () {
+    $("#btnAdd").bind("click", function () {
+        add_exemption('', '')
+    });
+    $("body").on("click", ".remove", function () {
+        $(this).closest("tr").remove();
+    });
+});

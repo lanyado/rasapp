@@ -123,9 +123,9 @@ def editUser():
         #update
         for column_name in set(users_df.columns):
             if column_name not in user.keys():
-                new_value = users_df[user_mask][column_name].values
+                new_value = users_df[user_mask][column_name]
                 if len(new_value)>0:
-                    new_value = new_value[0]
+                    new_value = new_value.values[0]
                 else:
                     new_value = ""
 
@@ -167,9 +167,9 @@ def getExemptions():
     users_df = cnf.USERS_DF
     user_mask = users_df['id']==id
     time.sleep(1)
-    exemptions = users_df[user_mask]['exemptions'].values
+    exemptions = users_df[user_mask]['exemptions']
     if len(exemptions)> 0:
-        exemptions = exemptions[0]
+        exemptions = exemptions.values[0]
         resp = {'exemptions': exemptions}
     else:
         resp = {'exemptions': {}}
