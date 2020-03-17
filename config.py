@@ -1,16 +1,17 @@
 import pandas as pd
 
 EXEMPTS_WEEKDAY = {
-    'kitchen1': "פטור מטבחים אמצ\"ש",
-    'kitchen2': "פטור מטבחים אמצ\"ש",
-    'shmirot1': "פטור שמירות אמצ\"ש",
-    'shmirot2': "פטור שמירות אמצ\"ש"
+    'kitchen1': "פטור מטבחים אמצש",
+    'kitchen2': "פטור מטבחים אמצש",
+    'shmirot1': "פטור שמירות אמצש",
+    'shmirot2': "פטור שמירות אמצש"
 }
+
 EXEMPTS_WEEKEND = {
-    'kitchen1': "פטור מטבחים סופ\"ש",
-    'kitchen2': "פטור מטבחים סופ\"ש",
-    'shmirot1': "פטור שמירות סופ\"ש",
-    'shmirot2': "פטור שמירות סופ\"ש"
+    'kitchen1': "פטור מטבחים סופש",
+    'kitchen2': "פטור מטבחים סופש",
+    'shmirot1': "פטור שמירות סופש",
+    'shmirot2': "פטור שמירות סופש"
 }
 
 MIN_DAYS_BETWEEN_WEEKDAY_TORANUTS = 2

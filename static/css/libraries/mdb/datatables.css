@@ -26,13 +26,13 @@ div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb
   margin-top: 1rem; }
 
 div.dataTables_wrapper div.dataTables_length label {
-  text-align: left;
+  text-align: right;
   font-weight: normal;
   padding-top: .5rem;
   padding-bottom: .5rem; }
 
 div.dataTables_wrapper div.dataTables_filter label {
-  text-align: left;
+  text-align: right;
   font-weight: normal;
   padding-top: .5rem;
   padding-bottom: .5rem; }

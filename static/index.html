@@ -48,16 +48,16 @@
               <div class="modal-body mx-4">
                 
                 <div class="md-form mb-5">
-                  <input type="number" maxlength="7" id="inputId" class="form-control validate">
-                  <label data-error="wrong" data-success="right" for="inputId">מספר  אישי</label>
+                  <input type="number" maxlength="7" id="inputId1" class="form-control">
+                  <label for="inputId1">מספר אישי</label>
                 </div>
                 <div class="md-form mb-5">
-                  <input type="text" id="inputName" class="form-control validate">
-                  <label data-error="wrong" data-success="right" for="inputName">שם מלא</label>
+                  <input type="text" id="inputName1" class="form-control">
+                  <label for="inputName1">שם מלא</label>
                 </div>
                 <div class="md-form mb-5">
-                  <p data-error="wrong" data-success="right" for="inputUnit">אגף</p>
-                  <select id="inputUnit" class="form-control match-content">
+                  <p for="inputUnit1">אגף</p>
+                  <select id="inputUnit1" class="form-control match-content">
                       <option value="מודיעין">מודיעין</option>
                       <option value='חימוש'>חימוש</option>
                       <option value='מחנה'>מחנה</option>
@@ -77,7 +77,7 @@
                 <div class="md-form mb-5">                   
                   <h5 class="text-center">הפטורים של החייל</h5>
                   <section class="container">
-                      <div class="table table-responsive" id="exemptions_table_warpper1">
+                      <div class="table table-responsive" id="exemptions-table-warpper1">
                       </div>
                   </section>     
                 </div>
@@ -91,7 +91,7 @@
           </div>
         </div>
         <div class="text-center wrapperToBtnModalAdd">
-          <a href="" class="btn btn-info btn-rounded btn-sm btnToModalAdd" data-toggle="modal" data-target="#modalAdd" onclick=" $('.TextBoxContainer').html('')">הוסף<i
+          <a href="" class="btn btn-info btn-rounded btn-sm btnToModalAdd" data-toggle="modal" data-target="#modalAdd" onclick=" $('.exemptions-table-body').html('')">הוסף<i
               class="fas fa-plus-square ml-1"></i></a>
         </div>
         <!--
@@ -110,16 +110,16 @@
               </div>
               <div class="modal-body mx-3 modal-inputs" id="editInputs">
                 <div class="md-form mb-5">
-                  <input type="number" maxlength="7" id="inputId" class="form-control validate">
-                  <label data-error="wrong" data-success="right" for="inputId">מספר  אישי</label>
+                  <input type="number" maxlength="7" id="inputId2" class="form-control">
+                  <label for="inputId2">מספר  אישי</label>
                 </div>
                 <div class="md-form mb-5">
-                  <input type="text" id="inputName" class="form-control validate">
-                  <label data-error="wrong" data-success="right" for="inputName">שם מלא</label>
+                  <input type="text" id="inputName2" class="form-control">
+                  <label for="inputName2">שם מלא</label>
                 </div>
                 <div class="md-form mb-5">
-                  <p data-error="wrong" data-success="right" for="inputUnit">אגף</p>
-                  <select id="inputUnit" class="form-control match-content">
+                  <p for="inputUnit2">אגף</p>
+                  <select id="inputUnit2" class="form-control match-content">
                       <option value="מודיעין">מודיעין</option>
                       <option value='חימוש'>חימוש</option>
                       <option value='מחנה'>מחנה</option>
@@ -139,7 +139,7 @@
                 <div class="md-form mb-5">                   
                   <h5 class="text-center">הפטורים של החייל</h5>
                   <section class="container">
-                      <div class="table table-responsive" id="exemptions_table_warpper2">
+                      <div class="table table-responsive" id="exemptions-table-warpper2">
                       </div>
                   </section>     
                 </div>
@@ -262,27 +262,25 @@
           </div>
     </div>
 
-<div id="to_remove">
-  
-
-            <table class="table table-responsive table-striped table-bordered" id="exemptions_table">
-                <thead>
-                  <tr>
-                      <td>שם הפטור</td>
-                      <td>תאריך סיום הפטור</td>
-                      <td>הסרת הפטור</td>
-                    </tr>
-                </thead>
-                <tbody class="TextBoxContainer">
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <th colspan="3">
-                    <button class="btnAdd" type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Add more controls"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp; הוסף פטור&nbsp;</button></th>
-                  </tr>
-                </tfoot>
-                </table>
-</div>
+  <div id="to_remove">
+    <table class="table table-responsive table-striped table-bordered" id="exemptions-table">
+      <thead>
+        <tr>
+            <td>שם הפטור</td>
+            <td>תאריך סיום הפטור</td>
+            <td>הסרת הפטור</td>
+          </tr>
+      </thead>
+      <tbody class="exemptions-table-body">
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="3">
+          <button class="btnAdd" type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Add more controls"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp; הוסף פטור&nbsp;</button></th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
 
   <img id="download_icon" src="{{ url_for('static', filename='img/excel.png') }}">
 <!--

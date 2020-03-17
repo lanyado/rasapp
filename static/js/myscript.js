@@ -1,14 +1,6 @@
 $('#dtBasicExample, #dtBasicExample-1, #dt-more-columns, #dt-less-columns').mdbEditor();
 $('.dataTables_length').addClass('bs-select');
-/*
-$('#usersTable').bind('DOMSubtreeModified',function(){
-  setTimeout(() => {
-    $.post("/postmethod", {
-      javascript_data: $('#usersTable').html()
-    });
-  }, 25);
-})
-*/
+
 function add_user(table, row){
   for(var i=0;i<3;i++){ // chack that all all the must input are full
      if(row[i] === "" || row[i] === null) {
@@ -18,14 +10,12 @@ function add_user(table, row){
   }
 
   var exemptions = {}
-  if (row.length>2){
     for(var i=3;i<row.length-1;i=i+2){ 
       var exemption_name = row[i];
       var exemption_date = row[i+1];
 
       exemptions[exemption_name] = exemption_date;
     }
-  }
 
   var new_user = new FormData();
 
@@ -62,17 +52,16 @@ function add_user(table, row){
 }
 
 function edit_user(table, row){
-
     var user = {
-      'id': $($('.modal-content').find('#inputId')[1]).val(),
-      'name': $($('.modal-content').find('#inputName')[1]).val(),
-      'unit': $($('.modal-content').find('#inputUnit')[1]).val()
+      'id': $($('.modal-content').find('#inputId2')[0]).val(),
+      'name': $($('.modal-content').find('#inputName2')[0]).val(),
+      'unit': $($('.modal-content').find('#inputUnit2')[0]).val()
     }
 
     var exemptions = {};
-    for(var i=0;i<$("#exemptions_table_warpper2" ).find('select').length;i++){ 
-      var exemption_name = $($("#exemptions_table_warpper2" ).find('select')[i]).val();
-      var exemption_date = $($("#exemptions_table_warpper2" ).find('input')[i]).val();
+    for(var i=0;i<$("#exemptions-table-warpper2" ).find('select').length;i++){ 
+      var exemption_name = $($("#exemptions-table-warpper2" ).find('select')[i]).val();
+      var exemption_date = $($("#exemptions-table-warpper2" ).find('input')[i]).val();
 
       exemptions[exemption_name] = exemption_date;
     }
@@ -139,10 +128,9 @@ function remove_user(table, row){
 function get_exemptions(){
   setTimeout(() => {
         $.post( "/getExemptions", {
-            id: $($('#editInputs').find('#inputId')).val()
+            id: $($('#editInputs').find('#inputId2')).val()
           },function(response){
-            console.log(response.exemptions)
-            $(".TextBoxContainer").html("") // clear the exemptions table
+            $(".exemptions-table-body").html("") // clear the exemptions table
                 for (key in response.exemptions){
                     var exemption_name = key
                     var exemption_date = response.exemptions[key]
@@ -162,34 +150,57 @@ $('#download_icon').on('click',function(){
    });
 })
 
-
 /*======== The exemptions table =======*/
-function GetDynamicTextBox(name, date) {
-    return '<td><select name="" class="form-control"><option>פטור מטבחים אמצש</option><option>פטור מטבחים סופש</option><option>פטור שמירות אמצש</option><option>פטור שמירות סופש</option></select></td>'+'<td><input name = "DynamicTextBox" type="date" value = "' + date + '" class="form-control" /></td>' + '<td>      <button type="button" class="btnAdd btn btn-outline-danger remove">הסר</button></td>'
-}
+
+function get_exemption_tr(name, date) {
+    var exemptions_names = ['פטור מטבחים אמצש', 'פטור מטבחים סופש','פטור שמירות אמצש','פטור שמירות סופש'];
+    var tr = '<td><select class="form-control">';
+
+    exemptions_names.forEach(exemption_name => tr+= '<option>'+exemption_name+'</option>');
+        
+    tr += '</select></td><td><input type="date" value = "' + date + '" class="form-control" /></td>' + '<td><button type="button" class="btnAdd btn btn-outline-danger remove">הסר</button></td>';
+    return tr;
+  }
 function add_exemptions(name, date){
     var tr = $("<tr />");
-    tr.html(GetDynamicTextBox(name, date));
+    tr.html(get_exemption_tr(name, date));
 
-     if (name != "")
+    if (name)
         $(tr).find('option:contains("'+name+'")').attr('selected','selected');
 
-     $(".TextBoxContainer").append(tr);
+     $(".exemptions-table-body").append(tr);
+}
+
+function formatDate(date) {
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [year, month, day].join('-');
 }
 
 $(function () {
-    var element1 = $('#exemptions_table').clone();
-    $("#exemptions_table_warpper1" ).html(element1);
-    var element2 = $('#exemptions_table').clone();
-
+    var element1 = $('#exemptions-table').clone();
+    $("#exemptions-table-warpper1" ).html(element1);
+    var element2 = $('#exemptions-table').clone();
     $('#to_remove').remove();
-
-    $("#exemptions_table_warpper2" ).html(element2);
+    $("#exemptions-table-warpper2" ).html(element2);
 
     $(".btnAdd").bind("click", function () {
-        add_exemptions("","")
+        // add a new exemption with a defult date on ADD BUTTON click
+        var today = new Date();
+        var defult_date = today.setFullYear(today.getFullYear() + 10); // today + 1 month
+
+        add_exemptions("",formatDate(defult_date));
     });
     $("body").on("click", ".remove", function () {
+        // remove the last exemption on REMOVE BUTTON click
         $(this).closest("tr").remove();
     });
 });

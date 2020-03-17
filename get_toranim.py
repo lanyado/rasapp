@@ -39,29 +39,31 @@ def update_last_weekday(new_date, user_id, is_weekday):
     else:
         users_df.loc[users_df['id'] == user_id, ['last_weekend']] = new_date
 
-def is_exempt(possible_exemptions, user_exemptions, toranut_date):
-    exemption_date = user_exemptions[possible_exemptions]  # type: string
-    if exemption_date == '':
-        exemption_date = "1998-01-01"
+def is_exempt(possible_exemption, user_exemptions, toranut_date):
+    if possible_exemption in user_exemptions:
 
-    exemption_date = datetime.datetime.strptime(exemption_date, '%Y-%m-%d')
-    toranut_date = datetime.datetime.strptime(toranut_date, '%Y-%m-%d')
-    return exemption_date > toranut_date
+        exemption_date = user_exemptions[possible_exemption]  # type: string
+        if exemption_date == '':
+            exemption_date = "1998-01-01"
+
+        exemption_date = datetime.datetime.strptime(exemption_date, '%Y-%m-%d')
+        toranut_date = datetime.datetime.strptime(toranut_date, '%Y-%m-%d')
+        return exemption_date > toranut_date
 
 def get_available_toranim(toranut_name:str, users_df:pd.DataFrame, is_week_day:bool, toranut_date:str):
     """Receives kind of toranut, if its weekday or not, and all of the users and
     returns only the eligible users"""
     available_df = users_df
     if is_week_day:
-        possible_exemptions = cnf.EXEMPTS_WEEKDAY[toranut_name]  # type string
+        possible_exemption = cnf.EXEMPTS_WEEKDAY[toranut_name]  # type string
     else:
-        possible_exemptions = cnf.EXEMPTS_WEEKEND[toranut_name]  # type: string
+        possible_exemption = cnf.EXEMPTS_WEEKEND[toranut_name]  # type: string
 
     for index, user in users_df.iterrows():
         # user is a row in users_df
-        user_exemptions = user['ptorim']
+        user_exemptions = user['exemptions']
 
-        if is_exempt(possible_exemptions, user_exemptions, toranut_date)\
+        if is_exempt(possible_exemption, user_exemptions, toranut_date)\
            or was_toran_yesterday(toranut_date, user):
            available_df.drop(index=index, inplace = True)
     return available_df

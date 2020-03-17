@@ -28,5 +28,5 @@ def get_date_type(dates_list):
         if str(date) in holidays.Date.values:
             dates_type.append('holiday: ' + holidays[holidays['Date'] == str(date)]['Name'].iloc[0])
         else:
-            dates_type.append('סופש' if date.weekday() in [3, 4, 5] else 'אמצע שבוע')
+            dates_type.append('סופש' if date.weekday() in [3, 4, 5] else 'אמצש')
     return dates_type
