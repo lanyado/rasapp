@@ -31,11 +31,6 @@ def get_users_df():
                               'exemptions': 'dict', 'last_weekday': 'str',
                               'last_weekend': 'str'})
 
-def writes_to_json(data_written, edited_file):
-    """Takes data to write and puts it in the file"""
-    with open(edited_file, "w", encoding='utf-8') as json_file:
-        json.dump(data_written, json_file, ensure_ascii=False, indent=1)
-
 def update_users_file(df):
     """Takes data to write and puts it in the file"""
     with open(users_json_file, 'w', encoding='utf-8') as users_file:
@@ -190,12 +185,20 @@ def giveExcel():
 
     dates = get_dates(json.loads(request.form['javascript_data']))
     toranuyot_df = pd.DataFrame({'date': map(str, dates),\
-                            'day_of_week': map(str, get_day_of_week(dates)),\
-                            'date_type': map(str, get_date_type(dates)),\
-                            'kitchen1': '', 'kitchen2': '', 'shmirot1': '', 'shmirot2': ''})
+                                 'day_of_week': map(str, get_day_of_week(dates)),\
+                                 'date_type': map(str, get_date_type(dates)),\
+                                 'kitchen1': '', 'kitchen2': '', 'shmirot1': '', 'shmirot2': ''})
     toranuyot_df = add_toranim(toranuyot_df) # add the toranim
+    print(toranuyot_df)
+    toranuyot_df.rename(inplace = True,\
+                        columns={'date': 'תאריך',\
+                                 'day_of_week': 'יום בשבוע',\
+                                 'date_type': 'סוג תאריך',\
+                                 'kitchen1': 'תורן מטבח 1', 'kitchen2': 'תורן מטבח 2', 'shmirot1': 'תורן שמירות 1', 'shmirot2': 'תורן שמירות 2'})
+
     file_name = str(dates[0]) + '-' + str(dates[-1]) + '.csv'
-    toranuyot_df.to_csv(file_name, index=False, header=True, encoding='utf_8-sig')
+
+    toranuyot_df.to_csv(file_name, index=False, header=True, encoding='utf-8-sig')
     # edit_last_json(users_df)''
     xlsx_log.info(log_message('created an excel file'))
     return '', 204

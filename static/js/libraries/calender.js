@@ -226,6 +226,7 @@ $( document ).ready(function() {
 				"נובמבר","דצמבר"];
 		var daysArray = ["ראשון","שני","שלישי",
 						"רביעי","חמישי","שישי","שבת"];
+		daysArray = daysArray.reverse();
 		var o = ["#16a085","#1abc9c","#c0392b","#27ae60",
 				"#FF6860","#f39c12","#f1c40f","#e67e22",
 				"#2ecc71","#e74c3c","#d35400","#2c3e50"];

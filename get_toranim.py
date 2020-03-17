@@ -1,4 +1,5 @@
 ﻿# coding=utf-8
+import sys
 import config as cnf
 from lib.log import get_log, log_message
 
@@ -41,19 +42,17 @@ def update_last_weekday(new_date, user_id, is_weekday):
 
 def is_exempt(possible_exemption, user_exemptions, toranut_date):
     if possible_exemption in user_exemptions:
-
         exemption_date = user_exemptions[possible_exemption]  # type: string
-        if exemption_date == '':
-            exemption_date = "1998-01-01"
-
         exemption_date = datetime.datetime.strptime(exemption_date, '%Y-%m-%d')
         toranut_date = datetime.datetime.strptime(toranut_date, '%Y-%m-%d')
         return exemption_date > toranut_date
+    else:
+        return False
 
 def get_available_toranim(toranut_name:str, users_df:pd.DataFrame, is_week_day:bool, toranut_date:str):
     """Receives kind of toranut, if its weekday or not, and all of the users and
     returns only the eligible users"""
-    available_df = users_df
+    available_users_df = users_df
     if is_week_day:
         possible_exemption = cnf.EXEMPTS_WEEKDAY[toranut_name]  # type string
     else:
@@ -65,37 +64,39 @@ def get_available_toranim(toranut_name:str, users_df:pd.DataFrame, is_week_day:b
 
         if is_exempt(possible_exemption, user_exemptions, toranut_date)\
            or was_toran_yesterday(toranut_date, user):
-           available_df.drop(index=index, inplace = True)
-    return available_df
+           available_users_df.drop(index=index, inplace = True)
+    return available_users_df
 
 
-def get_oldest_toranim(availables, is_weekday):
+def get_oldest_toranim(available_users_df, is_weekday):
     """Receives all of the available users and returns the one who had the most time without this toranut"""
     if is_weekday:
         last_date = 'last_weekday'
     else:
         last_date = 'last_weekend'
 
-    mask = availables[last_date] == availables[last_date].min()
-    if len(availables[mask])>0:
-        chosen_user = availables[mask].sample(n=1)
+    mask = available_users_df[last_date] == available_users_df[last_date].min()
+    if len(available_users_df[mask])>0:
+        chosen_user = available_users_df[mask].sample(n=1)
+        print(chosen_user)
         return chosen_user
     else:
         print('no available toranim')
+        sys.exit(0)
 
 def set_weekday_toran(final_csv, index, row):
     for toranut_name in ['kitchen1', 'kitchen2', 'shmirot1', 'shmirot2']:
-        availables = get_available_toranim(toranut_name=toranut_name, users_df=users_df,\
+        available_users_df = get_available_toranim(toranut_name=toranut_name, users_df=users_df,\
                                             is_week_day=True, toranut_date=row['date'])
-        chosen_user = get_oldest_toranim(availables, True)
-        # writes into sheet
+        chosen_user = get_oldest_toranim(available_users_df, True)
+        # writes into sheet - user name - > date (row)/toranut name (col)
         final_csv.loc[final_csv['date'] == row['date'], [toranut_name]] = chosen_user['name'].values[0]
         update_last_weekday(new_date=row['date'],\
                             user_id=str(list(chosen_user['id'])[0]), is_weekday=True)
 
 def set_weekend_toran(final_csv, index, row):
     for toranut_name in ['kitchen1', 'shmirot1']:
-        available = get_available_toranim(toranut_name=toranut_name, users_df=users_df,\
+        available_users_df = get_available_toranim(toranut_name=toranut_name, users_df=users_df,\
                                             is_week_day=False, toranut_date=row['date'])
 
         if index > 0:
@@ -103,7 +104,7 @@ def set_weekend_toran(final_csv, index, row):
             today = final_csv.iloc[index]
 
             if yesterday['date_type'] == 'אמצש' and today['date_type'] != 'אמצש':
-                chosen_user = get_oldest_toranim(available, False)
+                chosen_user = get_oldest_toranim(available_users_df, False)
                 final_csv.loc[final_csv['date'] == row['date'], [toranut_name]] = chosen_user['name'].values[0]
                 update_last_weekday(row['date'], str(list(chosen_user['id'])[0]), False)
 
@@ -118,6 +119,6 @@ def add_toranim(final_csv):
     for index, row in final_csv.iterrows():
         if row['date_type'] == 'אמצש':
             set_weekday_toran(final_csv, index, row)
-        else:  # סופש
+        else:
             set_weekend_toran(final_csv, index, row)
     return final_csv
