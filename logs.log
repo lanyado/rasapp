@@ -10711,3 +10711,82 @@
 2020-03-17 20:04:39,206 - INFO - werkzeug -  * Restarting with stat
 2020-03-17 20:04:40,418 - WARNING - werkzeug -  * Debugger is active!
 2020-03-17 20:04:40,425 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-17 22:15:05,707 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-17 22:15:05,711 - INFO - werkzeug -  * Restarting with stat
+2020-03-17 22:15:06,338 - WARNING - werkzeug -  * Debugger is active!
+2020-03-17 22:15:06,350 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-17 22:33:16,003 - INFO - Website - Function name: hello | message: got users
+2020-03-17 22:33:16,032 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:33:16] "GET / HTTP/1.1" 200 -
+2020-03-17 22:33:17,043 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:33:17] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-17 22:33:17,062 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:33:17] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-17 22:33:32,503 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-17 22:33:32,504 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:33:32] "POST /giveExcel HTTP/1.1" 204 -
+2020-03-17 22:33:52,004 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-17 22:33:52,005 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:33:52] "POST /giveExcel HTTP/1.1" 204 -
+2020-03-17 22:34:33,005 - INFO - Website - Function name: addUser | message: added user 56657 to json
+2020-03-17 22:34:33,006 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:34:33] "POST /addUser HTTP/1.1" 200 -
+2020-03-17 22:34:35,095 - INFO - Website - Function name: hello | message: got users
+2020-03-17 22:34:35,098 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:34:35] "GET / HTTP/1.1" 200 -
+2020-03-17 22:34:35,563 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:34:35] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-17 22:34:36,094 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:34:36] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-17 22:34:41,312 - INFO - Website - Function name: addUser | message: added user 654564 to json
+2020-03-17 22:34:41,313 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:34:41] "POST /addUser HTTP/1.1" 200 -
+2020-03-17 22:34:44,358 - INFO - Website - Function name: hello | message: got users
+2020-03-17 22:34:44,360 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:34:44] "GET / HTTP/1.1" 200 -
+2020-03-17 22:34:44,873 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:34:44] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-17 22:34:45,233 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:34:45] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-17 22:35:04,980 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-17 22:35:04,985 - INFO - werkzeug -  * Restarting with stat
+2020-03-17 22:35:05,814 - WARNING - werkzeug -  * Debugger is active!
+2020-03-17 22:35:05,822 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-17 22:35:06,198 - INFO - Website - Function name: hello | message: got users
+2020-03-17 22:35:06,219 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:35:06] "GET / HTTP/1.1" 200 -
+2020-03-17 22:35:06,645 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:35:06] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-17 22:35:06,819 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:35:06] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-17 22:35:19,026 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-17 22:35:19,026 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:35:19] "POST /giveExcel HTTP/1.1" 204 -
+2020-03-17 22:39:26,958 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-17 22:39:27,076 - INFO - werkzeug -  * Restarting with stat
+2020-03-17 22:39:28,440 - WARNING - werkzeug -  * Debugger is active!
+2020-03-17 22:39:28,447 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-17 22:39:33,625 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-17 22:39:33,714 - INFO - werkzeug -  * Restarting with stat
+2020-03-17 22:39:34,401 - WARNING - werkzeug -  * Debugger is active!
+2020-03-17 22:39:34,406 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-17 22:40:19,856 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-17 22:40:19,857 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:40:19] "POST /giveExcel HTTP/1.1" 204 -
+2020-03-17 22:40:42,502 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-17 22:40:42,592 - INFO - werkzeug -  * Restarting with stat
+2020-03-17 22:40:43,927 - WARNING - werkzeug -  * Debugger is active!
+2020-03-17 22:40:43,935 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-17 22:40:47,059 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-17 22:40:47,157 - INFO - werkzeug -  * Restarting with stat
+2020-03-17 22:40:47,984 - WARNING - werkzeug -  * Debugger is active!
+2020-03-17 22:40:47,990 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-17 22:41:42,797 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-17 22:41:42,896 - INFO - werkzeug -  * Restarting with stat
+2020-03-17 22:41:44,141 - WARNING - werkzeug -  * Debugger is active!
+2020-03-17 22:41:44,150 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-17 22:41:50,356 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-17 22:41:50,445 - INFO - werkzeug -  * Restarting with stat
+2020-03-17 22:41:51,891 - WARNING - werkzeug -  * Debugger is active!
+2020-03-17 22:41:51,897 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-17 22:42:31,176 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-17 22:42:31,278 - INFO - werkzeug -  * Restarting with stat
+2020-03-17 22:42:32,568 - WARNING - werkzeug -  * Debugger is active!
+2020-03-17 22:42:32,578 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-17 22:42:41,610 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:42:41] "POST /giveExcel HTTP/1.1" 500 -
+2020-03-17 22:43:00,520 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-17 22:43:00,625 - INFO - werkzeug -  * Restarting with stat
+2020-03-17 22:43:01,902 - WARNING - werkzeug -  * Debugger is active!
+2020-03-17 22:43:01,908 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-17 22:43:02,425 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-17 22:43:02,425 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:43:02] "POST /giveExcel HTTP/1.1" 204 -
+2020-03-17 22:43:13,281 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-17 22:43:13,385 - INFO - werkzeug -  * Restarting with stat
+2020-03-17 22:43:14,595 - WARNING - werkzeug -  * Debugger is active!
+2020-03-17 22:43:14,601 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-17 22:44:40,913 - INFO - Website - Function name: hello | message: got users
+2020-03-17 22:44:40,934 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:44:40] "GET / HTTP/1.1" 200 -
+2020-03-17 22:44:41,385 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:44:41] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-03-17 22:44:41,545 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:44:41] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
