@@ -17,8 +17,6 @@ function add_user(table, row){
      }
   }
 
-  console.log(row)
-
   var exemptions = {}
   if (row.length>2){
     for(var i=3;i<row.length-1;i=i+2){ 
@@ -28,6 +26,7 @@ function add_user(table, row){
       exemptions[exemption_name] = exemption_date;
     }
   }
+
   var new_user = new FormData();
 
   new_user.append('id', row[0])
@@ -69,21 +68,14 @@ function edit_user(table, row){
       'name': $($('.modal-content').find('#inputName')[1]).val(),
       'unit': $($('.modal-content').find('#inputUnit')[1]).val()
     }
-    console.log(row)
 
-    
-
-$($(".TextBoxContainer").find('select')[0]).val()
-
-
-  var exemptions = {}
+    var exemptions = {};
     for(var i=0;i<$("#exemptions_table_warpper2" ).find('select').length;i++){ 
       var exemption_name = $($("#exemptions_table_warpper2" ).find('select')[i]).val();
       var exemption_date = $($("#exemptions_table_warpper2" ).find('input')[i]).val();
 
       exemptions[exemption_name] = exemption_date;
     }
-
 
     var form_data = new FormData();
    
@@ -104,9 +96,8 @@ $($(".TextBoxContainer").find('select')[0]).val()
         .done((response) => {
           if (response.success){
             swal(response.message, "מעולה", "success").then(function() {
-                  window.location = window.location;
+                  window.location = window.location; // refresh the page to see the changes
             });
-            // edit the user in the users html table
           }
           else
             swal(response.message, "שגיאה", "error");
@@ -151,7 +142,7 @@ function get_exemptions(){
             id: $($('#editInputs').find('#inputId')).val()
           },function(response){
             console.log(response.exemptions)
-            $(".TextBoxContainer").html("")
+            $(".TextBoxContainer").html("") // clear the exemptions table
                 for (key in response.exemptions){
                     var exemption_name = key
                     var exemption_date = response.exemptions[key]
@@ -172,7 +163,7 @@ $('#download_icon').on('click',function(){
 })
 
 
-/*===============*/
+/*======== The exemptions table =======*/
 function GetDynamicTextBox(name, date) {
     return '<td><select name="" class="form-control"><option>פטור מטבחים אמצש</option><option>פטור מטבחים סופש</option><option>פטור שמירות אמצש</option><option>פטור שמירות סופש</option></select></td>'+'<td><input name = "DynamicTextBox" type="date" value = "' + date + '" class="form-control" /></td>' + '<td>      <button type="button" class="btnAdd btn btn-outline-danger remove">הסר</button></td>'
 }
@@ -187,11 +178,6 @@ function add_exemptions(name, date){
 }
 
 $(function () {
-  //  var element = $('.exemptions_table').detach();
-
- //   $('#exemptions_table_warpper1').append(element);
-   // $('#exemptions_table_warpper2').append(element);
-
     var element1 = $('#exemptions_table').clone();
     $("#exemptions_table_warpper1" ).html(element1);
     var element2 = $('#exemptions_table').clone();
