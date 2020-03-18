@@ -15,26 +15,12 @@ import pandas as pd
 import ast
 
 #import modin.pandas as pd
-#from typing import Any
 
-current_dir = os.path.dirname(os.path.realpath(__file__))
-app = Flask(__name__, template_folder=os.path.join(current_dir, 'static'))  # Runs the HTML from the static folder
-users_json_file = os.path.join(current_dir, 'db/users.json')
-#exemptions_file = os.path.join(current_dir, 'db/exemptions.csv')
+app = Flask(__name__, template_folder=os.path.join(cnf.CURRENT_DIR, 'static'))  # Runs the HTML from the static folder
 
 site_log = get_log('Website')
 xlsx_log = get_log('XLSX')
 
-def get_users_df():
-    return pd.read_json('db/users.json', encoding='utf-8-sig',\
-                       dtype={'id':'str', 'name':'str', 'unit':'str',\
-                              'exemptions': 'dict', 'last_weekday': 'str',
-                              'last_weekend': 'str'})
-
-def update_users_file(df):
-    """Takes data to write and puts it in the file"""
-    with open(users_json_file, 'w', encoding='utf-8') as users_file:
-        df.to_json(users_file, force_ascii=False, orient='records')
 
 def edit_last_json(csv):
     final_users = csv.to_dict('index')
@@ -46,9 +32,7 @@ def edit_last_json(csv):
 # =========================== landing page rander ============================
 @app.route("/")  # Opens index.html when the user searches for http://127.0.0.1:5000/
 def hello():
-    #users_df = pd.read_json(users_json_file)
-    #exemptions_df = pd.read_csv(exemptions_file)
-    users = json.load(codecs.open(users_json_file, 'r', 'utf-8-sig'))
+    users = json.load(codecs.open(cnf.USERS_JSON_FILE, 'r', 'utf-8-sig'))
 
     site_log.info(log_message('got users'))
     return render_template('index.html', users=users)
@@ -59,13 +43,13 @@ def addUser():
     new_user = request.form.to_dict()
     new_user['exemptions'] = ast.literal_eval(new_user['exemptions'])
 
-    users_df = get_users_df()
+    users_df = cnf.get_users_df()
 
     if new_user['id'] not in users_df['id'].unique(): # if its a new id
         try:
             users_df = users_df.append(new_user, ignore_index = True)
 
-            update_users_file(users_df)
+            cnf.update_users_file(users_df)
         
             resp = {'success': True,\
                     'message': 'החייל הוסף למערכת'}
@@ -90,10 +74,10 @@ def addUser():
 def removeUser():
     user_id = request.form.to_dict()['id']
     try:
-        users_df = get_users_df()
+        users_df = cnf.get_users_df()
         users_df = users_df[users_df.id != user_id]
  
-        update_users_file(users_df)
+        cnf.update_users_file(users_df)
 
         resp = {'success': True,\
                 'message': 'המשתמש נמחק בהצלחה'}
@@ -117,7 +101,7 @@ def editUser():
     original_id = form_data['original_id']
 
     try:
-        users_df = get_users_df()
+        users_df = cnf.get_users_df()
         user_mask = users_df['id']==original_id
 
         user['exemptions'] = exemptions
@@ -146,7 +130,7 @@ def editUser():
         users_df.loc[user_mask, 'exemptions'] = str(exemptions)
         '''
 
-        update_users_file(users_df)
+        cnf.update_users_file(users_df)
 
         resp = {'success': True,\
                 'message': 'המשתמש עודכן בהצלחה'}
@@ -166,7 +150,7 @@ def editUser():
 @app.route('/getExemptions', methods=['POST'])
 def getExemptions():
     id = request.form['id']
-    users_df = get_users_df()
+    users_df = cnf.get_users_df()
     user_mask = users_df['id']==id
     exemptions = users_df[user_mask]['exemptions']
     if len(exemptions)> 0:
@@ -189,7 +173,6 @@ def giveExcel():
                                  'date_type': map(str, get_date_type(dates)),\
                                  'kitchen1': '', 'kitchen2': '', 'shmirot1': '', 'shmirot2': ''})
     toranuyot_df = add_toranim(toranuyot_df) # add the toranim
-    print(toranuyot_df)
     toranuyot_df.rename(inplace = True,\
                         columns={'date': 'תאריך',\
                                  'day_of_week': 'יום בשבוע',\

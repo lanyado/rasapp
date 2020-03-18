@@ -10790,3 +10790,298 @@
 2020-03-17 22:44:40,934 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:44:40] "GET / HTTP/1.1" 200 -
 2020-03-17 22:44:41,385 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:44:41] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
 2020-03-17 22:44:41,545 - INFO - werkzeug - 127.0.0.1 - - [17/Mar/2020 22:44:41] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-03-18 10:58:09,803 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-18 10:58:09,805 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 10:58:10,623 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 10:58:10,633 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 10:58:12,452 - INFO - Website - Function name: hello | message: got users
+2020-03-18 10:58:12,474 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET / HTTP/1.1" 200 -
+2020-03-18 10:58:12,544 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/fonts/fontawesome.css HTTP/1.1" 304 -
+2020-03-18 10:58:12,549 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 304 -
+2020-03-18 10:58:12,550 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 304 -
+2020-03-18 10:58:12,553 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/css/libraries/calender.css HTTP/1.1" 304 -
+2020-03-18 10:58:12,554 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 304 -
+2020-03-18 10:58:12,555 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/css/style.css HTTP/1.1" 304 -
+2020-03-18 10:58:12,557 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/img/logo.png HTTP/1.1" 304 -
+2020-03-18 10:58:12,558 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/img/excel.png HTTP/1.1" 304 -
+2020-03-18 10:58:12,752 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 304 -
+2020-03-18 10:58:12,754 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 304 -
+2020-03-18 10:58:12,756 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 304 -
+2020-03-18 10:58:12,756 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/js/libraries/popper.min.js HTTP/1.1" 304 -
+2020-03-18 10:58:12,757 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 304 -
+2020-03-18 10:58:12,757 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 304 -
+2020-03-18 10:58:12,760 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 304 -
+2020-03-18 10:58:12,761 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/js/libraries/calender.js HTTP/1.1" 304 -
+2020-03-18 10:58:12,762 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:12] "GET /static/js/myscript.js HTTP/1.1" 304 -
+2020-03-18 10:58:13,335 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:13] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+2020-03-18 10:58:20,092 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:58:20] "POST /giveExcel HTTP/1.1" 500 -
+2020-03-18 10:59:34,377 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-18 10:59:34,480 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 10:59:35,625 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 10:59:35,632 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 10:59:38,210 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-18 10:59:38,210 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 10:59:38,848 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 10:59:38,853 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 10:59:41,815 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:59:41] "GET / HTTP/1.1" 500 -
+2020-03-18 10:59:41,844 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:59:41] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2020-03-18 10:59:41,845 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:59:41] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2020-03-18 10:59:41,845 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:59:41] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2020-03-18 10:59:42,034 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:59:42] "GET /?__debugger__=yes&cmd=resource&f=less.png HTTP/1.1" 200 -
+2020-03-18 10:59:42,035 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:59:42] "GET /?__debugger__=yes&cmd=resource&f=more.png HTTP/1.1" 200 -
+2020-03-18 10:59:42,123 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:59:42] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2020-03-18 10:59:42,142 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:59:42] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-03-18 10:59:42,226 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 10:59:42] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-03-18 10:59:51,281 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/config.py', reloading
+2020-03-18 10:59:51,373 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 11:03:45,256 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-18 11:03:45,257 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 11:03:45,806 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 11:03:45,811 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 11:03:48,488 - INFO - Website - Function name: hello | message: got users
+2020-03-18 11:03:48,506 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET / HTTP/1.1" 200 -
+2020-03-18 11:03:48,620 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-03-18 11:03:48,622 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-03-18 11:03:48,623 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-03-18 11:03:48,624 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-03-18 11:03:48,626 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-03-18 11:03:48,627 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-03-18 11:03:48,629 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-03-18 11:03:48,633 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-03-18 11:03:48,845 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-03-18 11:03:48,846 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-03-18 11:03:48,846 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-03-18 11:03:48,846 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-03-18 11:03:48,848 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-03-18 11:03:48,848 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-03-18 11:03:48,856 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-03-18 11:03:48,856 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-03-18 11:03:48,856 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:48] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-03-18 11:03:49,289 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:49] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-03-18 11:03:49,818 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:49] "GET /favicon.ico HTTP/1.1" 404 -
+2020-03-18 11:03:53,720 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-18 11:03:53,720 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:03:53] "POST /giveExcel HTTP/1.1" 204 -
+2020-03-18 11:05:40,523 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 11:05:40,621 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 11:05:41,627 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 11:05:41,634 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 11:05:48,845 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-18 11:05:48,949 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 11:05:49,680 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 11:05:49,685 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 11:05:52,774 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-03-18 11:05:52,877 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 11:05:53,429 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 11:05:53,434 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 11:06:28,300 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-18 11:06:28,301 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 11:06:28,909 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 11:06:28,917 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 11:06:55,129 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-18 11:06:55,130 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 11:06:55,694 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 11:06:55,699 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 11:07:54,020 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-18 11:07:54,020 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 11:07:54,733 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 11:07:54,741 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 11:07:58,947 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:07:58] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-03-18 11:08:02,684 - INFO - Website - Function name: addUser | message: added user 465654 to json
+2020-03-18 11:08:02,686 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:08:02] "POST /addUser HTTP/1.1" 200 -
+2020-03-18 11:08:04,602 - INFO - Website - Function name: hello | message: got users
+2020-03-18 11:08:04,627 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:08:04] "GET / HTTP/1.1" 200 -
+2020-03-18 11:08:11,015 - INFO - Website - Function name: addUser | message: added user 654546 to json
+2020-03-18 11:08:11,015 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:08:11] "POST /addUser HTTP/1.1" 200 -
+2020-03-18 11:08:16,679 - INFO - Website - Function name: hello | message: got users
+2020-03-18 11:08:16,680 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:08:16] "GET / HTTP/1.1" 200 -
+2020-03-18 11:08:23,721 - INFO - Website - Function name: addUser | message: added user 65645 to json
+2020-03-18 11:08:23,721 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:08:23] "POST /addUser HTTP/1.1" 200 -
+2020-03-18 11:08:26,637 - INFO - Website - Function name: hello | message: got users
+2020-03-18 11:08:26,639 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:08:26] "GET / HTTP/1.1" 200 -
+2020-03-18 11:08:42,579 - INFO - Website - Function name: hello | message: got users
+2020-03-18 11:08:42,581 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:08:42] "GET / HTTP/1.1" 200 -
+2020-03-18 11:08:59,937 - INFO - Website - Function name: addUser | message: added user 547756 to json
+2020-03-18 11:08:59,938 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:08:59] "POST /addUser HTTP/1.1" 200 -
+2020-03-18 11:09:03,317 - INFO - Website - Function name: hello | message: got users
+2020-03-18 11:09:03,318 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:09:03] "GET / HTTP/1.1" 200 -
+2020-03-18 11:09:21,898 - INFO - Website - Function name: addUser | message: added user 657 to json
+2020-03-18 11:09:21,898 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:09:21] "POST /addUser HTTP/1.1" 200 -
+2020-03-18 11:09:24,151 - INFO - Website - Function name: hello | message: got users
+2020-03-18 11:09:24,152 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:09:24] "GET / HTTP/1.1" 200 -
+2020-03-18 11:09:39,466 - INFO - Website - Function name: addUser | message: added user 76567 to json
+2020-03-18 11:09:39,466 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:09:39] "POST /addUser HTTP/1.1" 200 -
+2020-03-18 11:09:42,216 - INFO - Website - Function name: hello | message: got users
+2020-03-18 11:09:42,218 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:09:42] "GET / HTTP/1.1" 200 -
+2020-03-18 11:10:15,446 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-18 11:10:15,447 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 11:10:16,498 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 11:10:16,508 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 11:10:25,017 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-18 11:10:25,017 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:10:25] "POST /giveExcel HTTP/1.1" 204 -
+2020-03-18 11:10:42,939 - INFO - Website - Function name: hello | message: got users
+2020-03-18 11:10:42,957 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:10:42] "GET / HTTP/1.1" 200 -
+2020-03-18 11:10:46,308 - INFO - Website - Function name: hello | message: got users
+2020-03-18 11:10:46,310 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 11:10:46] "GET / HTTP/1.1" 200 -
+2020-03-18 15:15:25,008 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 15:15:25,251 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 15:15:26,576 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 15:15:26,583 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 15:16:10,045 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 15:16:10,145 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 15:16:11,365 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 15:16:11,377 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 15:16:15,768 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:16:15,791 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:16:15] "GET / HTTP/1.1" 200 -
+2020-03-18 15:16:24,524 - INFO - Website - Function name: addUser | message: added user 1 to json
+2020-03-18 15:16:24,525 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:16:24] "POST /addUser HTTP/1.1" 200 -
+2020-03-18 15:16:26,367 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:16:26,368 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:16:26] "GET / HTTP/1.1" 200 -
+2020-03-18 15:16:32,205 - ERROR - Website - tried to add a user that already exist on the db
+2020-03-18 15:16:32,205 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:16:32] "POST /addUser HTTP/1.1" 200 -
+2020-03-18 15:16:38,024 - INFO - Website - Function name: addUser | message: added user 2 to json
+2020-03-18 15:16:38,026 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:16:38] "POST /addUser HTTP/1.1" 200 -
+2020-03-18 15:16:40,070 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:16:40,072 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:16:40] "GET / HTTP/1.1" 200 -
+2020-03-18 15:16:44,940 - INFO - Website - Function name: addUser | message: added user 321 to json
+2020-03-18 15:16:44,941 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:16:44] "POST /addUser HTTP/1.1" 200 -
+2020-03-18 15:16:47,060 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:16:47,061 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:16:47] "GET / HTTP/1.1" 200 -
+2020-03-18 15:16:51,707 - INFO - Website - Function name: addUser | message: added user 132 to json
+2020-03-18 15:16:51,707 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:16:51] "POST /addUser HTTP/1.1" 200 -
+2020-03-18 15:20:37,947 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:20:37,949 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:37] "GET / HTTP/1.1" 200 -
+2020-03-18 15:20:40,864 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:20:40,865 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:40] "GET / HTTP/1.1" 200 -
+2020-03-18 15:20:43,604 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:20:43,606 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET / HTTP/1.1" 200 -
+2020-03-18 15:20:43,650 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-03-18 15:20:43,650 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-03-18 15:20:43,652 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-03-18 15:20:43,652 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-03-18 15:20:43,653 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-03-18 15:20:43,654 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-03-18 15:20:43,661 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-03-18 15:20:43,661 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-03-18 15:20:43,710 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-03-18 15:20:43,711 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-03-18 15:20:43,713 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-03-18 15:20:43,713 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-03-18 15:20:43,715 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-03-18 15:20:43,716 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-03-18 15:20:43,719 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-03-18 15:20:43,724 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-03-18 15:20:43,725 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-03-18 15:20:43,869 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:43] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-03-18 15:20:44,166 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:44] "GET /favicon.ico HTTP/1.1" 404 -
+2020-03-18 15:20:46,887 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:46] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-03-18 15:20:51,756 - INFO - Website - Function name: addUser | message: added user 897 to json
+2020-03-18 15:20:51,756 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:51] "POST /addUser HTTP/1.1" 200 -
+2020-03-18 15:20:52,867 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:20:52,869 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:20:52] "GET / HTTP/1.1" 200 -
+2020-03-18 15:21:43,454 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:21:43,455 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:21:43] "GET / HTTP/1.1" 200 -
+2020-03-18 15:21:51,541 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:21:51,543 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:21:51] "GET / HTTP/1.1" 200 -
+2020-03-18 15:21:57,565 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:21:57,566 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:21:57] "GET / HTTP/1.1" 200 -
+2020-03-18 15:22:03,781 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-18 15:22:03,782 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 15:22:04,459 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 15:22:04,467 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 15:22:04,473 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:22:04,490 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET / HTTP/1.1" 200 -
+2020-03-18 15:22:04,534 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-03-18 15:22:04,538 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-03-18 15:22:04,538 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-03-18 15:22:04,539 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-03-18 15:22:04,540 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-03-18 15:22:04,540 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-03-18 15:22:04,547 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-03-18 15:22:04,548 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-03-18 15:22:04,597 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-03-18 15:22:04,597 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-03-18 15:22:04,598 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-03-18 15:22:04,599 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-03-18 15:22:04,599 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-03-18 15:22:04,599 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-03-18 15:22:04,608 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-03-18 15:22:04,609 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-03-18 15:22:04,609 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-03-18 15:22:04,755 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:04] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-03-18 15:22:05,202 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:05] "GET /favicon.ico HTTP/1.1" 404 -
+2020-03-18 15:22:09,323 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-18 15:22:09,323 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:22:09] "POST /giveExcel HTTP/1.1" 204 -
+2020-03-18 15:23:44,257 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:23:44,259 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:23:44] "GET / HTTP/1.1" 200 -
+2020-03-18 15:24:49,730 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 15:24:49,821 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 15:24:51,237 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 15:24:51,248 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 15:25:03,303 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-18 15:25:03,304 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:25:03] "POST /giveExcel HTTP/1.1" 204 -
+2020-03-18 15:26:52,113 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 15:26:52,217 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 15:26:53,529 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 15:26:53,536 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 15:27:56,674 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 15:27:56,792 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 15:27:58,284 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 15:27:58,297 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 15:28:46,899 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 15:28:47,003 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 15:28:48,208 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 15:28:48,217 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 15:28:57,521 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 15:28:57,641 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 15:28:58,889 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 15:28:58,895 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 15:30:45,183 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 15:30:45,311 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 15:30:46,707 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 15:30:46,713 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 15:30:53,055 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:30:53,075 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:30:53] "GET / HTTP/1.1" 200 -
+2020-03-18 15:30:58,509 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-18 15:30:58,509 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:30:58] "POST /giveExcel HTTP/1.1" 204 -
+2020-03-18 15:31:12,766 - INFO - Website - Function name: hello | message: got users
+2020-03-18 15:31:12,768 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 15:31:12] "GET / HTTP/1.1" 200 -
+2020-03-18 17:04:32,807 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 17:04:32,967 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 17:04:34,276 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 17:04:34,282 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 17:04:38,472 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 17:04:38,567 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 17:04:39,306 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 17:04:39,311 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 17:04:40,363 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 17:04:40,458 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 17:04:41,060 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 17:04:41,066 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 17:04:50,372 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 17:04:50,465 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 17:04:51,057 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 17:04:51,062 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 17:07:38,342 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 17:07:38,457 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 17:07:39,830 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 17:07:39,838 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 17:09:13,891 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 17:09:13,987 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 17:09:15,297 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 17:09:15,305 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 17:10:25,478 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 17:10:25,594 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 17:10:26,886 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 17:10:26,895 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 17:10:34,140 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-03-18 17:10:34,232 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 17:18:40,802 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-18 17:18:40,805 - INFO - werkzeug -  * Restarting with stat
+2020-03-18 17:18:41,906 - WARNING - werkzeug -  * Debugger is active!
+2020-03-18 17:18:41,917 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-18 17:18:43,158 - INFO - Website - Function name: hello | message: got users
+2020-03-18 17:18:43,179 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 17:18:43] "GET / HTTP/1.1" 200 -
+2020-03-18 17:18:51,953 - INFO - Website - Function name: hello | message: got users
+2020-03-18 17:18:51,955 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 17:18:51] "GET / HTTP/1.1" 200 -
+2020-03-18 21:53:00,679 - INFO - Website - Function name: hello | message: got users
+2020-03-18 21:53:00,684 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 21:53:00] "GET / HTTP/1.1" 200 -
