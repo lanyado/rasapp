@@ -11085,3 +11085,51 @@
 2020-03-18 17:18:51,955 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 17:18:51] "GET / HTTP/1.1" 200 -
 2020-03-18 21:53:00,679 - INFO - Website - Function name: hello | message: got users
 2020-03-18 21:53:00,684 - INFO - werkzeug - 127.0.0.1 - - [18/Mar/2020 21:53:00] "GET / HTTP/1.1" 200 -
+2020-03-24 18:03:26,273 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-24 18:03:26,275 - INFO - werkzeug -  * Restarting with stat
+2020-03-24 18:03:26,845 - WARNING - werkzeug -  * Debugger is active!
+2020-03-24 18:03:26,863 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-24 18:03:31,110 - INFO - Website - Function name: hello | message: got users
+2020-03-24 18:03:31,181 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET / HTTP/1.1" 200 -
+2020-03-24 18:03:31,263 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-03-24 18:03:31,264 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-03-24 18:03:31,264 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-03-24 18:03:31,264 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-03-24 18:03:31,265 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-03-24 18:03:31,268 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-03-24 18:03:31,274 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-03-24 18:03:31,275 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-03-24 18:03:31,418 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-03-24 18:03:31,421 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-03-24 18:03:31,422 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-03-24 18:03:31,425 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-03-24 18:03:31,427 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-03-24 18:03:31,431 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-03-24 18:03:31,433 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-03-24 18:03:31,433 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-03-24 18:03:31,435 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-03-24 18:03:31,643 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-03-24 18:03:31,953 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:03:31] "GET /favicon.ico HTTP/1.1" 404 -
+2020-03-24 18:06:05,938 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-24 18:06:05,939 - INFO - werkzeug -  * Restarting with stat
+2020-03-24 18:06:06,670 - WARNING - werkzeug -  * Debugger is active!
+2020-03-24 18:06:06,681 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-24 18:06:17,080 - INFO - Website - Function name: addUser | message: added user 090 to json
+2020-03-24 18:06:17,081 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:06:17] "POST /addUser HTTP/1.1" 200 -
+2020-03-24 18:06:18,086 - INFO - Website - Function name: hello | message: got users
+2020-03-24 18:06:18,108 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 18:06:18] "GET / HTTP/1.1" 200 -
+2020-03-24 23:26:53,868 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-03-24 23:26:53,870 - INFO - werkzeug -  * Restarting with stat
+2020-03-24 23:26:54,561 - WARNING - werkzeug -  * Debugger is active!
+2020-03-24 23:26:54,571 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-03-24 23:26:57,609 - INFO - Website - Function name: hello | message: got users
+2020-03-24 23:26:57,630 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 23:26:57] "GET / HTTP/1.1" 200 -
+2020-03-24 23:26:57,710 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 23:26:57] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-03-24 23:26:57,713 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 23:26:57] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-03-24 23:26:57,715 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 23:26:57] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-03-24 23:26:57,860 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 23:26:57] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-03-24 23:26:58,265 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 23:26:58] "GET /favicon.ico HTTP/1.1" 404 -
+2020-03-24 23:27:14,691 - INFO - Website - Function name: hello | message: got users
+2020-03-24 23:27:14,693 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 23:27:14] "GET / HTTP/1.1" 200 -
+2020-03-24 23:27:19,254 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-03-24 23:27:19,254 - INFO - werkzeug - 127.0.0.1 - - [24/Mar/2020 23:27:19] "POST /giveExcel HTTP/1.1" 204 -

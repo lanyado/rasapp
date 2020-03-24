@@ -46,7 +46,7 @@
               </div>
 
               <div class="modal-body mx-4">
-                
+
                 <div class="md-form mb-5">
                   <input type="number" maxlength="7" id="inputId1" class="form-control">
                   <label for="inputId1">מספר אישי</label>
@@ -74,12 +74,12 @@
                       <option value='אבן יקרה'>אבן יקרה</option>
                   </select>
                 </div>
-                <div class="md-form mb-5">                   
+                <div class="md-form mb-5">
                   <h5 class="text-center">הפטורים של החייל</h5>
                   <section class="container">
                       <div class="table table-responsive" id="exemptions-table-warpper1">
                       </div>
-                  </section>     
+                  </section>
                 </div>
              </div>
               <div class="modal-footer d-flex justify-content-center buttonAddFormWrapper">
@@ -136,12 +136,12 @@
                       <option value='אבן יקרה'>אבן יקרה</option>
                   </select>
                 </div>
-                <div class="md-form mb-5">                   
+                <div class="md-form mb-5">
                   <h5 class="text-center">הפטורים של החייל</h5>
                   <section class="container">
                       <div class="table table-responsive" id="exemptions-table-warpper2">
                       </div>
-                  </section>     
+                  </section>
                 </div>
               </div>
               <div class="modal-footer d-flex justify-content-center editInsideWrapper">
@@ -211,7 +211,7 @@
               <td>{{ user.id }}</td>
               <td>{{ user.name }}</td>
               <td>{{ user.unit }}</td>
-              <td> {% for exemption, date in user.exemptions.items() %}{% if date|length %}{{ exemption }} ({{ date }})<br>{% endif %}{% endfor %}</td>
+              <td> {% for exemption, date in user.exemptions.items() %}{{ exemption }} ({{ date }})<br>{% endfor %}</td>
             </tr>
         {% endfor %}
 

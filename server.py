@@ -50,7 +50,7 @@ def addUser():
             users_df = users_df.append(new_user, ignore_index = True)
 
             cnf.update_users_file(users_df)
-        
+
             resp = {'success': True,\
                     'message': 'החייל הוסף למערכת'}
 
@@ -76,7 +76,7 @@ def removeUser():
     try:
         users_df = cnf.get_users_df()
         users_df = users_df[users_df.id != user_id]
- 
+
         cnf.update_users_file(users_df)
 
         resp = {'success': True,\
@@ -95,9 +95,9 @@ def removeUser():
 @app.route('/editUser', methods=['POST']) # from mdb-editor2.js
 def editUser():
     form_data = request.form.to_dict()
-    user = ast.literal_eval(form_data['user']) 
-    exemptions = ast.literal_eval(form_data['exemptions']) 
-    
+    user = ast.literal_eval(form_data['user'])
+    exemptions = ast.literal_eval(form_data['exemptions'])
+
     original_id = form_data['original_id']
 
     try:
@@ -179,9 +179,9 @@ def giveExcel():
                                  'date_type': 'סוג תאריך',\
                                  'kitchen1': 'תורן מטבח 1', 'kitchen2': 'תורן מטבח 2', 'shmirot1': 'תורן שמירות 1', 'shmirot2': 'תורן שמירות 2'})
 
-    file_name = str(dates[0]) + '-' + str(dates[-1]) + '.csv'
+    file_name = f'{dates[0]} - {dates[-1]}.csv'
 
-    toranuyot_df.to_csv(file_name, index=False, header=True, encoding='utf-8-sig')
+    toranuyot_df.to_csv(f'results/{file_name}', index=False, header=True, encoding='utf-8-sig')
     # edit_last_json(users_df)''
     xlsx_log.info(log_message('created an excel file'))
     return '', 204
