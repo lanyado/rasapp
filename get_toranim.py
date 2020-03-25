@@ -5,7 +5,7 @@ from lib.log import get_log, log_message
 
 import os
 import json
-import datetime
+from datetime import datetime
 
 import pandas as pd
 #import modin.pandas as pd
@@ -19,11 +19,11 @@ def writes_to_json(data_written, edited_file):
         json.dump(data_written, json_file, ensure_ascii=False, indent=1)
 
 def was_toran_yesterday(date, user) -> bool:
-    weekday_delta = datetime.datetime.strptime(date,'%Y-%m-%d')\
-    - datetime.datetime.strptime(user['last_weekday'],'%Y-%m-%d')
+    weekday_delta = datetime.strptime(date,'%Y-%m-%d')\
+    - datetime.strptime(user['last_weekday'],'%Y-%m-%d')
 
-    weekend_delta = datetime.datetime.strptime(date,'%Y-%m-%d')\
-    - datetime.datetime.strptime(user['last_weekend'],'%Y-%m-%d')
+    weekend_delta = datetime.strptime(date,'%Y-%m-%d')\
+    - datetime.strptime(user['last_weekend'],'%Y-%m-%d')
 
     return (weekday_delta.days < cnf.MIN_DAYS_BETWEEN_WEEKDAY_TORANUTS)\
     or (weekend_delta.days < cnf.MIN_DAYS_BETWEEN_WEEKEND_TORANUTS)
@@ -38,8 +38,8 @@ def update_last_toranut_date(new_date, user_id, is_weekday):
 def is_exempt(possible_exemption, user_exemptions, toranut_date):
     if possible_exemption in user_exemptions:
         exemption_date = user_exemptions[possible_exemption]  # type: string
-        exemption_date = datetime.datetime.strptime(exemption_date, '%Y-%m-%d')
-        toranut_date = datetime.datetime.strptime(toranut_date, '%Y-%m-%d')
+        exemption_date = datetime.strptime(exemption_date, '%Y-%m-%d')
+        toranut_date = datetime.strptime(toranut_date, '%Y-%m-%d')
         return exemption_date > toranut_date
     else:
         return False

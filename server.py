@@ -7,33 +7,42 @@ import json
 import codecs
 import time
 import glob
+from datetime import datetime
 
 from lib.dates import get_dates, get_day_of_week, get_date_type
 from get_toranim import add_toranim
 
 from flask import Flask, render_template, request, jsonify, send_from_directory
 import pandas as pd
-import ast
-
-
 #import modin.pandas as pd
+
+import ast
 
 app = Flask(__name__, template_folder=os.path.join(cnf.CURRENT_DIR, 'static'))  # Runs the HTML from the static folder
 
 site_log = get_log('Website')
 xlsx_log = get_log('XLSX')
 
+def remove_exemptions(exemptions):
+    print(type(exemptions))
+    new_exemptions = {}
+    if len(exemptions)>0:
+        for name, date in exemptions.items():
+            if datetime.strptime(date,'%Y-%m-%d') >= datetime.today():
+                new_exemptions[name] = date
+    print(new_exemptions)
+    return new_exemptions
 
-def edit_last_json(csv):
-    final_users = csv.to_dict('index')
-    f2 = []
-    for key in final_users:
-        f2.append(final_users[key])
-    writes_to_json(f2, 'db/users.json')
+def remove_expired_exemptions():
+    users_df = cnf.get_users_df()
+    users_df['exemptions'] = users_df['exemptions'].apply(remove_exemptions)
+    print(users_df['exemptions'])
+    cnf.update_users_file(users_df)
 
 # =========================== landing page rander ============================
 @app.route("/")  # Opens index.html when the user searches for http://127.0.0.1:5000/
 def hello():
+    remove_expired_exemptions()
     users = json.load(codecs.open(cnf.USERS_JSON_FILE, 'r', 'utf-8-sig'))
 
     site_log.info(log_message('got users'))
@@ -181,15 +190,14 @@ def giveExcel():
         resp = {'success': True,\
                 'message': 'חלוקת התורנים התבצעה בהצלחה'}
 
-        site_log.error(log_message(str(e)))
+        xlsx_log.error(log_message(str(e)))
     except Exception as e:
         error_message = getattr(e, 'message', str(e))
         print(error_message)
         if error_message == 'no available toranim':
             resp = {'success': False,\
                     'message': 'אין מספיק תורנים'}
-            site_log.error(log_message(str(e)))
-
+            xlsx_log.error(log_message(str(e)))
 
     toranuyot_df.rename(inplace = True,\
                         columns={'date': 'תאריך',\
@@ -200,7 +208,6 @@ def giveExcel():
     file_name = f'{dates[0]}_{dates[-1]}.csv'
 
     toranuyot_df.to_csv(f'results/{file_name}', index=False, header=True, encoding='utf-8-sig')
-    # edit_last_json(users_df)''
     xlsx_log.info(log_message('created an excel file'))
 
     return jsonify(resp)
