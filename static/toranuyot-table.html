@@ -1,0 +1,14 @@
+<!-- https://sarahleejane.github.io/learning/python/2015/08/09/simple-tables-in-webapps-using-flask-and-pandas-with-python.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/toranuyot-table.css') }}">
+  </head>
+  <body>
+    <div class= page>
+<h1>חלוקת התורנויות לתאריכים {{min_date}} עד {{max_date}}</h1>
+        {{ table|safe }}
+      </div>
+    </body>
+</html>

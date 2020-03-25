@@ -6,13 +6,15 @@ import os
 import json
 import codecs
 import time
+import glob
 
 from lib.dates import get_dates, get_day_of_week, get_date_type
 from get_toranim import add_toranim
 
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 import pandas as pd
 import ast
+
 
 #import modin.pandas as pd
 
@@ -167,24 +169,50 @@ def getExemptions():
 @app.route('/giveExcel', methods=['POST'])
 def giveExcel():
 
-    dates = get_dates(json.loads(request.form['javascript_data']))
+    form_data = request.form.to_dict()
+    dates = get_dates(ast.literal_eval(form_data['dates']))
+
     toranuyot_df = pd.DataFrame({'date': map(str, dates),\
                                  'day_of_week': map(str, get_day_of_week(dates)),\
                                  'date_type': map(str, get_date_type(dates)),\
                                  'kitchen1': '', 'kitchen2': '', 'shmirot1': '', 'shmirot2': ''})
-    toranuyot_df = add_toranim(toranuyot_df) # add the toranim
+    try:
+        toranuyot_df = add_toranim(toranuyot_df) # add the toranim
+        resp = {'success': True,\
+                'message': 'חלוקת התורנים התבצעה בהצלחה'}
+
+        site_log.error(log_message(str(e)))
+    except Exception as e:
+        error_message = getattr(e, 'message', str(e))
+        print(error_message)
+        if error_message == 'no available toranim':
+            resp = {'success': False,\
+                    'message': 'אין מספיק תורנים'}
+            site_log.error(log_message(str(e)))
+
+
     toranuyot_df.rename(inplace = True,\
                         columns={'date': 'תאריך',\
                                  'day_of_week': 'יום בשבוע',\
                                  'date_type': 'סוג תאריך',\
                                  'kitchen1': 'תורן מטבח 1', 'kitchen2': 'תורן מטבח 2', 'shmirot1': 'תורן שמירות 1', 'shmirot2': 'תורן שמירות 2'})
 
-    file_name = f'{dates[0]} - {dates[-1]}.csv'
+    file_name = f'{dates[0]}_{dates[-1]}.csv'
 
     toranuyot_df.to_csv(f'results/{file_name}', index=False, header=True, encoding='utf-8-sig')
     # edit_last_json(users_df)''
     xlsx_log.info(log_message('created an excel file'))
-    return '', 204
+
+    return jsonify(resp)
+# =========================== toranuyot table rander ============================
+
+@app.route("/last-toranuyot-table")  # Opens index.html when the user searches for http://127.0.0.1:5000/
+def last_toranuyot_table():
+    list_of_files = glob.glob('results/*') # * means all if need specific format then *.csv
+    latest_file = max(list_of_files, key=os.path.getctime)
+    df = pd.read_csv(latest_file)
+
+    return render_template('toranuyot-table.html', table = df.to_html(), min_date = min(df['תאריך']), max_date = max(df['תאריך']))
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -76,8 +76,8 @@ def get_oldest_toran(available_users_df, is_weekday):
         print(chosen_user)
         return chosen_user
     else:
-        print('no available toranim')
-        sys.exit(0)
+        raise Exception('no available toranim')
+
 
 def set_weekday_toranim(final_csv, index, row):
     for toranut_name in cnf.WEEKDAY_TORANUYOT.keys():
@@ -100,7 +100,7 @@ def set_weekend_toranim(final_csv, index, row):
         if index > 0:
             yesterday = final_csv.iloc[index - 1]
             today = final_csv.iloc[index]
-            
+
             # if yesterday and today are weekends setting for today yesterday's toran
             if yesterday['date_type'] == 'סופש':
                 final_csv.loc[index: index, [toranut_name]] = yesterday[toranut_name]
@@ -123,6 +123,6 @@ def add_toranim(final_csv):
             set_weekday_toranim(final_csv, index, row)
         else:
             set_weekend_toranim(final_csv, index, row)
- 
+    print("updating users")
     cnf.update_users_file(users_df)
     return final_csv

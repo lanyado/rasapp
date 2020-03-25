@@ -10,7 +10,7 @@ function add_user(table, row){
   }
 
   var exemptions = {}
-    for(var i=3;i<row.length-1;i=i+2){ 
+    for(var i=3;i<row.length-1;i=i+2){
       var exemption_name = row[i];
       var exemption_date = row[i+1];
 
@@ -59,7 +59,7 @@ function edit_user(table, row){
     }
 
     var exemptions = {};
-    for(var i=0;i<$("#exemptions-table-warpper2" ).find('select').length;i++){ 
+    for(var i=0;i<$("#exemptions-table-warpper2" ).find('select').length;i++){
       var exemption_name = $($("#exemptions-table-warpper2" ).find('select')[i]).val();
       var exemption_date = $($("#exemptions-table-warpper2" ).find('input')[i]).val();
 
@@ -67,7 +67,7 @@ function edit_user(table, row){
     }
 
     var form_data = new FormData();
-   
+
     form_data.append('user', JSON.stringify(user))
     form_data.append('exemptions', JSON.stringify(exemptions))
 
@@ -145,9 +145,32 @@ function get_exemptions(){
 }
 
 $('#download_icon').on('click',function(){
-   $.post( "/giveExcel", {
-        javascript_data: JSON.stringify(window.dates)
-   });
+  var form_data = new FormData();
+  form_data.append('dates', JSON.stringify(window.dates))
+
+   $.ajax({
+       url: '/giveExcel',
+       type: 'POST',
+       dataType: 'json',
+       data: form_data,
+       processData: false,
+       cache: false,
+       contentType: false,
+   })
+       .done((response) => {
+         if (response.success){
+          swal(response.message, "מעולה", "success").then(function() {
+              window.open('http://127.0.0.1:5000/last-toranuyot-table', '_blank');
+           });
+         }
+         else
+           swal(response.message, "שגיאה", "error");
+       })
+       .fail((jqXhr) => {
+           console.log(jqXhr.responseJSON)
+           swal('שגיאה','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
+     });
+
 })
 
 /*======== The exemptions table =======*/
@@ -157,7 +180,7 @@ function get_exemption_tr(name, date) {
     var tr = '<td><select class="form-control">';
 
     exemptions_names.forEach(exemption_name => tr+= '<option>'+exemption_name+'</option>');
-        
+
     tr += '</select></td><td><input type="date" value = "' + date + '" class="form-control" /></td>' + '<td><button type="button" class="btnAdd btn btn-outline-danger remove">הסר</button></td>';
     return tr;
   }
@@ -177,9 +200,9 @@ function formatDate(date) {
         day = '' + d.getDate(),
         year = d.getFullYear();
 
-    if (month.length < 2) 
+    if (month.length < 2)
         month = '0' + month;
-    if (day.length < 2) 
+    if (day.length < 2)
         day = '0' + day;
 
     return [year, month, day].join('-');
