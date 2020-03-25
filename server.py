@@ -24,19 +24,16 @@ site_log = get_log('Website')
 xlsx_log = get_log('XLSX')
 
 def remove_exemptions(exemptions):
-    print(type(exemptions))
     new_exemptions = {}
     if len(exemptions)>0:
         for name, date in exemptions.items():
             if datetime.strptime(date,'%Y-%m-%d') >= datetime.today():
                 new_exemptions[name] = date
-    print(new_exemptions)
     return new_exemptions
 
 def remove_expired_exemptions():
     users_df = cnf.get_users_df()
     users_df['exemptions'] = users_df['exemptions'].apply(remove_exemptions)
-    print(users_df['exemptions'])
     cnf.update_users_file(users_df)
 
 # =========================== landing page rander ============================
