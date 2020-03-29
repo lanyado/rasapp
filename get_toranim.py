@@ -73,7 +73,6 @@ def get_oldest_toran(available_users_df, is_weekday):
     mask = available_users_df[last_date] == available_users_df[last_date].min()
     if len(available_users_df[mask])>0:
         chosen_user = available_users_df[mask].sample(n=1)
-        print(chosen_user)
         return chosen_user
     else:
         raise Exception('no available toranim')
@@ -87,7 +86,8 @@ def set_weekday_toranim(final_csv, index, row):
 
         chosen_user = get_oldest_toran(available_users_df, True)
         # writes into sheet - user name - > date (row)/toranut name (col)
-        final_csv.loc[index: index, [toranut_name]] = chosen_user['name'].values[0]
+        text_to_fill = f"{chosen_user['name'].values[0]} | {chosen_user['id'].values[0]} | {chosen_user['unit'].values[0]}"
+        final_csv.loc[index: index, [toranut_name]] = text_to_fill
         update_last_toranut_date(new_date=row['date'],\
                             user_id=str(list(chosen_user['id'])[0]), is_weekday=True)
 
@@ -114,7 +114,8 @@ def set_weekend_toranim(final_csv, index, row):
 
         # if today is the first day of the weekend, find toran for this weekend
         chosen_user = get_oldest_toran(available_users_df, False)
-        final_csv.loc[index: index, [toranut_name]] = chosen_user['name'].values[0]
+        text_to_fill = f"{chosen_user['name'].values[0]} | {chosen_user['id'].values[0]} | {chosen_user['unit'].values[0]}"
+        final_csv.loc[index: index, [toranut_name]] = text_to_fill
         update_last_toranut_date(row['date'], chosen_user['id'].values[0], False)
 
 def add_toranim(final_csv):
@@ -123,6 +124,5 @@ def add_toranim(final_csv):
             set_weekday_toranim(final_csv, index, row)
         else:
             set_weekend_toranim(final_csv, index, row)
-    print("updating users")
     cnf.update_users_file(users_df)
     return final_csv

@@ -187,7 +187,6 @@ def giveExcel():
         resp = {'success': True,\
                 'message': 'חלוקת התורנים התבצעה בהצלחה'}
 
-        xlsx_log.error(log_message(str(e)))
     except Exception as e:
         error_message = getattr(e, 'message', str(e))
         print(error_message)
