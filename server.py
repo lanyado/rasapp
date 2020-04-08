@@ -12,7 +12,7 @@ from datetime import datetime
 from lib.dates import get_dates, get_day_of_week, get_date_type
 from get_toranim import add_toranim
 
-from flask import Flask, render_template, request, jsonify, send_from_directory
+from flask import Flask, render_template, request, jsonify, send_from_directory, url_for
 import pandas as pd
 #import modin.pandas as pd
 
@@ -22,6 +22,8 @@ app = Flask(__name__, template_folder=os.path.join(cnf.CURRENT_DIR, 'static'))  
 
 site_log = get_log('Website')
 xlsx_log = get_log('XLSX')
+
+loged_in = False
 
 def remove_exemptions(exemptions):
     new_exemptions = {}
@@ -36,15 +38,36 @@ def remove_expired_exemptions():
     users_df['exemptions'] = users_df['exemptions'].apply(remove_exemptions)
     cnf.update_users_file(users_df)
 
+# =========================== login finction ============================
+@app.route('/login', methods = ['POST'])
+def login():
+    password = request.form.to_dict()['password']
+    if password == ' ':
+        global loged_in
+        loged_in = True
+        resp = {'auth': True,\
+                'redirect_url':url_for('dashboard')}
+    else:
+        resp = {'auth':False}
+
+    return jsonify(resp)
+
 # =========================== landing page rander ============================
 @app.route("/")  # Opens index.html when the user searches for http://127.0.0.1:5000/
 def hello():
-    remove_expired_exemptions()
-    users = json.load(codecs.open(cnf.USERS_JSON_FILE, 'r', 'utf-8-sig'))
+    return render_template('login.html')
 
-    site_log.info(log_message('got users'))
-    return render_template('index.html', users=users)
+# =========================== dashboard rander ============================
+@app.route("/dashboard")  # Opens index.html when the user searches for http://127.0.0.1:5000/
+def dashboard():
+    if loged_in:
+        remove_expired_exemptions()
+        users = json.load(codecs.open(cnf.USERS_JSON_FILE, 'r', 'utf-8-sig'))
 
+        site_log.info(log_message('got users'))
+        return render_template('dashboard.html', users=users)
+    else:
+        return render_template('login.html')
 # =========================== Add User ================================
 @app.route('/addUser', methods=['POST'])
 def addUser():
@@ -56,19 +79,18 @@ def addUser():
     if new_user['id'] not in users_df['id'].unique(): # if its a new id
         try:
             users_df = users_df.append(new_user, ignore_index = True)
-
             cnf.update_users_file(users_df)
-
-            resp = {'success': True,\
-                    'message': 'החייל הוסף למערכת'}
-
-            site_log.info(log_message(f"added user {new_user['id']} to json"))
 
         except Exception as e:
             print(str(e))
             resp = {'success': False,\
                     'message': str(e)}
             site_log.error(log_message(str(e)))
+
+        else:
+            resp = {'success': True,\
+                    'message': 'החייל הוסף למערכת'}
+            site_log.info(log_message(f"added user {new_user['id']} to json"))
 
     else:
         resp = {'success': False,\
@@ -87,15 +109,16 @@ def removeUser():
 
         cnf.update_users_file(users_df)
 
-        resp = {'success': True,\
-                'message': 'המשתמש נמחק בהצלחה'}
-        site_log.info(log_message('removed user from json'))
-
     except Exception as e:
         print(str(e))
         resp = {'success': False,\
                 'message': str(e)}
         site_log.error(log_message(str(e)))
+
+    else:
+        resp = {'success': True,\
+                'message': 'המשתמש נמחק בהצלחה'}
+        site_log.info(log_message('removed user from json'))
 
     return jsonify(resp)
 
@@ -105,16 +128,14 @@ def editUser():
     form_data = request.form.to_dict()
     user = ast.literal_eval(form_data['user'])
     exemptions = ast.literal_eval(form_data['exemptions'])
-
     original_id = form_data['original_id']
 
+    user['exemptions'] = exemptions
     try:
         users_df = cnf.get_users_df()
-        user_mask = users_df['id']==original_id
+        user_mask = users_df['id'] == original_id
 
-        user['exemptions'] = exemptions
-
-        #update
+        #update the user with keys it hasn't have
         for column_name in set(users_df.columns):
             if column_name not in user.keys():
                 new_value = users_df[user_mask][column_name]
@@ -122,27 +143,14 @@ def editUser():
                     new_value = new_value.values[0]
                 else:
                     new_value = ""
-
                 user[column_name] = new_value
 
-        # delete
+        # delete from users_df
         users_df = users_df[users_df.id != original_id]
-        # insert
+        # insert to users_df
         users_df = users_df.append(user, ignore_index = True)
 
-        '''
-        other mathood
-        for key, value in user.items():
-           users_df.loc[user_mask, key]  = value
-
-        users_df.loc[user_mask, 'exemptions'] = str(exemptions)
-        '''
-
         cnf.update_users_file(users_df)
-
-        resp = {'success': True,\
-                'message': 'המשתמש עודכן בהצלחה'}
-        site_log.info(log_message('edited user in json'))
 
     except Exception as e:
         print(str(e))
@@ -150,9 +158,13 @@ def editUser():
                 'message': str(e)}
         site_log.error(log_message(str(e)))
 
+    else:
+        resp = {'success': True,\
+                'message': 'המשתמש עודכן בהצלחה'}
+        site_log.info(log_message('edited user in json'))
 
-    site_log.info(log_message('edited user in json'))
-    return jsonify(resp)
+    finally:
+        return jsonify(resp)
 
 # =========================== get Exemptions =========================
 @app.route('/getExemptions', methods=['POST'])
@@ -166,7 +178,6 @@ def getExemptions():
         resp = {'exemptions': exemptions}
     else:
         resp = {'exemptions': {}}
-
 
     site_log.info(log_message('got ptorim'))
     return jsonify(resp)
@@ -184,9 +195,6 @@ def giveExcel():
                                  'kitchen1': '', 'kitchen2': '', 'shmirot1': '', 'shmirot2': ''})
     try:
         toranuyot_df = add_toranim(toranuyot_df) # add the toranim
-        resp = {'success': True,\
-                'message': 'חלוקת התורנים התבצעה בהצלחה'}
-
     except Exception as e:
         error_message = getattr(e, 'message', str(e))
         print(error_message)
@@ -194,19 +202,22 @@ def giveExcel():
             resp = {'success': False,\
                     'message': 'אין מספיק תורנים'}
             xlsx_log.error(log_message(str(e)))
+    else:
+        resp = {'success': True,\
+                'message': 'חלוקת התורנים התבצעה בהצלחה'}
+        toranuyot_df.rename(inplace = True,\
+                            columns={'date': 'תאריך',\
+                                     'day_of_week': 'יום בשבוע',\
+                                     'date_type': 'סוג תאריך',\
+                                     'kitchen1': 'תורן מטבח 1', 'kitchen2': 'תורן מטבח 2', 'shmirot1': 'תורן שמירות 1', 'shmirot2': 'תורן שמירות 2'})
 
-    toranuyot_df.rename(inplace = True,\
-                        columns={'date': 'תאריך',\
-                                 'day_of_week': 'יום בשבוע',\
-                                 'date_type': 'סוג תאריך',\
-                                 'kitchen1': 'תורן מטבח 1', 'kitchen2': 'תורן מטבח 2', 'shmirot1': 'תורן שמירות 1', 'shmirot2': 'תורן שמירות 2'})
+        file_name = f'{dates[0]}_{dates[-1]}.csv'
 
-    file_name = f'{dates[0]}_{dates[-1]}.csv'
+        toranuyot_df.to_csv(f'results/{file_name}', index=False, header=True, encoding='utf-8-sig')
+        xlsx_log.info(log_message('created an excel file'))
 
-    toranuyot_df.to_csv(f'results/{file_name}', index=False, header=True, encoding='utf-8-sig')
-    xlsx_log.info(log_message('created an excel file'))
-
-    return jsonify(resp)
+    finally:
+        return jsonify(resp)
 # =========================== toranuyot table rander ============================
 
 @app.route("/last-toranuyot-table")  # Opens index.html when the user searches for http://127.0.0.1:5000/
