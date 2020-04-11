@@ -18,12 +18,23 @@ import pandas as pd
 
 import ast
 
+from functools import wraps
+
 app = Flask(__name__, template_folder=os.path.join(cnf.CURRENT_DIR, 'static'))  # Runs the HTML from the static folder
 
 site_log = get_log('Website')
 xlsx_log = get_log('XLSX')
 
 loged_in = False
+
+def checkUser(func):
+    """Checks whether user is logged in or raises error 401."""
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        if not loged_in:
+            return render_template('login.html')
+        return func(*args, **kwargs)
+    return wrapper
 
 def remove_exemptions(exemptions):
     new_exemptions = {}
@@ -39,6 +50,7 @@ def remove_expired_exemptions():
     cnf.update_users_file(users_df)
 
 # =========================== login finction ============================
+
 @app.route('/login', methods = ['POST'])
 def login():
     password = request.form.to_dict()['password']
@@ -54,22 +66,17 @@ def login():
 
 # =========================== landing page rander ============================
 @app.route("/")  # Opens index.html when the user searches for http://127.0.0.1:5000/
-def hello():
-    return render_template('login.html')
-
-# =========================== dashboard rander ============================
-@app.route("/dashboard")  # Opens index.html when the user searches for http://127.0.0.1:5000/
+@checkUser
 def dashboard():
-    if loged_in:
-        remove_expired_exemptions()
-        users = json.load(codecs.open(cnf.USERS_JSON_FILE, 'r', 'utf-8-sig'))
+    remove_expired_exemptions()
+    users = json.load(codecs.open(cnf.USERS_JSON_FILE, 'r', 'utf-8-sig'))
 
-        site_log.info(log_message('got users'))
-        return render_template('dashboard.html', users=users)
-    else:
-        return render_template('login.html')
+    site_log.info(log_message('got users'))
+    return render_template('dashboard.html', users=users)
+
 # =========================== Add User ================================
 @app.route('/addUser', methods=['POST'])
+@checkUser
 def addUser():
     new_user = request.form.to_dict()
     new_user['exemptions'] = ast.literal_eval(new_user['exemptions'])
@@ -101,6 +108,7 @@ def addUser():
 
 # =========================== Remove User =============================
 @app.route('/removeUser', methods=['POST']) # from mdb-editor2.js
+@checkUser
 def removeUser():
     user_id = request.form.to_dict()['id']
     try:
@@ -124,6 +132,7 @@ def removeUser():
 
 # =========================== Edit user ===============================
 @app.route('/editUser', methods=['POST']) # from mdb-editor2.js
+@checkUser
 def editUser():
     form_data = request.form.to_dict()
     user = ast.literal_eval(form_data['user'])
@@ -168,6 +177,7 @@ def editUser():
 
 # =========================== get Exemptions =========================
 @app.route('/getExemptions', methods=['POST'])
+@checkUser
 def getExemptions():
     id = request.form['id']
     users_df = cnf.get_users_df()
@@ -183,9 +193,9 @@ def getExemptions():
     return jsonify(resp)
 
 # =========================== Give final excel ========================
-@app.route('/giveExcel', methods=['POST'])
-def giveExcel():
-
+@app.route('/getToranim', methods=['POST'])
+@checkUser
+def getToranim():
     form_data = request.form.to_dict()
     dates = get_dates(ast.literal_eval(form_data['dates']))
 
@@ -222,7 +232,8 @@ def giveExcel():
         return jsonify(resp)
 # =========================== toranuyot table rander ============================
 
-@app.route("/toranuyot-table")  # Opens index.html when the user searches for http://127.0.0.1:5000/
+@app.route("/toranuyot-table")
+@checkUser
 def last_toranuyot_table():
     list_of_files = glob.glob('results/*') # * means all if need specific format then *.csv
     latest_file = max(list_of_files, key=os.path.getctime)

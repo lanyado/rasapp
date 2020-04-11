@@ -7,7 +7,7 @@ function login(){
         password: password
     		},function(response){
             if (response.auth){
-    				    window.location.href = response.redirect_url
+    				    window.location.href = window.location.href //response.redirect_url
             }
     			  else{
                 box.style.animation = "shake 0.5s ease";

@@ -154,7 +154,7 @@ $('#get_toranim').on('click',function(){
   form_data.append('dates', JSON.stringify(window.dates))
 
    $.ajax({
-       url: '/giveExcel',
+       url: '/getToranim',
        type: 'POST',
        dataType: 'json',
        data: form_data,
