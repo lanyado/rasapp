@@ -13191,3 +13191,93 @@
 2020-04-08 16:16:12,839 - INFO - werkzeug - 127.0.0.1 - - [08/Apr/2020 16:16:12] "POST /login HTTP/1.1" 200 -
 2020-04-08 16:16:12,861 - INFO - Website - Function name: dashboard | message: got users
 2020-04-08 16:16:12,873 - INFO - werkzeug - 127.0.0.1 - - [08/Apr/2020 16:16:12] "GET /dashboard HTTP/1.1" 200 -
+2020-04-11 22:14:28,176 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-11 22:14:28,178 - INFO - werkzeug -  * Restarting with stat
+2020-04-11 22:14:28,754 - WARNING - werkzeug -  * Debugger is active!
+2020-04-11 22:14:28,763 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-04-11 22:51:03,192 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-11 22:51:03,356 - INFO - werkzeug -  * Restarting with stat
+2020-04-11 23:03:57,487 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-11 23:03:57,489 - INFO - werkzeug -  * Restarting with stat
+2020-04-11 23:03:58,253 - WARNING - werkzeug -  * Debugger is active!
+2020-04-11 23:03:58,261 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-04-11 23:03:58,278 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:03:58] "GET / HTTP/1.1" 200 -
+2020-04-11 23:03:58,355 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:03:58] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-11 23:03:58,359 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:03:58] "GET /static/css/login.css HTTP/1.1" 304 -
+2020-04-11 23:03:58,359 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:03:58] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-11 23:03:58,360 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:03:58] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-11 23:03:58,663 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:03:58] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-11 23:03:58,812 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:03:58] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-11 23:04:02,163 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "POST /login HTTP/1.1" 200 -
+2020-04-11 23:04:02,183 - INFO - Website - Function name: dashboard | message: got users
+2020-04-11 23:04:02,196 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /dashboard HTTP/1.1" 200 -
+2020-04-11 23:04:02,233 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-11 23:04:02,240 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-11 23:04:02,242 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-11 23:04:02,244 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 304 -
+2020-04-11 23:04:02,247 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-11 23:04:02,248 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/css/libraries/calender.css HTTP/1.1" 304 -
+2020-04-11 23:04:02,255 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/excel.png HTTP/1.1" 304 -
+2020-04-11 23:04:02,312 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-11 23:04:02,314 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-11 23:04:02,315 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-11 23:04:02,318 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-11 23:04:02,319 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 304 -
+2020-04-11 23:04:02,320 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-11 23:04:02,324 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/js/libraries/calender.js HTTP/1.1" 304 -
+2020-04-11 23:04:02,325 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-11 23:04:02,793 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/overlays/01.png HTTP/1.1" 200 -
+2020-04-11 23:04:02,797 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/overlays/02.png HTTP/1.1" 200 -
+2020-04-11 23:04:02,799 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/overlays/03.png HTTP/1.1" 200 -
+2020-04-11 23:04:02,800 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/overlays/06.png HTTP/1.1" 200 -
+2020-04-11 23:04:02,800 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/overlays/04.png HTTP/1.1" 200 -
+2020-04-11 23:04:02,801 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/overlays/05.png HTTP/1.1" 200 -
+2020-04-11 23:04:02,801 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/overlays/07.png HTTP/1.1" 200 -
+2020-04-11 23:04:02,811 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/overlays/08.png HTTP/1.1" 200 -
+2020-04-11 23:04:02,812 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/overlays/09.png HTTP/1.1" 200 -
+2020-04-11 23:04:02,816 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/svg/arrow_right.svg HTTP/1.1" 200 -
+2020-04-11 23:04:02,816 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:02] "GET /static/img/svg/arrow_left.svg HTTP/1.1" 200 -
+2020-04-11 23:04:26,068 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:26] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-11 23:04:26,099 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:26] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-11 23:04:34,440 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:04:34] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 -
+2020-04-11 23:05:07,805 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-04-11 23:05:07,806 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:05:07] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-11 23:35:12,583 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-11 23:35:12,586 - INFO - werkzeug -  * Restarting with stat
+2020-04-11 23:35:13,743 - WARNING - werkzeug -  * Debugger is active!
+2020-04-11 23:35:13,754 - INFO - werkzeug -  * Debugger PIN: 244-650-978
+2020-04-11 23:35:21,145 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:35:21] "GET /dashboard HTTP/1.1" 200 -
+2020-04-11 23:35:21,192 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:35:21] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-11 23:35:21,193 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:35:21] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-11 23:35:21,194 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:35:21] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-11 23:35:21,194 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:35:21] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-11 23:35:21,380 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:35:21] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-11 23:35:21,500 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:35:21] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-11 23:35:23,298 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:35:23] "POST /login HTTP/1.1" 200 -
+2020-04-11 23:35:23,324 - INFO - Website - Function name: dashboard | message: got users
+2020-04-11 23:35:23,337 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:35:23] "GET /dashboard HTTP/1.1" 200 -
+2020-04-11 23:35:34,580 - INFO - Website - Function name: removeUser | message: removed user from json
+2020-04-11 23:35:34,581 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:35:34] "POST /removeUser HTTP/1.1" 200 -
+2020-04-11 23:35:43,061 - INFO - Website - Function name: removeUser | message: removed user from json
+2020-04-11 23:35:43,062 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:35:43] "POST /removeUser HTTP/1.1" 200 -
+2020-04-11 23:36:09,196 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-04-11 23:36:09,196 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:36:09] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-11 23:36:18,007 - INFO - Website - Function name: editUser | message: edited user in json
+2020-04-11 23:36:18,008 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:36:18] "POST /editUser HTTP/1.1" 200 -
+2020-04-11 23:36:19,187 - INFO - Website - Function name: dashboard | message: got users
+2020-04-11 23:36:19,188 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:36:19] "GET /dashboard HTTP/1.1" 200 -
+2020-04-11 23:36:22,774 - INFO - Website - Function name: getExemptions | message: got ptorim
+2020-04-11 23:36:22,775 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:36:22] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-11 23:36:27,371 - INFO - Website - Function name: editUser | message: edited user in json
+2020-04-11 23:36:27,371 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:36:27] "POST /editUser HTTP/1.1" 200 -
+2020-04-11 23:36:28,535 - INFO - Website - Function name: dashboard | message: got users
+2020-04-11 23:36:28,536 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:36:28] "GET /dashboard HTTP/1.1" 200 -
+2020-04-11 23:36:47,120 - INFO - Website - Function name: addUser | message: added user 767826561 to json
+2020-04-11 23:36:47,120 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:36:47] "POST /addUser HTTP/1.1" 200 -
+2020-04-11 23:36:48,108 - INFO - Website - Function name: dashboard | message: got users
+2020-04-11 23:36:48,110 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:36:48] "GET /dashboard HTTP/1.1" 200 -
+2020-04-11 23:36:59,738 - INFO - XLSX - Function name: giveExcel | message: created an excel file
+2020-04-11 23:36:59,738 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:36:59] "POST /giveExcel HTTP/1.1" 200 -
+2020-04-11 23:37:00,848 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:37:00] "GET /toranuyot-table HTTP/1.1" 200 -
+2020-04-11 23:37:00,883 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:37:00] "GET /static/css/toranuyot-table.css HTTP/1.1" 200 -
+2020-04-11 23:37:06,709 - INFO - werkzeug - 127.0.0.1 - - [11/Apr/2020 23:37:06] "GET /toranuyot-table HTTP/1.1" 200 -

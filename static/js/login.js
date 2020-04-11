@@ -1,11 +1,10 @@
-
 function login(){
     const box = $('.field-password')[0];
-    const pass = $('#password-input').val();
+    const password = $('#password-input').val();
 
-    if (pass){
+    if (password){
     	$.post('/login',{
-        password: pass
+        password: password
     		},function(response){
             if (response.auth){
     				    window.location.href = response.redirect_url
@@ -16,14 +15,14 @@ function login(){
            }
       	})
     }
-    // GET RID OF ANIMATION
+    // get rid of the animation
     box.addEventListener("animationend", () => {
         box.style.animation = "";
     })
 }
 
 // let the user to login on enter key press
-$('input').keyup(function(e){
+$('input').on("keyup", (e) => {
     if(e.keyCode == 13)
        login();
 });

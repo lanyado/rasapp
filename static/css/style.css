@@ -26,14 +26,14 @@ details > summary:first-of-type {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-#download_icon {
+#get_toranim {
     width: 10%;
     height: 10%;
     display: block;
     margin: 0 auto;
     cursor: pointer;
 }
-#download_icon:hover {
+#get_toranim:hover {
     opacity: 0.8;
 }
 .form-control { display: inline-block !important; }

@@ -204,7 +204,9 @@ def giveExcel():
             xlsx_log.error(log_message(str(e)))
     else:
         resp = {'success': True,\
-                'message': 'חלוקת התורנים התבצעה בהצלחה'}
+                'message': 'חלוקת התורנים התבצעה בהצלחה',\
+                'redirect_url':url_for('last_toranuyot_table')}
+
         toranuyot_df.rename(inplace = True,\
                             columns={'date': 'תאריך',\
                                      'day_of_week': 'יום בשבוע',\
@@ -220,7 +222,7 @@ def giveExcel():
         return jsonify(resp)
 # =========================== toranuyot table rander ============================
 
-@app.route("/last-toranuyot-table")  # Opens index.html when the user searches for http://127.0.0.1:5000/
+@app.route("/toranuyot-table")  # Opens index.html when the user searches for http://127.0.0.1:5000/
 def last_toranuyot_table():
     list_of_files = glob.glob('results/*') # * means all if need specific format then *.csv
     latest_file = max(list_of_files, key=os.path.getctime)

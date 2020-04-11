@@ -1,41 +1,43 @@
-$('#dtBasicExample, #dtBasicExample-1, #dt-more-columns, #dt-less-columns').mdbEditor();
-$('.dataTables_length').addClass('bs-select');
+(function (){
+  $('#dtBasicExample, #dtBasicExample-1, #dt-more-columns, #dt-less-columns').mdbEditor();
+  $('.dataTables_length').addClass('bs-select');
+})();
 
 function add_user(table, row){
-  for(var i=0;i<3;i++){ // chack that all all the must input are full
-     if(row[i] === "" || row[i] === null) {
-          swal("שגיאה", "יש למלא את כל השדות", "error");
-          return 1;
-     }
-  }
-
-  var exemptions = {}
-    for(var i=3;i<row.length-1;i=i+2){
-      var exemption_name = row[i];
-      var exemption_date = row[i+1];
-
-      exemptions[exemption_name] = exemption_date;
+    for(var i=0;i<3;i++){ // chack that all all the must input are full
+       if(row[i] === "" || row[i] === null) {
+            swal("שגיאה", "יש למלא את כל השדות", "error");
+            return 1;
+       }
     }
 
-  var new_user = new FormData();
+    var exemptions = {}
+    for(var i=3;i<row.length-1;i=i+2){
+        var exemption_name = row[i];
+        var exemption_date = row[i+1];
 
-  new_user.append('id', row[0])
-  new_user.append('name', row[1])
-  new_user.append('unit', row[2])
-  new_user.append('last_weekday', '2000-01-01')
-  new_user.append('last_weekend', '2000-01-01')
-  new_user.append('exemptions', JSON.stringify(exemptions))
+        exemptions[exemption_name] = exemption_date;
+    }
 
-  $.ajax({
-      url: '/addUser',
-      type: 'POST',
-      dataType: 'json',
-      data: new_user,
-      processData: false,
-      cache: false,
-      contentType: false,
-  })
-      .done((response) => {
+    var new_user = new FormData();
+
+    new_user.append('id', row[0])
+    new_user.append('name', row[1])
+    new_user.append('unit', row[2])
+    new_user.append('last_weekday', '2000-01-01')
+    new_user.append('last_weekend', '2000-01-01')
+    new_user.append('exemptions', JSON.stringify(exemptions))
+
+    $.ajax({
+        url: '/addUser',
+        type: 'POST',
+        dataType: 'json',
+        data: new_user,
+        processData: false,
+        cache: false,
+        contentType: false,
+    })
+    .done((response) => {
         if (response.success){
           table.row.add(row).draw(); // add the new user to the users html table
           swal(response.message, "מעולה", "success").then(function() {
@@ -44,10 +46,10 @@ function add_user(table, row){
         }
         else
           swal(response.message, "שגיאה", "error");
-      })
-      .fail((jqXhr) => {
-          console.log(jqXhr.responseJSON)
-          swal('שגיאה','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
+    })
+    .fail((jqXhr) => {
+        console.log(jqXhr.responseJSON)
+        swal('שגיאה','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
     });
 }
 
@@ -59,9 +61,12 @@ function edit_user(table, row){
     }
 
     var exemptions = {};
-    for(var i=0;i<$("#exemptions-table-warpper2" ).find('select').length;i++){
-      var exemption_name = $($("#exemptions-table-warpper2" ).find('select')[i]).val();
-      var exemption_date = $($("#exemptions-table-warpper2" ).find('input')[i]).val();
+    var exemptions_table = $("#exemptions-table-warpper2");
+    var number_of_exemptions = exemptions_table.find('select').length;
+
+    for(var i=0; i< number_of_exemptions; i++){
+      var exemption_name = $(exemptions_table.find('select')[i]).val();
+      var exemption_date = $(exemptions_table.find('input')[i]).val();
 
       exemptions[exemption_name] = exemption_date;
     }
@@ -70,7 +75,6 @@ function edit_user(table, row){
 
     form_data.append('user', JSON.stringify(user))
     form_data.append('exemptions', JSON.stringify(exemptions))
-
     form_data.append('original_id', $(row).children()[0].textContent)
 
     $.ajax({
@@ -131,20 +135,21 @@ function get_exemptions(){
             id: $($('#editInputs').find('#inputId2')).val()
           },function(response){
             $(".exemptions-table-body").html("") // clear the exemptions table
-                for (key in response.exemptions){
-                    var exemption_name = key
-                    var exemption_date = response.exemptions[key]
-                    add_exemptions(exemption_name, exemption_date)
-                    if (response.exemptions[key])
-                        $($("input[title|='"+key+"']")[0]).val(response.exemptions[key])
+                var exemptions = response.exemptions;
+                Object.keys(exemptions).forEach(function (key) {
+                    var name = key;
+                    var date = exemptions[name];
+                    add_exemptions(name, date)
+                    if (exemptions[name])
+                        $($(`input[title|='${name}']`)[0]).val(exemptions[name])
                     else
-                        $($("input[title|='"+key+"']")[0]).val('')
-                }
+                        $($(`input[title|='${name}']`)[0]).val('')
+                });
           });
     }, 25);
 }
 
-$('#download_icon').on('click',function(){
+$('#get_toranim').on('click',function(){
   var form_data = new FormData();
   form_data.append('dates', JSON.stringify(window.dates))
 
@@ -160,7 +165,7 @@ $('#download_icon').on('click',function(){
        .done((response) => {
          if (response.success){
           swal(response.message, "מעולה", "success").then(function() {
-              window.open('http://127.0.0.1:5000/last-toranuyot-table', '_blank');
+              window.open(response.redirect_url, '_blank');
            });
          }
          else
@@ -179,19 +184,21 @@ function get_exemption_tr(name, date) {
     var exemptions_names = ['פטור מטבחים אמצש', 'פטור מטבחים סופש','פטור שמירות אמצש','פטור שמירות סופש'];
     var tr = '<td><select class="form-control">';
 
-    exemptions_names.forEach(exemption_name => tr+= '<option>'+exemption_name+'</option>');
+    exemptions_names.forEach((exemption_name) => {tr+= `<option>${exemption_name}</option>`});
 
-    tr += '</select></td><td><input type="date" value = "' + date + '" class="form-control" /></td>' + '<td><button type="button" class="btnAdd btn btn-outline-danger remove">הסר</button></td>';
+    tr += `</select></td><td><input type="date" value = "${date}" class="form-control" /></td>'
+           <td><button type="button" class="btnAdd btn btn-outline-danger remove">הסר</button></td>`;
     return tr;
-  }
+}
+
 function add_exemptions(name, date){
-    var tr = $("<tr />");
+    var tr = $("<tr/>");
     tr.html(get_exemption_tr(name, date));
 
     if (name)
-        $(tr).find('option:contains("'+name+'")').attr('selected','selected');
+        $(tr).find(`option:contains("${name}")`).attr('selected','selected');
 
-     $(".exemptions-table-body").append(tr);
+    $(".exemptions-table-body").append(tr);
 }
 
 function formatDate(date) {
@@ -208,22 +215,23 @@ function formatDate(date) {
     return [year, month, day].join('-');
 }
 
-$(function () {
+(function (){
     var element1 = $('#exemptions-table').clone();
     $("#exemptions-table-warpper1" ).html(element1);
     var element2 = $('#exemptions-table').clone();
     $('#to_remove').remove();
     $("#exemptions-table-warpper2" ).html(element2);
+})();
 
-    $(".btnAdd").bind("click", function () {
-        // add a new exemption with a defult date on ADD BUTTON click
-        var today = new Date();
-        var defult_date = today.setFullYear(today.getFullYear() + 10); // today + 1 month
+$(".btnAdd").bind("click", () => {
+    // add a new exemption with a defult date on ADD BUTTON click
+    var today = new Date();
+    var defult_date = today.setFullYear(today.getFullYear() + 10); // today + 1 month
 
-        add_exemptions("",formatDate(defult_date));
-    });
-    $("body").on("click", ".remove", function () {
-        // remove the last exemption on REMOVE BUTTON click
-        $(this).closest("tr").remove();
-    });
+    add_exemptions("",formatDate(defult_date));
+});
+
+$("body").on("click", ".remove", () => {
+    // remove the last exemption on REMOVE BUTTON click
+    $(this).closest("tr").remove();
 });
