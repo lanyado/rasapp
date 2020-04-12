@@ -181,7 +181,7 @@ $('#get_toranim').on('click',function(){
 /*======== The exemptions table =======*/
 
 function get_exemption_tr(name, date) {
-    const exemptions_names = ['פטור מטבחים אמצש', 'פטור מטבחים סופש','פטור שמירות אמצש','פטור שמירות סופש'];
+    const exemptions_names = new Set(['פטור מטבחים אמצש', 'פטור מטבחים סופש','פטור שמירות אמצש','פטור שמירות סופש']);
     let tr = '<td><select class="form-control">';
 
     exemptions_names.forEach((exemption_name) => {tr+= `<option>${exemption_name}</option>`});

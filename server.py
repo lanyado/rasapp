@@ -28,7 +28,7 @@ xlsx_log = get_log('XLSX')
 loged_in = False
 
 def checkUser(func):
-    """Checks whether user is logged in or raises error 401."""
+    """Checks whether user is logged in or send him to the login page"""
     @wraps(func)
     def wrapper(*args, **kwargs):
         if not loged_in:
