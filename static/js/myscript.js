@@ -4,22 +4,22 @@
 })();
 
 function add_user(table, row){
-    for(var i=0;i<3;i++){ // chack that all all the must input are full
+    for(let i=0; i<3; i++){ // chack that all all the must input are full
        if(row[i] === "" || row[i] === null) {
             swal("שגיאה", "יש למלא את כל השדות", "error");
             return 1;
        }
     }
 
-    var exemptions = {}
-    for(var i=3;i<row.length-1;i=i+2){
-        var exemption_name = row[i];
-        var exemption_date = row[i+1];
+    let exemptions = {}
+    for(let i=3; i<row.length-1; i=i+2){
+        let exemption_name = row[i];
+        let exemption_date = row[i+1];
 
         exemptions[exemption_name] = exemption_date;
     }
 
-    var new_user = new FormData();
+    let new_user = new FormData();
 
     new_user.append('id', row[0])
     new_user.append('name', row[1])
@@ -54,24 +54,24 @@ function add_user(table, row){
 }
 
 function edit_user(table, row){
-    var user = {
+    let user = {
       'id': $($('.modal-content').find('#inputId2')[0]).val(),
       'name': $($('.modal-content').find('#inputName2')[0]).val(),
       'unit': $($('.modal-content').find('#inputUnit2')[0]).val()
     }
 
-    var exemptions = {};
-    var exemptions_table = $("#exemptions-table-warpper2");
-    var number_of_exemptions = exemptions_table.find('select').length;
+    let exemptions = {};
+    let exemptions_table = $("#exemptions-table-warpper2");
+    let number_of_exemptions = exemptions_table.find('select').length;
 
-    for(var i=0; i< number_of_exemptions; i++){
-      var exemption_name = $(exemptions_table.find('select')[i]).val();
-      var exemption_date = $(exemptions_table.find('input')[i]).val();
+    for(let i=0; i< number_of_exemptions; i++){
+      let exemption_name = $(exemptions_table.find('select')[i]).val();
+      let exemption_date = $(exemptions_table.find('input')[i]).val();
 
       exemptions[exemption_name] = exemption_date;
     }
 
-    var form_data = new FormData();
+    let form_data = new FormData();
 
     form_data.append('user', JSON.stringify(user))
     form_data.append('exemptions', JSON.stringify(exemptions))
@@ -102,7 +102,7 @@ function edit_user(table, row){
 }
 
 function remove_user(table, row){
-    var user_to_remove = new FormData();
+    let user_to_remove = new FormData();
     user_to_remove.append('id', $(row).children()[0].textContent)
 
     $.ajax({
@@ -135,10 +135,10 @@ function get_exemptions(){
             id: $($('#editInputs').find('#inputId2')).val()
           },function(response){
             $(".exemptions-table-body").html("") // clear the exemptions table
-                var exemptions = response.exemptions;
+                const exemptions = response.exemptions;
                 Object.keys(exemptions).forEach(function (key) {
-                    var name = key;
-                    var date = exemptions[name];
+                    let name = key;
+                    let date = exemptions[name];
                     add_exemptions(name, date)
                     if (exemptions[name])
                         $($(`input[title|='${name}']`)[0]).val(exemptions[name])
@@ -150,7 +150,7 @@ function get_exemptions(){
 }
 
 $('#get_toranim').on('click',function(){
-  var form_data = new FormData();
+  let form_data = new FormData();
   form_data.append('dates', JSON.stringify(window.dates))
 
    $.ajax({
@@ -181,8 +181,8 @@ $('#get_toranim').on('click',function(){
 /*======== The exemptions table =======*/
 
 function get_exemption_tr(name, date) {
-    var exemptions_names = ['פטור מטבחים אמצש', 'פטור מטבחים סופש','פטור שמירות אמצש','פטור שמירות סופש'];
-    var tr = '<td><select class="form-control">';
+    const exemptions_names = ['פטור מטבחים אמצש', 'פטור מטבחים סופש','פטור שמירות אמצש','פטור שמירות סופש'];
+    let tr = '<td><select class="form-control">';
 
     exemptions_names.forEach((exemption_name) => {tr+= `<option>${exemption_name}</option>`});
 
@@ -192,7 +192,7 @@ function get_exemption_tr(name, date) {
 }
 
 function add_exemptions(name, date){
-    var tr = $("<tr/>");
+    let tr = $("<tr/>");
     tr.html(get_exemption_tr(name, date));
 
     if (name)
@@ -202,7 +202,7 @@ function add_exemptions(name, date){
 }
 
 function formatDate(date) {
-    var d = new Date(date),
+    let d = new Date(date),
         month = '' + (d.getMonth() + 1),
         day = '' + d.getDate(),
         year = d.getFullYear();
@@ -216,22 +216,22 @@ function formatDate(date) {
 }
 
 (function (){
-    var element1 = $('#exemptions-table').clone();
+    let element1 = $('#exemptions-table').clone();
     $("#exemptions-table-warpper1" ).html(element1);
-    var element2 = $('#exemptions-table').clone();
+    let element2 = $('#exemptions-table').clone();
     $('#to_remove').remove();
     $("#exemptions-table-warpper2" ).html(element2);
 })();
 
 $(".btnAdd").bind("click", () => {
     // add a new exemption with a defult date on ADD BUTTON click
-    var today = new Date();
-    var defult_date = today.setFullYear(today.getFullYear() + 10); // today + 1 month
+    const today = new Date();
+    const defult_date = today.setFullYear(today.getFullYear() + 10); // today + 1 month
 
     add_exemptions("",formatDate(defult_date));
 });
 
-$("body").on("click", ".remove", () => {
-    // remove the last exemption on REMOVE BUTTON click
+function removeExemption(){  // remove the last exemption on REMOVE BUTTON click
     $(this).closest("tr").remove();
-});
+}
+$("body").on('click', '.remove', removeExemption);

@@ -14,7 +14,11 @@ body {
   align-items: center;
   text-align: right;
 }
-
+#logo {
+    width: 25%;
+    position: absolute;
+    top: 0;
+}
 /* MODAL WINDOW */
 .modal-bg {
   position: fixed;

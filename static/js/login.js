@@ -23,7 +23,7 @@ function login(){
 
 // let the user to login on enter key press
 $('input').on("keyup", (e) => {
-    if(e.keyCode == 13)
+    if(e.keyCode === 13)
        login();
 });
 
