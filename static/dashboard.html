@@ -48,11 +48,13 @@
               <div class="modal-body mx-4">
 
                 <div class="md-form mb-5">
-                  <input type="number" maxlength="7" id="inputId1" class="form-control">
+                  <!-- need the js here because "number" input don't support "maxlength" attribute -->
+                  <input type="number" maxlength="7" id="inputId1" class="form-control"
+                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                   <label for="inputId1">מספר אישי</label>
                 </div>
                 <div class="md-form mb-5">
-                  <input type="text" id="inputName1" class="form-control">
+                  <input type="text" maxlength="40" id="inputName1" class="form-control">
                   <label for="inputName1">שם מלא</label>
                 </div>
                 <div class="md-form mb-5">
@@ -154,7 +156,7 @@
         </div>
 
         <div class="text-center buttonEditWrapper">
-          <button class="btn btn-info btn-rounded btn-sm buttonEdit" onclick="get_exemptions()" data-toggle="modal" data-target="#modalEdit"
+          <button class="btn btn-info btn-rounded btn-sm buttonEdit" onclick="getExemptions()" data-toggle="modal" data-target="#modalEdit"
             disabled>ערוך<i class="fas fa-pen-square ml-1"></i></a>
         </div>
         <!--
@@ -262,7 +264,7 @@
           </div>
     </div>
 
-  <div id="to_remove">
+  <div id="to-remove">
     <table class="table table-responsive table-striped table-bordered" id="exemptions-table">
       <thead>
         <tr>
@@ -282,7 +284,7 @@
     </table>
   </div>
 
-  <img id="get_toranim" src="{{ url_for('static', filename='img/excel.png') }}">
+  <img id="get-toranim" src="{{ url_for('static', filename='img/excel.png') }}">
 <!--
 =========================================
               SCRIPTS
@@ -304,6 +306,7 @@
   <script type="text/javascript" src="{{ url_for('static', filename='js/libraries/calender.js') }}"></script>
   <!-- my JavaScript -->
   <script type="text/javascript" src="{{ url_for('static', filename='js/myscript.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/exemptions.js') }}"></script>
 
 </body>
 </html>

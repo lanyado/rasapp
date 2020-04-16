@@ -32,7 +32,7 @@
             $newRow.push($wrapperModalEditor.find('.addNewInputs input, .addNewInputs select').eq(_i).val());
         }
 
-        add_user($table, $newRow);
+        addUser($table, $newRow);
 
       },
           btnToModalAdd = function btnToModalAdd(e) {
@@ -73,7 +73,7 @@
         return $('.modalEditClass label').addClass('active');
       },
           buttonEditInside = function buttonEditInside(e) {
-            edit_user($table, $selectedRow);
+            editUser($table, $selectedRow);
 
         for (var _i3 = 0; _i3 < $(e.target).closest('.wrapper-modal-editor').find('thead tr').children().length; _i3++) {
           $table.cell($(trColorSelected).find('td').eq(_i3)).data($wrapperModalEditor.find('.modalEditClass input').eq(_i3).val());
@@ -95,7 +95,7 @@
           buttonDeleteYes = function buttonDeleteYes() {
 
              setTimeout(() => {
-                remove_user($table, trColorSelected);
+                removeUser($table, trColorSelected);
                 $buttonEdit.prop('disabled', true);
                 $buttonDelete.prop('disabled', true);
                 $createShowP.html('0 row selected');
