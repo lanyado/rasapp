@@ -1,42 +1,3 @@
-function getExemptions (){
-    $.post( "/getExemptions", {
-        id: $($('#editInputs').find('#inputId2')).val()
-      },function(response){
-        $(".exemptions-table-body").html("") // clear the exemptions table
-            const exemptions = response.exemptions;
-            Object.keys(exemptions).forEach(function (key) {
-                const name = key;
-                const date = exemptions[name];
-                addExemptions(name, date)
-                if (exemptions[name])
-                    $($(`input[title|='${name}']`)[0]).val(exemptions[name])
-                else
-                    $($(`input[title|='${name}']`)[0]).val('')
-            });
-    });
-}
-
-function getExemptionTr (name, date) {
-    const EXEMPTIONS_NAMES = new Set(['פטור מטבחים אמצש', 'פטור מטבחים סופש','פטור שמירות אמצש','פטור שמירות סופש']);
-    let tr = '<td><select class="form-control">';
-
-    EXEMPTIONS_NAMES.forEach((exemptionName) => {tr+= `<option>${exemptionName}</option>`});
-
-    tr += `</select></td><td><input type="date" value = "${date}" class="form-control" /></td>'
-           <td><button type="button" class="btnAdd btn btn-outline-danger remove">הסר</button></td>`;
-    return tr;
-}
-
-function addExemptions (name, date){
-    let tr = $("<tr/>");
-    tr.html(getExemptionTr(name, date));
-
-    if (name)
-        $(tr).find(`option:contains("${name}")`).attr('selected','selected');
-
-    $(".exemptions-table-body").append(tr);
-}
-
 function formatDate (date) {
     let d = new Date(date),
         month = '' + (d.getMonth() + 1),
@@ -49,6 +10,41 @@ function formatDate (date) {
         day = '0' + day;
 
     return [year, month, day].join('-');
+}
+
+function getExemptions (){
+    $.post( "/getExemptions", {
+        id: $($('#editInputs').find('#inputId2')).val()
+      },function(response){
+        $(".exemptions-table-body").html("") // clear the exemptions table
+            const exemptions = response.exemptions;
+            Object.keys(exemptions).forEach(function (key) {
+                const name = key;
+                const date = exemptions[name];
+                addExemptions(name, date)
+            });
+    });
+}
+
+function getExemptionTr (date) {
+    const EXEMPTIONS_NAMES = new Set(['פטור מטבחים אמצש', 'פטור מטבחים סופש','פטור שמירות אמצש','פטור שמירות סופש']);
+    let tr = '<td><select class="form-control">';
+
+    EXEMPTIONS_NAMES.forEach((exemptionName) => {tr+= `<option>${exemptionName}</option>`});
+
+    tr += `</select></td><td><input type="date" value = "${date}" class="form-control" /></td>'
+           <td><button type="button" class="btnAdd btn btn-outline-danger remove">הסר</button></td>`;
+    return tr;
+}
+
+function addExemptions (name, date){
+    let tr = $("<tr/>");
+    tr.html(getExemptionTr(date));
+
+    if (name)
+        $(tr).find(`option:contains("${name}")`).attr('selected','selected');
+
+    $(".exemptions-table-body").append(tr);
 }
 
 (function (){

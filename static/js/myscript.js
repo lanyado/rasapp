@@ -1,6 +1,7 @@
 (function (){
   $('#dtBasicExample, #dtBasicExample-1, #dt-more-columns, #dt-less-columns').mdbEditor();
   $('.dataTables_length').addClass('bs-select');
+  window.domain = 'http://127.0.0.1:5000/'
 })()
 
 function addUser (table, row){
@@ -147,7 +148,7 @@ function getToranim (){
          if (response.success){
           swal(response.message, "מעולה", "success").then(function() {
               // open it in a new tab
-              window.open(response.redirect_url, '_blank');
+              showExcel(response.filename);
            });
          }
          else
@@ -162,13 +163,14 @@ $('#get-toranim').on('click',function(){
   getToranim();
 })
 
+function showExcel(filename){
+  const url = `${window.domain}toranuyot-table?filename=${filename}`
+  window.open(url, '_blank');
+}
 
 $('#view-excel').on('click',function(){
   let filename = $('#select-excel').val();
-  filename = filename.replace(' הכי חדש','')
-
-  const url = `${window.location}toranuyot-table?filename=${filename}`
-
-  window.open(url, '_blank');
+  filename = filename.replace(' הכי חדש','');
+  showExcel(filename);
 })
 

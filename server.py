@@ -223,10 +223,6 @@ def getToranim():
                     'message': 'אין מספיק תורנים'}
             xlsx_log.error(log_message(str(e)))
     else:
-        resp = {'success': True,\
-                'message': 'חלוקת התורנים התבצעה בהצלחה',\
-                'redirect_url':url_for('last_toranuyot_table')}
-
         toranuyot_df.rename(inplace = True,\
                             columns={'date': 'תאריך',\
                                      'day_of_week': 'יום בשבוע',\
@@ -237,6 +233,10 @@ def getToranim():
 
         toranuyot_df.to_csv(f'results/{file_name}', index=False, header=True, encoding='utf-8-sig')
         xlsx_log.info(log_message('created an excel file'))
+        
+        resp = {'success': True,\
+                'message': 'חלוקת התורנים התבצעה בהצלחה',\
+                'filename':file_name}
 
     finally:
         return jsonify(resp)
