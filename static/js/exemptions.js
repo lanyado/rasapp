@@ -21,30 +21,47 @@ function getExemptions (){
             Object.keys(exemptions).forEach(function (key) {
                 const name = key;
                 const date = exemptions[name];
-                addExemptions(name, date)
+                const exemptionsTable = $(".exemptions-table-body")[1]
+                addExemptions(exemptionsTable, name, date)
             });
     });
 }
 
-function getExemptionTr (date) {
-    const EXEMPTIONS_NAMES = new Set(['פטור מטבחים אמצש', 'פטור מטבחים סופש','פטור שמירות אמצש','פטור שמירות סופש']);
+function getExemptionTr (exemptionsTable, name, date) {
+    
     let tr = '<td><select class="form-control">';
 
-    EXEMPTIONS_NAMES.forEach((exemptionName) => {tr+= `<option>${exemptionName}</option>`});
+    // add the options to the exemption select
+    if (name.length>0){
+        tr+= `<option selected>${name}</option>`
+    }
+    else{
+        const ALL_EXEMPTIONS = ['פטור מטבחים אמצש', 'פטור מטבחים סופש','פטור שמירות אמצש','פטור שמירות סופש'];
+        const otherExemptions = $(exemptionsTable).find("select :selected")
+        let ALREADY_EXEMPTIONS = []
+        if (otherExemptions.length>0){
+            ALREADY_EXEMPTIONS =  otherExemptions.map(function(i, el) {
+                return $(el).val();
+            }).get();
+        }
+        const EXEMPTIONS_TO_ADD = ALL_EXEMPTIONS.filter(x => !ALREADY_EXEMPTIONS.includes(x) );
+        if (EXEMPTIONS_TO_ADD.length>0)
+            EXEMPTIONS_TO_ADD.forEach((exemptionName) => {tr+= `<option>${exemptionName}</option>`});
+        else
+            return ''
+    }
 
     tr += `</select></td><td><input type="date" value = "${date}" class="form-control" /></td>'
            <td><button type="button" class="btnAdd btn btn-outline-danger remove">הסר</button></td>`;
     return tr;
 }
 
-function addExemptions (name, date){
+function addExemptions (exemptionsTable, name, date){
     let tr = $("<tr/>");
-    tr.html(getExemptionTr(date));
+    tr.html(getExemptionTr(exemptionsTable, name, date));
 
-    if (name)
-        $(tr).find(`option:contains("${name}")`).attr('selected','selected');
-
-    $(".exemptions-table-body").append(tr);
+    if (Text.html!='')
+        $(exemptionsTable).append(tr);
 }
 
 (function (){
@@ -55,13 +72,15 @@ function addExemptions (name, date){
     $("#exemptions-table-warpper2" ).html(element2);
 })();
 
-$(".btnAdd").bind("click", () => {
+function btnAdd (){
     // add a new exemption with a defult date on ADD BUTTON click
     const TODAY = new Date();
     const DEFAULT_DATE = TODAY.setFullYear(TODAY.getFullYear() + 10); // today + 1 month
+    const exemptionsTable = $(this).closest("#exemptions-table")[0]
+    addExemptions(exemptionsTable,"",formatDate(DEFAULT_DATE));
+}
 
-    addExemptions("",formatDate(DEFAULT_DATE));
-});
+$("body").on('click', '.btnAdd', btnAdd);
 
 function removeExemption (){  // remove the last exemption on REMOVE BUTTON click
     $(this).closest("tr").remove();
