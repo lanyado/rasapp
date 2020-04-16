@@ -15878,3 +15878,77 @@
 2020-04-16 18:21:54,753 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:54] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
 2020-04-16 18:21:54,763 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:54] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
 2020-04-16 18:22:06,589 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:22:06] "GET /toranuyot-table?filename=2022-01-28_2022-01-29.csv HTTP/1.1" 200 -
+2020-04-16 21:51:18,650 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-16 21:51:18,652 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 21:51:19,282 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 21:51:19,296 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 21:51:19,308 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:19] "GET / HTTP/1.1" 200 -
+2020-04-16 21:51:19,860 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:19] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 21:51:20,808 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:20] "POST /login HTTP/1.1" 200 -
+2020-04-16 21:51:20,838 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 21:51:20,855 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:20] "GET / HTTP/1.1" 200 -
+2020-04-16 21:51:31,671 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 21:51:31,779 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 21:51:32,590 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 21:51:32,595 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 21:51:32,610 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:32] "GET / HTTP/1.1" 200 -
+2020-04-16 21:51:32,645 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:32] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 21:51:32,645 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:32] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 21:51:32,646 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:32] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 21:51:32,646 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:32] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 21:51:32,769 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:32] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 21:51:32,779 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:32] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 21:51:32,908 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:32] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 21:51:34,133 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:34] "POST /login HTTP/1.1" 200 -
+2020-04-16 21:51:34,155 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 21:51:34,170 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:51:34] "GET / HTTP/1.1" 200 -
+2020-04-16 21:52:26,238 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 21:52:26,344 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 21:52:28,014 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 21:52:28,025 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 21:52:28,042 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:28] "GET / HTTP/1.1" 200 -
+2020-04-16 21:52:37,162 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-16 21:52:37,164 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 21:52:37,929 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 21:52:37,936 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 21:52:37,949 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:37] "GET / HTTP/1.1" 200 -
+2020-04-16 21:52:37,995 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:37] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 21:52:37,998 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:37] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 21:52:37,999 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:37] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 21:52:38,000 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:38] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 21:52:38,116 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:38] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 21:52:38,129 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:38] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 21:52:38,254 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:38] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 21:52:39,778 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:39] "POST /login HTTP/1.1" 200 -
+2020-04-16 21:52:39,803 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 21:52:39,820 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:39] "GET / HTTP/1.1" 200 -
+2020-04-16 21:52:46,181 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 21:52:46,280 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 21:52:47,062 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 21:52:47,070 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 21:52:49,792 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-16 21:52:49,793 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 21:52:50,613 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 21:52:50,622 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 21:52:50,634 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:50] "GET / HTTP/1.1" 200 -
+2020-04-16 21:52:50,686 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:50] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 21:52:50,686 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:50] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 21:52:50,687 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:50] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 21:52:50,688 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:50] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 21:52:50,746 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:50] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 21:52:50,752 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:50] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 21:52:50,806 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:50] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 21:52:55,326 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:55] "POST /login HTTP/1.1" 200 -
+2020-04-16 21:52:55,360 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 21:52:55,377 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:52:55] "GET / HTTP/1.1" 200 -
+2020-04-16 21:53:09,246 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 21:53:09,341 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 21:53:09,991 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 21:53:09,996 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 21:53:47,415 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:53:47] "GET / HTTP/1.1" 200 -
+2020-04-16 21:53:49,277 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:53:49] "POST /login HTTP/1.1" 200 -
+2020-04-16 21:53:49,295 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 21:53:49,309 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:53:49] "GET / HTTP/1.1" 200 -
+2020-04-16 21:53:50,955 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 21:53:50,956 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:53:50] "GET / HTTP/1.1" 200 -
+2020-04-16 21:53:53,440 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 21:53:53] "GET /toranuyot-table?filename=2022-01-28_2022-01-29.csv HTTP/1.1" 200 -

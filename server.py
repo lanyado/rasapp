@@ -52,10 +52,7 @@ def remove_expired_exemptions():
 def get_toranuyot_table_names():
     filenames = glob.glob('results/*') # * means all if need specific format then *.csv
     filenames.sort(key=os.path.getctime)
-
-    latest_file = max(filenames, key=os.path.getctime)
-    
-    filenames[filenames.index(latest_file)] = f'{latest_file} הכי חדש'
+    filenames[-1] = f'{filenames[-1]} הכי חדש'
 
     filenames = [file_name.split('/')[1] for file_name in filenames]
     return filenames
@@ -243,7 +240,8 @@ def getToranim():
 
     finally:
         return jsonify(resp)
-# =========================== toranuyot table rander ============================
+
+# =========================== toranuyot table ============================
 
 @app.route("/toranuyot-table", methods=['GET'])
 @checkUser
