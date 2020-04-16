@@ -283,9 +283,28 @@
       </tfoot>
     </table>
   </div>
+  <img id="get-toranim" class="final-icon" src="{{ url_for('static', filename='img/excel.png') }}">
+  
+  <hr>
 
-  <img id="get-toranim" src="{{ url_for('static', filename='img/excel.png') }}">
-<!--
+  <div id="select-warper">
+    <h3>בחר גליון לצפייה</h3>
+
+  <div class="select">
+    <select id="select-excel">
+      {% for file_name in toranuyot_tables %}
+          {% if file_name.endswith(' הכי חדש') %}
+              <option selected>{{file_name}}</option>
+          {% else %}
+              <option>{{file_name}}</option>
+          {% endif %}
+      {% endfor %}
+    </select>
+  </div>
+  <img id="view-excel" class="final-icon" src="{{ url_for('static', filename='img/search.png') }}">
+</div>
+
+  <!--
 =========================================
               SCRIPTS
 =========================================

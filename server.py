@@ -49,6 +49,17 @@ def remove_expired_exemptions():
     users_df['exemptions'] = users_df['exemptions'].apply(remove_exemptions)
     cnf.update_users_file(users_df)
 
+def get_toranuyot_table_names():
+    filenames = glob.glob('results/*') # * means all if need specific format then *.csv
+    filenames.sort(key=os.path.getctime)
+
+    latest_file = max(filenames, key=os.path.getctime)
+    
+    filenames[filenames.index(latest_file)] = f'{latest_file} הכי חדש'
+
+    filenames = [file_name.split('/')[1] for file_name in filenames]
+    return filenames
+
 # =========================== login finction ============================
 
 @app.route('/login', methods = ['POST'])
@@ -71,8 +82,10 @@ def dashboard():
     remove_expired_exemptions()
     users = json.load(codecs.open(cnf.USERS_JSON_FILE, 'r', 'utf-8-sig'))
 
+    toranuyot_tables = get_toranuyot_table_names()
+
     site_log.info(log_message('got users'))
-    return render_template('dashboard.html', users=users)
+    return render_template('dashboard.html', users=users, toranuyot_tables=toranuyot_tables)
 
 # =========================== Add User ================================
 @app.route('/addUser', methods=['POST'])
@@ -232,13 +245,11 @@ def getToranim():
         return jsonify(resp)
 # =========================== toranuyot table rander ============================
 
-@app.route("/toranuyot-table")
+@app.route("/toranuyot-table", methods=['GET'])
 @checkUser
 def last_toranuyot_table():
-    list_of_files = glob.glob('results/*') # * means all if need specific format then *.csv
-    latest_file = max(list_of_files, key=os.path.getctime)
-    df = pd.read_csv(latest_file)
-
+    filename = request.args.get('filename', None)
+    df = pd.read_csv('results/'+filename)
     return render_template('toranuyot-table.html', table = df.to_html(), min_date = min(df['תאריך']), max_date = max(df['תאריך']))
 
 if __name__ == "__main__":

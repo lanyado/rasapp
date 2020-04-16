@@ -161,3 +161,14 @@ function getToranim (){
 $('#get-toranim').on('click',function(){
   getToranim();
 })
+
+
+$('#view-excel').on('click',function(){
+  let filename = $('#select-excel').val();
+  filename = filename.replace(' הכי חדש','')
+
+  const url = `${window.location}toranuyot-table?filename=${filename}`
+
+  window.open(url, '_blank');
+})
+

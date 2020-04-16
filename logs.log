@@ -14408,3 +14408,1473 @@
 2020-04-16 02:06:26,791 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 02:06:26] "POST /getToranim HTTP/1.1" 200 -
 2020-04-16 02:06:27,736 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 02:06:27] "GET /toranuyot-table HTTP/1.1" 200 -
 2020-04-16 02:06:27,779 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 02:06:27] "GET /static/css/toranuyot-table.css HTTP/1.1" 200 -
+2020-04-16 17:05:40,518 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-16 17:05:40,522 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:05:41,950 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:05:41,964 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:05:41,981 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:41] "GET / HTTP/1.1" 200 -
+2020-04-16 17:05:42,055 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:42] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 17:05:42,057 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:42] "GET /static/fonts/fontawesome.css HTTP/1.1" 304 -
+2020-04-16 17:05:42,059 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:42] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 304 -
+2020-04-16 17:05:42,059 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:42] "GET /static/img/logo.png HTTP/1.1" 304 -
+2020-04-16 17:05:42,222 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:42] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 17:05:42,282 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:42] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+2020-04-16 17:05:48,018 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "POST /login HTTP/1.1" 200 -
+2020-04-16 17:05:48,051 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:05:48,065 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET / HTTP/1.1" 200 -
+2020-04-16 17:05:48,115 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 304 -
+2020-04-16 17:05:48,123 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 304 -
+2020-04-16 17:05:48,131 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/img/view-excel.png HTTP/1.1" 404 -
+2020-04-16 17:05:48,133 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/css/style.css HTTP/1.1" 304 -
+2020-04-16 17:05:48,134 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/css/libraries/calender.css HTTP/1.1" 304 -
+2020-04-16 17:05:48,136 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 304 -
+2020-04-16 17:05:48,139 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/img/excel.png HTTP/1.1" 304 -
+2020-04-16 17:05:48,252 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/js/libraries/popper.min.js HTTP/1.1" 304 -
+2020-04-16 17:05:48,256 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 304 -
+2020-04-16 17:05:48,258 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 304 -
+2020-04-16 17:05:48,259 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 304 -
+2020-04-16 17:05:48,263 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 304 -
+2020-04-16 17:05:48,263 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 304 -
+2020-04-16 17:05:48,265 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/js/libraries/calender.js HTTP/1.1" 304 -
+2020-04-16 17:05:48,266 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/js/myscript.js HTTP/1.1" 304 -
+2020-04-16 17:05:48,268 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/js/exemptions.js HTTP/1.1" 304 -
+2020-04-16 17:05:48,512 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:05:48,525 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:05:48] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:06:55,393 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:06:55,408 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:55] "GET / HTTP/1.1" 200 -
+2020-04-16 17:06:55,449 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:55] "GET /static/img/view-excel.png HTTP/1.1" 404 -
+2020-04-16 17:06:55,749 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:55] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:06:55,765 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:55] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:06:58,818 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:06:58,819 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:58] "GET / HTTP/1.1" 200 -
+2020-04-16 17:06:58,873 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:58] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:06:58,873 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:58] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:06:58,874 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:58] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:06:58,876 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:58] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:06:58,879 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:58] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:06:58,881 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:58] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:06:58,885 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:58] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:06:58,887 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:58] "GET /static/img/view-excel.png HTTP/1.1" 404 -
+2020-04-16 17:06:59,015 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:06:59,022 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:06:59,026 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:06:59,030 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:06:59,031 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:06:59,036 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:06:59,036 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:06:59,037 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:06:59,041 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:06:59,047 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:06:59,051 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:06:59,052 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:06:59,065 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:06:59,092 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:06:59,315 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:06:59] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:07:50,967 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:07:50,991 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:50] "GET / HTTP/1.1" 200 -
+2020-04-16 17:07:51,042 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:07:51,054 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:07:51,055 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:07:51,057 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:07:51,058 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:07:51,062 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:07:51,067 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/img/view-excel.png HTTP/1.1" 404 -
+2020-04-16 17:07:51,068 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:07:51,198 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:07:51,208 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:07:51,210 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:07:51,210 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:07:51,212 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:07:51,217 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:07:51,221 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:07:51,223 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:07:51,225 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:07:51,229 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:07:51,232 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:07:51,232 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:07:51,251 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:07:51,278 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:07:51,509 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:07:51] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:08:03,826 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:08:03,842 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:03] "GET / HTTP/1.1" 200 -
+2020-04-16 17:08:03,886 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:03] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:08:03,889 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:03] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:08:03,890 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:03] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:08:03,894 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:03] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:08:03,896 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:03] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:08:03,898 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:03] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:08:03,900 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:03] "GET /static/img/view-excel.png HTTP/1.1" 404 -
+2020-04-16 17:08:03,902 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:03] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:08:04,029 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:08:04,038 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:08:04,040 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:08:04,043 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:08:04,044 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:08:04,047 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:08:04,049 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:08:04,053 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:08:04,056 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:08:04,059 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:08:04,062 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:08:04,064 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:08:04,077 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:08:04,113 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:08:04,346 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:08:04] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:11:00,009 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:11:00,027 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET / HTTP/1.1" 200 -
+2020-04-16 17:11:00,091 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:11:00,094 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:11:00,095 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:11:00,098 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:11:00,104 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:11:00,107 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:11:00,110 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/img/view-excel.png HTTP/1.1" 404 -
+2020-04-16 17:11:00,111 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:11:00,240 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:11:00,248 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:11:00,249 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:11:00,255 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:11:00,255 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:11:00,255 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:11:00,257 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:11:00,270 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:11:00,277 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:11:00,280 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:11:00,280 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:11:00,281 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:11:00,347 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:11:00,358 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:11:00,595 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:11:00] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:13:16,857 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:13:17,006 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:13:18,588 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:13:18,603 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:13:36,213 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:13:36,325 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:13:37,703 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:13:37,716 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:13:37,736 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:37] "GET / HTTP/1.1" 200 -
+2020-04-16 17:13:37,793 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:37] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:13:37,796 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:37] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:13:37,796 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:37] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:13:37,796 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:37] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 17:13:37,919 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:37] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 17:13:37,935 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:37] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:13:38,105 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:38] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:13:39,537 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:39] "POST /login HTTP/1.1" 200 -
+2020-04-16 17:13:39,566 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:13:39,582 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:39] "GET / HTTP/1.1" 200 -
+2020-04-16 17:13:39,633 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:39] "GET /static/img/view-excel.png HTTP/1.1" 404 -
+2020-04-16 17:13:39,876 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:39] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:13:39,884 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:13:39] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:17:18,701 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:17:18,823 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:18:27,347 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-16 17:18:27,349 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:18:28,817 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:18:28,831 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:18:30,616 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:30] "GET / HTTP/1.1" 200 -
+2020-04-16 17:18:30,797 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:30] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:18:30,798 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:30] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 17:18:30,799 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:30] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:18:30,800 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:30] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:18:30,952 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:30] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 17:18:31,083 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:31] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:18:31,292 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:31] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:18:34,130 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:34] "POST /login HTTP/1.1" 200 -
+2020-04-16 17:18:34,180 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:34] "GET / HTTP/1.1" 500 -
+2020-04-16 17:18:34,232 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:34] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2020-04-16 17:18:34,233 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:34] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2020-04-16 17:18:34,233 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:34] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2020-04-16 17:18:34,419 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:34] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2020-04-16 17:18:34,443 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:34] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:18:34,580 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:18:34] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:19:08,123 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:19:08,238 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:19:34,379 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-16 17:19:34,382 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:19:35,593 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:19:35,607 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:19:35,621 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:35] "GET / HTTP/1.1" 200 -
+2020-04-16 17:19:35,681 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:35] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:19:35,683 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:35] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 17:19:35,686 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:35] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:19:35,687 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:35] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:19:35,800 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:35] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 17:19:35,803 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:35] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:19:35,955 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:35] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:19:37,016 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:37] "POST /login HTTP/1.1" 200 -
+2020-04-16 17:19:37,060 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:37] "GET / HTTP/1.1" 500 -
+2020-04-16 17:19:37,114 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:37] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2020-04-16 17:19:37,114 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:37] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2020-04-16 17:19:37,116 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:37] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2020-04-16 17:19:37,289 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:37] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2020-04-16 17:19:37,309 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:37] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:19:37,455 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:19:37] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:19:48,004 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:19:48,106 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:19:49,707 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:19:49,719 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:20:21,719 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:20:21,819 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:20:22,523 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:20:22,528 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:20:24,869 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-16 17:20:24,869 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:20:25,741 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:20:25,750 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:20:39,185 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:39] "GET / HTTP/1.1" 200 -
+2020-04-16 17:20:39,235 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:39] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:20:39,237 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:39] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:20:39,237 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:39] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:20:39,238 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:39] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 17:20:39,370 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:39] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 17:20:39,373 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:39] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:20:39,530 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:39] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:20:40,582 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:40] "POST /login HTTP/1.1" 200 -
+2020-04-16 17:20:40,613 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:20:40,631 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:40] "GET / HTTP/1.1" 200 -
+2020-04-16 17:20:40,672 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:40] "GET /static/img/view-excel.png HTTP/1.1" 404 -
+2020-04-16 17:20:41,026 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:41] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:20:41,034 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:20:41] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:23:57,483 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:23:57,537 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:23:57] "GET / HTTP/1.1" 500 -
+2020-04-16 17:23:57,594 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:23:57] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2020-04-16 17:23:57,595 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:23:57] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2020-04-16 17:23:57,595 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:23:57] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2020-04-16 17:23:57,754 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:23:57] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2020-04-16 17:23:57,834 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:23:57] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:23:57,998 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:23:57] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:24:08,499 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:24:08,532 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:24:08] "GET / HTTP/1.1" 500 -
+2020-04-16 17:24:08,594 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:24:08] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2020-04-16 17:24:08,595 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:24:08] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2020-04-16 17:24:08,596 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:24:08] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2020-04-16 17:24:08,729 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:24:08] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2020-04-16 17:24:08,788 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:24:08] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:24:08,928 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:24:08] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:26:36,520 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:26:36,557 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:26:36] "GET / HTTP/1.1" 500 -
+2020-04-16 17:26:36,621 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:26:36] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2020-04-16 17:26:36,622 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:26:36] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2020-04-16 17:26:36,624 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:26:36] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2020-04-16 17:26:36,766 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:26:36] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2020-04-16 17:26:36,836 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:26:36] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:26:36,979 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:26:36] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:27:40,147 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:27:40,163 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET / HTTP/1.1" 200 -
+2020-04-16 17:27:40,222 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:27:40,234 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:27:40,234 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:27:40,236 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:27:40,239 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:27:40,240 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:27:40,240 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:27:40,248 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/img/view-excel.png HTTP/1.1" 404 -
+2020-04-16 17:27:40,375 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:27:40,382 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:27:40,383 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:27:40,383 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:27:40,385 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:27:40,385 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:27:40,398 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:27:40,399 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:27:40,399 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:27:40,402 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:27:40,404 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:27:40,430 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:27:40,465 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:27:40,487 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:27:40,757 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:40] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:27:46,211 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:27:46,213 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET / HTTP/1.1" 200 -
+2020-04-16 17:27:46,258 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:27:46,262 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:27:46,265 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:27:46,269 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:27:46,273 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:27:46,276 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:27:46,279 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:27:46,281 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/img/view-excel.png HTTP/1.1" 404 -
+2020-04-16 17:27:46,407 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:27:46,413 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:27:46,415 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:27:46,422 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:27:46,425 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:27:46,431 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:27:46,431 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:27:46,432 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:27:46,433 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:27:46,435 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:27:46,438 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:27:46,443 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:27:46,514 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:27:46,521 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:27:46,746 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:27:46] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:29:20,051 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:29:20,073 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET / HTTP/1.1" 200 -
+2020-04-16 17:29:20,115 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:29:20,121 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:29:20,122 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:29:20,128 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:29:20,130 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:29:20,133 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:29:20,136 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:29:20,138 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:29:20,264 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:29:20,274 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:29:20,274 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:29:20,276 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:29:20,278 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:29:20,279 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:29:20,281 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:29:20,293 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:29:20,295 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:29:20,295 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:29:20,300 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:29:20,300 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:29:20,351 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:29:20,366 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:29:20,619 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:29:20] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:31:25,295 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:31:25,449 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:31:26,875 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:31:26,884 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:33:01,813 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:33:01,932 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:33:02,949 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:33:02,965 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:37:03,592 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:03] "GET / HTTP/1.1" 200 -
+2020-04-16 17:37:03,641 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:03] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:37:03,646 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:03] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 17:37:03,647 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:03] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:03,650 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:03] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:37:03,792 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:03] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 17:37:03,802 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:03] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:37:03,975 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:03] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:37:05,262 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:05] "POST /login HTTP/1.1" 200 -
+2020-04-16 17:37:05,298 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:37:05,313 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:05] "GET / HTTP/1.1" 200 -
+2020-04-16 17:37:05,569 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:05] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:37:05,575 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:05] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:37:08,607 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:37:08,607 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET / HTTP/1.1" 200 -
+2020-04-16 17:37:08,650 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:37:08,654 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:37:08,659 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:37:08,659 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:37:08,665 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:37:08,665 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:37:08,666 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:37:08,672 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:37:08,782 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:08,788 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:08,789 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:37:08,795 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:37:08,796 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:08,796 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:08,798 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:08,804 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:37:08,805 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:37:08,811 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:37:08,814 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:37:08,821 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:37:08,854 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:37:08,906 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:08] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:37:09,128 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:09] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:37:32,754 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:37:32,756 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET / HTTP/1.1" 200 -
+2020-04-16 17:37:32,812 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:37:32,816 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:37:32,820 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:37:32,820 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:37:32,825 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:37:32,825 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:37:32,836 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:37:32,838 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:37:32,954 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:32,962 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:37:32,963 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:32,966 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:32,969 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:37:32,972 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:32,974 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:32,975 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:37:32,982 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:37:32,986 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:37:32,989 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:37:32,990 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:32] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:37:33,007 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:33] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:37:33,066 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:33] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:37:33,253 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:33] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:37:37,449 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:37:37,450 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET / HTTP/1.1" 200 -
+2020-04-16 17:37:37,501 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:37:37,504 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:37:37,504 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:37:37,505 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:37:37,507 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:37:37,508 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:37:37,517 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:37:37,518 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:37:37,628 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:37,631 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:37,635 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:37,637 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:37:37,637 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:37,638 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:37:37,641 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:37,647 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:37:37,650 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:37:37,653 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:37:37,653 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:37:37,703 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:37:37,703 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-16 17:37:37,782 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:37:37,931 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:37] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:37:38,108 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:38] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:37:38,684 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:38] "GET //toranuyot-table?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 308 -
+2020-04-16 17:37:38,708 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:37:38,709 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:38] "GET /?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:37:50,499 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:37:50,501 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET / HTTP/1.1" 200 -
+2020-04-16 17:37:50,542 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:37:50,543 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:37:50,666 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:37:50,683 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:37:50,684 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:37:50,688 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:37:50,701 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:50,701 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:50,701 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:50,717 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:50,718 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:37:50,719 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:37:50,733 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:37:50,739 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:37:50,739 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:37:50,746 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:37:50,808 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:37:50,810 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:37:50,811 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:37:50,820 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:37:50,861 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:37:50,867 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:50] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:37:51,617 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:51] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:37:55,058 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:37:55,059 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:37:55] "GET /?2022-01-28_2022-01-29.csv%20newest/toranuyot-table?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:38:14,780 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:38:14,782 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:14] "GET / HTTP/1.1" 200 -
+2020-04-16 17:38:16,649 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:38:16,650 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:16] "GET /?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:38:48,675 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:38:48,799 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:38:50,191 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:38:50,200 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:38:50,219 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:50] "GET /?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:38:50,258 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:50] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:38:50,259 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:50] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 17:38:50,259 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:50] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:38:50,261 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:50] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:38:50,375 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:50] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 17:38:50,384 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:50] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:38:50,523 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:50] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:38:52,994 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:52] "GET / HTTP/1.1" 200 -
+2020-04-16 17:38:54,424 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:54] "POST /login HTTP/1.1" 200 -
+2020-04-16 17:38:54,454 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:38:54,470 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:54] "GET / HTTP/1.1" 200 -
+2020-04-16 17:38:55,985 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:38:55,986 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:38:55] "GET /?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:39:55,424 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:39:55] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:39:55,448 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:39:55] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:40:48,841 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:40:48,843 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:40:48] "GET / HTTP/1.1" 200 -
+2020-04-16 17:40:49,089 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:40:49] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:40:49,187 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:40:49] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:40:50,423 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:40:50,424 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:40:50] "GET /?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:40:56,848 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:40:56,850 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:40:56] "GET / HTTP/1.1" 200 -
+2020-04-16 17:41:00,205 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:41:00,206 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET / HTTP/1.1" 200 -
+2020-04-16 17:41:00,254 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:41:00,254 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:41:00,255 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:41:00,255 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:41:00,257 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:41:00,259 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:41:00,265 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:41:00,266 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:41:00,370 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:41:00,371 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:41:00,371 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:41:00,371 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:41:00,373 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:41:00,373 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:41:00,383 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:41:00,386 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:41:00,388 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:41:00,390 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:41:00,390 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:41:00,394 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:41:00,630 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:00] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:41:02,914 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:41:02,915 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:02] "GET /?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:41:07,466 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:41:07,468 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:07] "GET /?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:41:12,252 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:12] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:41:12,268 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:41:12] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:42:06,174 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:42:06,176 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET / HTTP/1.1" 200 -
+2020-04-16 17:42:06,233 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:42:06,233 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:42:06,234 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:42:06,236 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:42:06,237 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:42:06,237 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:42:06,246 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:42:06,247 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:42:06,367 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:42:06,381 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:42:06,382 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:42:06,383 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:42:06,384 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:42:06,386 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:42:06,387 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:42:06,398 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:42:06,399 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:42:06,399 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:42:06,400 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:42:06,459 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:42:06,565 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:42:06,570 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:42:06,741 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:06] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:42:07,853 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:42:07,854 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:07] "GET /?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:42:34,449 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:42:34,451 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:42:34] "GET /?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:42:53,731 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:42:53,845 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:42:55,315 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:42:55,322 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:43:00,528 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:43:00,627 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:43:02,096 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:43:02,104 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:43:06,233 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:43:06,355 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:43:07,733 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:43:07,740 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:43:33,666 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:33] "GET / HTTP/1.1" 200 -
+2020-04-16 17:43:33,712 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:33] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:43:33,716 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:33] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:43:33,720 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:33] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 17:43:33,720 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:33] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:43:33,849 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:33] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 17:43:33,856 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:33] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:43:34,019 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:34] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:43:35,868 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:35] "POST /login HTTP/1.1" 200 -
+2020-04-16 17:43:35,901 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:43:35,918 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:35] "GET / HTTP/1.1" 200 -
+2020-04-16 17:43:36,265 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:36] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:43:36,271 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:36] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:43:37,992 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:43:37,993 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:43:37] "GET /?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:44:15,423 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:44:15,425 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET / HTTP/1.1" 200 -
+2020-04-16 17:44:15,469 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:44:15,472 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:44:15,475 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:44:15,475 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:44:15,477 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:44:15,479 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:44:15,482 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:44:15,483 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:44:15,614 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:44:15,622 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:44:15,625 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:44:15,626 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:44:15,628 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:44:15,629 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:44:15,634 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:44:15,636 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:44:15,639 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:44:15,642 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:44:15,647 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:44:15,647 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:44:15,664 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:44:15,701 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:44:15,926 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:15] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:44:27,584 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:44:27,585 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET / HTTP/1.1" 200 -
+2020-04-16 17:44:27,632 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:44:27,633 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:44:27,633 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:44:27,635 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:44:27,635 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:44:27,639 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:44:27,645 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:44:27,646 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:44:27,769 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:44:27,772 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:44:27,777 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:44:27,782 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:44:27,785 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:44:27,787 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:44:27,788 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:44:27,789 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:44:27,789 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:44:27,796 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:44:27,799 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:44:27,800 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:44:27,819 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:44:27,846 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:27] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:44:28,085 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:28] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:44:28,991 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:28] "GET /toranuyot-table?2022-01-28_2022-01-29.csv HTTP/1.1" 500 -
+2020-04-16 17:44:48,909 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:44:49,011 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:44:56,001 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-16 17:44:56,004 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:44:56,586 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:44:56,594 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:44:57,541 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:57] "GET / HTTP/1.1" 200 -
+2020-04-16 17:44:57,602 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:57] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:44:57,602 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:57] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 17:44:57,602 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:57] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:44:57,602 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:57] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:44:57,739 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:57] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 17:44:57,747 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:57] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:44:57,902 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:57] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:44:59,176 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:59] "POST /login HTTP/1.1" 200 -
+2020-04-16 17:44:59,204 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:44:59,220 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:59] "GET / HTTP/1.1" 200 -
+2020-04-16 17:44:59,549 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:59] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:44:59,552 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:44:59] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:45:00,989 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:45:00] "GET /toranuyot-table?2022-01-28_2022-01-29.csv HTTP/1.1" 500 -
+2020-04-16 17:47:12,730 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:47:12,834 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:47:13,477 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:47:13,482 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:47:16,232 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:16] "GET /?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:47:16,272 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:16] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 17:47:16,272 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:16] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:47:16,274 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:16] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:47:16,275 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:16] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:47:16,403 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:16] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 17:47:16,411 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:16] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:47:16,545 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:16] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:47:17,612 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:17] "POST /login HTTP/1.1" 200 -
+2020-04-16 17:47:17,634 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:47:17,649 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:17] "GET /?2022-01-28_2022-01-29.csv%20newest HTTP/1.1" 200 -
+2020-04-16 17:47:19,601 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:47:19,602 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:19] "GET /?2022-01-28_2022-01-29.csv%20newesttoranuyot-table?2022-01-28_2022-01-29.csv HTTP/1.1" 200 -
+2020-04-16 17:47:26,230 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:26] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:47:26,247 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:26] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:47:40,418 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:47:40,421 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:40] "GET / HTTP/1.1" 200 -
+2020-04-16 17:47:40,641 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:40] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:47:40,730 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:40] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:47:42,206 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:47:42] "GET /toranuyot-table?2022-01-28_2022-01-29.csv HTTP/1.1" 500 -
+2020-04-16 17:48:05,647 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:48:05,648 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET / HTTP/1.1" 200 -
+2020-04-16 17:48:05,700 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:48:05,703 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:48:05,703 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:48:05,704 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:48:05,704 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:48:05,704 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:48:05,708 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:48:05,716 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:48:05,831 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:48:05,844 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:48:05,847 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:48:05,852 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:48:05,854 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:48:05,854 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:48:05,856 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:48:05,858 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:48:05,863 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:48:05,868 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:48:05,871 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:48:05,872 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:48:05,884 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:05] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:48:06,014 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:06] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:48:06,157 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:06] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:48:07,323 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:07] "GET /toranuyot-table?filename=2022-01-28_2022-01-29.csv HTTP/1.1" 500 -
+2020-04-16 17:48:07,361 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:07] "GET /toranuyot-table?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2020-04-16 17:48:07,362 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:07] "GET /toranuyot-table?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2020-04-16 17:48:07,363 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:07] "GET /toranuyot-table?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2020-04-16 17:48:07,516 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:07] "GET /toranuyot-table?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2020-04-16 17:48:07,542 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:07] "GET /toranuyot-table?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:48:07,674 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:07] "GET /toranuyot-table?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:48:36,135 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:48:36,233 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:48:37,059 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:48:37,065 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:48:41,963 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:41] "GET / HTTP/1.1" 200 -
+2020-04-16 17:48:44,351 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:44] "POST /login HTTP/1.1" 200 -
+2020-04-16 17:48:44,377 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:48:44,392 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:44] "GET / HTTP/1.1" 200 -
+2020-04-16 17:48:46,191 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:46] "GET /toranuyot-table?filename=2022-01-28_2022-01-29.csv HTTP/1.1" 200 -
+2020-04-16 17:48:46,252 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:48:46] "GET /static/css/toranuyot-table.css HTTP/1.1" 200 -
+2020-04-16 17:49:00,323 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:49:00] "GET /toranuyot-table?filename=2020-06-01_2020-06-30.csv HTTP/1.1" 200 -
+2020-04-16 17:51:58,649 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:51:58,665 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET / HTTP/1.1" 200 -
+2020-04-16 17:51:58,718 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:51:58,719 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:51:58,721 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:51:58,722 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:51:58,723 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:51:58,725 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:51:58,733 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:51:58,734 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:51:58,854 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:51:58,855 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:51:58,855 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:51:58,857 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:51:58,858 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:51:58,859 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:51:58,872 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:51:58,872 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:51:58,873 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:51:58,873 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:51:58,874 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:51:58,884 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:58] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:51:59,128 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:51:59] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:52:27,377 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:52:27,394 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET / HTTP/1.1" 200 -
+2020-04-16 17:52:27,430 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:52:27,431 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:52:27,431 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:52:27,431 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:52:27,434 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:52:27,437 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:52:27,442 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:52:27,442 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:52:27,562 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:52:27,567 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:52:27,568 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:52:27,569 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:52:27,569 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:52:27,571 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:52:27,571 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:52:27,581 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:52:27,582 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:52:27,584 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:52:27,585 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:52:27,590 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:52:27,821 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:52:27] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:57:10,631 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:57:10,648 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET / HTTP/1.1" 200 -
+2020-04-16 17:57:10,688 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:57:10,690 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:57:10,690 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:57:10,690 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:57:10,691 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:57:10,692 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:57:10,703 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:57:10,703 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:57:10,824 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:57:10,831 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:57:10,832 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:57:10,832 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:57:10,832 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:57:10,833 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:57:10,834 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:57:10,844 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:57:10,845 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:57:10,846 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:57:10,846 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:57:10,858 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:10] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:57:11,084 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:11] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:57:17,767 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:17] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:57:17,784 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:57:17] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:58:01,466 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 17:58:01,467 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET / HTTP/1.1" 200 -
+2020-04-16 17:58:01,512 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 17:58:01,513 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:58:01,516 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 17:58:01,518 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 17:58:01,519 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 17:58:01,519 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 17:58:01,529 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 17:58:01,529 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:58:01,652 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:58:01,672 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 17:58:01,672 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 17:58:01,672 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 17:58:01,674 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 17:58:01,676 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 17:58:01,676 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 17:58:01,689 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 17:58:01,696 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:58:01,700 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 17:58:01,700 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 17:58:01,701 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 17:58:01,701 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-16 17:58:01,802 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 17:58:01,902 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:01] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 17:58:02,052 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:58:02] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:59:27,163 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 17:59:27,304 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 17:59:28,794 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 17:59:28,803 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 17:59:28,997 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:28] "GET / HTTP/1.1" 200 -
+2020-04-16 17:59:29,042 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:29] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 17:59:29,044 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:29] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 17:59:29,044 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:29] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 17:59:29,045 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:29] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 17:59:29,170 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:29] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 17:59:29,195 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:29] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 17:59:29,385 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:29] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 17:59:30,876 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:30] "POST /login HTTP/1.1" 200 -
+2020-04-16 17:59:30,920 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:30] "GET / HTTP/1.1" 500 -
+2020-04-16 17:59:30,957 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:30] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2020-04-16 17:59:30,959 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:30] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2020-04-16 17:59:30,960 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:30] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2020-04-16 17:59:31,135 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:31] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2020-04-16 17:59:31,141 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:31] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 17:59:31,279 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 17:59:31] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-04-16 18:00:25,612 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 18:00:25,732 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 18:00:26,917 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 18:00:26,924 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 18:00:28,570 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:00:28] "GET / HTTP/1.1" 200 -
+2020-04-16 18:00:28,627 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:00:28] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:00:28,628 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:00:28] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 18:00:28,629 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:00:28] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:00:28,629 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:00:28] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:00:28,787 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:00:28] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 18:00:28,791 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:00:28] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:00:28,983 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:00:28] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:00:29,907 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:00:29] "POST /login HTTP/1.1" 200 -
+2020-04-16 18:00:29,929 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:00:29,945 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:00:29] "GET / HTTP/1.1" 200 -
+2020-04-16 18:00:30,186 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:00:30] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:00:30,199 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:00:30] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:01:12,327 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 18:01:12,423 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 18:01:13,779 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 18:01:13,786 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 18:01:31,155 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:01:31] "GET / HTTP/1.1" 200 -
+2020-04-16 18:01:31,198 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:01:31] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:01:31,199 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:01:31] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:01:31,200 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:01:31] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 18:01:31,201 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:01:31] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:01:31,337 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:01:31] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 18:01:31,342 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:01:31] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:01:31,512 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:01:31] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:01:32,712 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:01:32] "POST /login HTTP/1.1" 200 -
+2020-04-16 18:01:32,740 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:01:32,756 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:01:32] "GET / HTTP/1.1" 200 -
+2020-04-16 18:01:32,986 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:01:32] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:01:33,017 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:01:33] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:02:19,271 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:02:19,288 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET / HTTP/1.1" 200 -
+2020-04-16 18:02:19,330 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:02:19,335 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:02:19,339 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:02:19,340 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:02:19,340 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:02:19,341 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:02:19,341 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:02:19,344 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:02:19,468 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:19,480 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:19,480 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:19,487 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:02:19,488 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:19,489 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:02:19,493 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:19,495 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:02:19,502 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:02:19,503 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:02:19,504 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-16 18:02:19,510 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:02:19,514 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 18:02:19,548 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:02:19,692 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:02:19,830 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:02:19,831 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET / HTTP/1.1" 200 -
+2020-04-16 18:02:19,837 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:02:19,874 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:02:19,876 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:02:19,877 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:02:19,877 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:02:19,880 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:02:19,880 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:02:19,883 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:02:19,885 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:19] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:02:20,010 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:20,013 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:20,015 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:20,019 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:20,020 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:02:20,021 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:02:20,023 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:20,025 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:02:20,029 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:02:20,030 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-16 18:02:20,032 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:02:20,036 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 18:02:20,037 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:02:20,126 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:02:20,219 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:02:20,375 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:20] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:02:26,054 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:02:26,056 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET / HTTP/1.1" 200 -
+2020-04-16 18:02:26,099 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:02:26,101 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:02:26,103 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:02:26,106 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:02:26,108 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:02:26,110 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:02:26,115 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:02:26,115 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:02:26,239 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:26,243 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:26,245 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:26,246 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:02:26,253 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:26,253 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:02:26,254 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:26,255 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:02:26,257 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-16 18:02:26,267 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:02:26,270 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:02:26,274 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 18:02:26,275 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:02:26,435 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:02:26,440 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:02:26,619 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:26] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:02:29,784 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:02:29,785 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET / HTTP/1.1" 200 -
+2020-04-16 18:02:29,829 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:02:29,834 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:02:29,835 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:02:29,836 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:02:29,840 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:02:29,842 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:02:29,843 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:02:29,843 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:02:29,957 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:29,970 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:02:29,972 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:29,972 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:29,973 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:02:29,973 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:29,973 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:29,982 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:02:29,985 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:02:29,985 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:02:29,987 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 18:02:29,995 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-16 18:02:29,996 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:29] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:02:30,080 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:30] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:02:30,221 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:30] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:02:30,378 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:30] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:02:43,015 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:02:43,031 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET / HTTP/1.1" 200 -
+2020-04-16 18:02:43,077 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:02:43,079 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:02:43,081 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:02:43,083 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:02:43,083 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:02:43,084 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:02:43,090 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:02:43,091 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:02:43,215 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:43,220 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:43,220 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:43,221 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:02:43,225 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:02:43,225 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:43,235 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:02:43,238 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:02:43,239 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:02:43,242 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:02:43,243 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 18:02:43,307 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:02:43,408 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:02:43,414 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:02:43,640 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:02:43] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:03:06,038 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:03:06] "GET /toranuyot-table?filename=2022-01-28_2022-01-29.csv HTTP/1.1" 200 -
+2020-04-16 18:04:55,174 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:04:55,195 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET / HTTP/1.1" 200 -
+2020-04-16 18:04:55,243 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:04:55,244 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:04:55,244 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:04:55,245 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:04:55,246 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:04:55,246 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:04:55,256 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:04:55,256 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:04:55,379 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:04:55,385 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:04:55,385 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:04:55,390 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:04:55,392 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:04:55,395 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:04:55,396 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:04:55,398 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:04:55,406 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:04:55,409 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:04:55,411 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:04:55,413 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 18:04:55,433 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:04:55,510 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:04:55,721 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:04:55] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:05:35,041 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:05:35,062 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET / HTTP/1.1" 200 -
+2020-04-16 18:05:35,114 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:05:35,114 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:05:35,116 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:05:35,116 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:05:35,120 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:05:35,121 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:05:35,129 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:05:35,132 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:05:35,263 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:05:35,269 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:05:35,272 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:05:35,272 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:05:35,278 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:05:35,278 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:05:35,282 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:05:35,290 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:05:35,292 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:05:35,300 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:05:35,300 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:05:35,301 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 18:05:35,311 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:05:35,434 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:05:35,620 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:05:35] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:07:54,076 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:07:54,077 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET / HTTP/1.1" 200 -
+2020-04-16 18:07:54,130 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:07:54,131 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:07:54,132 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:07:54,133 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:07:54,133 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:07:54,135 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:07:54,139 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:07:54,146 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:07:54,279 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:07:54,288 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:07:54,289 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:07:54,293 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:07:54,296 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:07:54,300 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:07:54,304 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:07:54,305 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-16 18:07:54,306 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:07:54,306 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:07:54,312 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:07:54,321 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 18:07:54,322 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:07:54,350 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:07:54,499 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:07:54,643 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:07:54] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:10:11,995 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:10:11,996 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:11] "GET / HTTP/1.1" 200 -
+2020-04-16 18:10:12,041 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:10:12,046 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:10:12,048 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:10:12,053 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:10:12,055 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:10:12,056 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:10:12,058 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:10:12,064 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:10:12,207 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:10:12,213 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:10:12,217 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:10:12,217 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:10:12,219 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:10:12,221 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:10:12,226 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-16 18:10:12,230 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:10:12,237 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:10:12,242 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:10:12,245 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 18:10:12,246 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:10:12,247 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:10:12,257 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:10:12,423 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:10:12,571 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:12] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:10:13,133 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:10:13,135 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET / HTTP/1.1" 200 -
+2020-04-16 18:10:13,178 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:10:13,186 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:10:13,187 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:10:13,188 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:10:13,189 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:10:13,190 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:10:13,191 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:10:13,198 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:10:13,317 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:10:13,332 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:10:13,333 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:10:13,334 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:10:13,334 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:10:13,335 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:10:13,337 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:10:13,347 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:10:13,351 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:10:13,352 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:10:13,352 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/img/view_excel.png HTTP/1.1" 200 -
+2020-04-16 18:10:13,411 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:10:13,510 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:10:13,517 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:10:13,686 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:10:13] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:11:33,452 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:11:33] "GET /toranuyot-table?filename=2020-04-23_2020-04-25.csv HTTP/1.1" 200 -
+2020-04-16 18:12:16,208 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:12:16,225 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET / HTTP/1.1" 200 -
+2020-04-16 18:12:16,265 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:12:16,270 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:12:16,270 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:12:16,272 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:12:16,277 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:12:16,279 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:12:16,281 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:12:16,283 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:12:16,409 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:16,420 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:16,421 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:16,424 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:16,424 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:12:16,425 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:12:16,428 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:16,432 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:12:16,440 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:12:16,441 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:12:16,441 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:12:16,441 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:12:16,458 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:12:16,491 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:12:16,734 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:16] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:12:38,487 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:12:38,488 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET / HTTP/1.1" 200 -
+2020-04-16 18:12:38,539 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:12:38,542 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:12:38,544 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:12:38,548 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:12:38,550 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:12:38,552 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:12:38,556 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:12:38,556 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:12:38,680 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:38,691 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:12:38,691 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:38,691 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:38,691 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:38,693 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:12:38,693 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:38,708 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:12:38,712 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:12:38,714 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-16 18:12:38,715 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:12:38,715 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:12:38,718 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:12:38,755 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:12:38,909 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:38] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:12:39,045 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:12:39,046 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET / HTTP/1.1" 200 -
+2020-04-16 18:12:39,047 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:12:39,093 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:12:39,094 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:12:39,094 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:12:39,094 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:12:39,095 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:12:39,095 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:12:39,103 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:12:39,103 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:12:39,220 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:39,231 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:39,231 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:39,231 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:12:39,234 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:39,235 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:12:39,235 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:12:39,244 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:12:39,246 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:12:39,248 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:12:39,250 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:12:39,251 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:12:39,267 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:12:39,296 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:12:39,509 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:12:39] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:16:01,517 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:16:01,519 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET / HTTP/1.1" 200 -
+2020-04-16 18:16:01,570 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:16:01,577 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:16:01,579 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:16:01,580 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:16:01,581 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:16:01,582 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:16:01,590 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:16:01,591 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:16:01,717 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:16:01,723 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:16:01,723 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:16:01,724 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:16:01,732 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:16:01,732 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:16:01,738 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:16:01,742 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:16:01,742 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:16:01,745 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:16:01,745 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:16:01,857 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:16:01,863 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:16:01,982 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:01] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:16:02,158 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:02] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:16:15,034 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:16:15,050 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET / HTTP/1.1" 200 -
+2020-04-16 18:16:15,103 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:16:15,107 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:16:15,109 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:16:15,111 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:16:15,112 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:16:15,113 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:16:15,116 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:16:15,123 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:16:15,253 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:16:15,258 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:16:15,261 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:16:15,264 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:16:15,272 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:16:15,272 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:16:15,274 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:16:15,276 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:16:15,277 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:16:15,278 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:16:15,284 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:16:15,361 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:16:15,365 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:16:15,430 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:16:15,681 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:16:15] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:17:53,635 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:17:53,652 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET / HTTP/1.1" 200 -
+2020-04-16 18:17:53,710 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:17:53,714 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:17:53,718 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:17:53,722 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:17:53,725 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:17:53,725 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:17:53,729 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:17:53,732 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:17:53,850 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:17:53,858 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:17:53,861 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:17:53,861 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:17:53,866 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:17:53,868 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:17:53,871 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:17:53,877 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:17:53,878 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:17:53,882 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:17:53,887 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:17:53,887 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:17:53,903 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:53] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:17:54,032 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:54] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:17:54,217 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:17:54] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:18:06,637 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:18:06,639 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET / HTTP/1.1" 200 -
+2020-04-16 18:18:06,686 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:18:06,687 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:18:06,690 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:18:06,695 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:18:06,696 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:18:06,699 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:18:06,701 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:18:06,702 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:18:06,823 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:06,834 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:06,836 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:06,836 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:06,836 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:18:06,837 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:18:06,838 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:06,844 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:18:06,851 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:18:06,852 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:18:06,852 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:18:06,853 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:18:06,871 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:18:06,900 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:06] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:18:07,130 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:07] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:18:12,939 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:18:12,940 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:12] "GET / HTTP/1.1" 200 -
+2020-04-16 18:18:12,979 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:12] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:18:12,987 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:12] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:18:12,991 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:12] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:18:12,994 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:12] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:18:12,995 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:18:12,998 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:12] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:18:12,999 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:12] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:18:13,004 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:18:13,108 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:13,110 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:13,113 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:13,116 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:18:13,117 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:13,121 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:18:13,121 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:13,126 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:18:13,130 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:18:13,132 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:18:13,134 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:18:13,195 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:18:13,295 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:18:13,309 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:18:13,477 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:13] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:18:28,898 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:18:28,899 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:28] "GET / HTTP/1.1" 200 -
+2020-04-16 18:18:28,949 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:28] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:18:28,951 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:28] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:18:28,955 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:28] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:18:28,963 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:28] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:18:28,964 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:28] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:18:28,964 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:28] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:18:28,965 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:18:28,967 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:28] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:18:29,077 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:29,084 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:29,088 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:29,091 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:29,092 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:18:29,095 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:18:29,099 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:29,100 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:18:29,109 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:18:29,113 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:18:29,114 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:18:29,114 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:18:29,128 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:18:29,156 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:18:29,384 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:29] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:18:53,309 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:18:53,324 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET / HTTP/1.1" 200 -
+2020-04-16 18:18:53,365 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:18:53,368 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:18:53,373 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:18:53,373 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:18:53,379 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:18:53,382 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:18:53,385 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:18:53,386 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:18:53,501 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:53,515 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:18:53,515 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:53,516 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:18:53,517 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:53,517 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:53,517 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:53,530 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:18:53,530 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:18:53,531 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:18:53,531 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:18:53,631 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:18:53,744 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:18:53,760 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:18:53,914 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:53] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:18:55,544 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:18:55,545 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET / HTTP/1.1" 200 -
+2020-04-16 18:18:55,590 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:18:55,595 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:18:55,596 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:18:55,600 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:18:55,600 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:18:55,602 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:18:55,603 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:18:55,609 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:18:55,726 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:55,731 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:55,732 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:55,741 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:18:55,745 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:18:55,747 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:55,750 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:18:55,751 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:18:55,753 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:18:55,755 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:18:55,759 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:18:55,761 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:18:55,779 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:18:55,804 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:55] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:18:56,029 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:18:56] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:19:01,873 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:19:01,874 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:01] "GET / HTTP/1.1" 200 -
+2020-04-16 18:19:01,953 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:01] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:19:01,954 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:01] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:19:01,956 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:01] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:19:01,957 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:01] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:19:01,958 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:01] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:19:01,959 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:01] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:19:01,967 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:01] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:19:01,969 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:01] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:19:02,073 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:19:02,079 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:19:02,082 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:19:02,083 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:19:02,085 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:19:02,088 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:19:02,090 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:19:02,091 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:19:02,100 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:19:02,101 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:19:02,101 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:19:02,158 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:19:02,259 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:19:02,274 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:19:02,437 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:02] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:19:10,321 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:10] "GET /toranuyot-table?filename=2022-01-28_2022-01-29.csv HTTP/1.1" 200 -
+2020-04-16 18:19:24,001 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:19:24,004 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET / HTTP/1.1" 200 -
+2020-04-16 18:19:24,053 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-16 18:19:24,054 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:19:24,057 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-16 18:19:24,059 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-16 18:19:24,059 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-16 18:19:24,060 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-16 18:19:24,069 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-16 18:19:24,069 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:19:24,186 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:19:24,191 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-16 18:19:24,196 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-16 18:19:24,197 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-16 18:19:24,200 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-16 18:19:24,205 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-16 18:19:24,209 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-16 18:19:24,211 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-16 18:19:24,214 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-16 18:19:24,217 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:19:24,223 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-16 18:19:24,223 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-16 18:19:24,241 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:19:24,276 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:19:24,540 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:24] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:19:56,675 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:19:56,678 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:56] "GET / HTTP/1.1" 200 -
+2020-04-16 18:19:57,073 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:57] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:19:57,089 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:19:57] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:20:02,892 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:20:02] "GET /toranuyot-table?filename=2020-07-23_2020-07-25.csv HTTP/1.1" 200 -
+2020-04-16 18:21:41,592 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-16 18:21:41,744 - INFO - werkzeug -  * Restarting with stat
+2020-04-16 18:21:43,389 - WARNING - werkzeug -  * Debugger is active!
+2020-04-16 18:21:43,405 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-16 18:21:51,200 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:51] "GET / HTTP/1.1" 200 -
+2020-04-16 18:21:51,252 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:51] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-16 18:21:51,253 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:51] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-16 18:21:51,254 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:51] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-16 18:21:51,257 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:51] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-16 18:21:51,387 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:51] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-16 18:21:51,395 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:51] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-16 18:21:51,576 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:51] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-16 18:21:52,977 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:52] "POST /login HTTP/1.1" 200 -
+2020-04-16 18:21:54,471 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:54] "POST /login HTTP/1.1" 200 -
+2020-04-16 18:21:54,496 - INFO - Website - Function name: dashboard | message: got users
+2020-04-16 18:21:54,513 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:54] "GET / HTTP/1.1" 200 -
+2020-04-16 18:21:54,753 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:54] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-16 18:21:54,763 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:21:54] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-16 18:22:06,589 - INFO - werkzeug - 127.0.0.1 - - [16/Apr/2020 18:22:06] "GET /toranuyot-table?filename=2022-01-28_2022-01-29.csv HTTP/1.1" 200 -
