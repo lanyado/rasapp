@@ -28,7 +28,7 @@ function getExemptions (){
 }
 
 function getExemptionTr (exemptionsTable, name, date) {
-    
+    // add the exemption name selector
     let tr = '<td><select class="form-control">';
 
     // add the options to the exemption select
@@ -50,7 +50,7 @@ function getExemptionTr (exemptionsTable, name, date) {
         else
             return ''
     }
-
+    // add the date picker and the remove button
     tr += `</select></td><td><input type="date" value = "${date}" class="form-control" /></td>'
            <td><button type="button" class="btnAdd btn btn-outline-danger remove">הסר</button></td>`;
     return tr;
@@ -64,6 +64,22 @@ function addExemptions (exemptionsTable, name, date){
         $(exemptionsTable).append(tr);
 }
 
+function btnAdd (){
+    // add a new exemption with a defult date on ADD BUTTON click
+    const TODAY = new Date();
+    const DEFAULT_DATE = TODAY.setFullYear(TODAY.getFullYear() + 10); // today + 1 month
+    
+    const exemptionsTable = $(this).closest("#exemptions-table")[0]
+    $(exemptionsTable).find('option').not('select :selected').remove();
+    addExemptions(exemptionsTable,"",formatDate(DEFAULT_DATE));
+}
+$("body").on('click', '.btnAdd', btnAdd);
+
+function removeExemption (){  // remove the last exemption on REMOVE BUTTON click
+    $(this).closest("tr").remove();
+}
+$("body").on('click', '.remove', removeExemption);
+
 (function (){
     const element1 = $('#exemptions-table').clone();
     $("#exemptions-table-warpper1" ).html(element1);
@@ -71,18 +87,3 @@ function addExemptions (exemptionsTable, name, date){
     $('#to-remove').remove();
     $("#exemptions-table-warpper2" ).html(element2);
 })();
-
-function btnAdd (){
-    // add a new exemption with a defult date on ADD BUTTON click
-    const TODAY = new Date();
-    const DEFAULT_DATE = TODAY.setFullYear(TODAY.getFullYear() + 10); // today + 1 month
-    const exemptionsTable = $(this).closest("#exemptions-table")[0]
-    addExemptions(exemptionsTable,"",formatDate(DEFAULT_DATE));
-}
-
-$("body").on('click', '.btnAdd', btnAdd);
-
-function removeExemption (){  // remove the last exemption on REMOVE BUTTON click
-    $(this).closest("tr").remove();
-}
-$("body").on('click', '.remove', removeExemption);
