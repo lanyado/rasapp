@@ -17447,3 +17447,136 @@
 2020-04-17 14:02:59,114 - INFO - XLSX - Function name: getToranim | message: created an excel file
 2020-04-17 14:02:59,114 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 14:02:59] "POST /getToranim HTTP/1.1" 200 -
 2020-04-17 14:03:00,602 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 14:03:00] "GET /toranuyot-table?filename=2020-06-11_2020-06-13.csv HTTP/1.1" 200 -
+2020-04-17 17:45:52,646 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-17 17:45:52,652 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 17:45:53,838 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 17:45:53,848 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 17:46:00,505 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:00] "GET / HTTP/1.1" 200 -
+2020-04-17 17:46:00,592 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:00] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-17 17:46:00,597 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:00] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-17 17:46:00,597 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:00] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-17 17:46:00,947 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:00] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-17 17:46:02,627 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:02] "POST /login HTTP/1.1" 200 -
+2020-04-17 17:46:02,666 - INFO - Website - Function name: dashboard | message: got users
+2020-04-17 17:46:02,681 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:02] "GET / HTTP/1.1" 200 -
+2020-04-17 17:46:02,717 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:02] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-17 17:46:02,717 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:02] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-17 17:46:02,788 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:02] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-17 17:46:02,790 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:02] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-17 17:46:02,791 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:02] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-17 17:46:02,792 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:02] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-17 17:46:03,238 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:03] "GET /static/img/overlays/01.png HTTP/1.1" 200 -
+2020-04-17 17:46:03,242 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:03] "GET /static/img/overlays/02.png HTTP/1.1" 200 -
+2020-04-17 17:46:03,245 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:03] "GET /static/img/overlays/04.png HTTP/1.1" 200 -
+2020-04-17 17:46:03,246 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:03] "GET /static/img/overlays/05.png HTTP/1.1" 200 -
+2020-04-17 17:46:03,247 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:03] "GET /static/img/overlays/03.png HTTP/1.1" 200 -
+2020-04-17 17:46:03,249 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:03] "GET /static/img/overlays/06.png HTTP/1.1" 200 -
+2020-04-17 17:46:03,251 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:03] "GET /static/img/overlays/07.png HTTP/1.1" 200 -
+2020-04-17 17:46:03,252 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:03] "GET /static/img/overlays/08.png HTTP/1.1" 200 -
+2020-04-17 17:46:03,254 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:03] "GET /static/img/overlays/09.png HTTP/1.1" 200 -
+2020-04-17 17:46:03,256 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:03] "GET /static/img/svg/arrow_left.svg HTTP/1.1" 200 -
+2020-04-17 17:46:03,256 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:03] "GET /static/img/svg/arrow_right.svg HTTP/1.1" 200 -
+2020-04-17 17:46:05,893 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:46:05] "GET /toranuyot-table?filename=2020-06-11_2020-06-13.csv HTTP/1.1" 200 -
+2020-04-17 17:47:55,064 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-04-17 17:47:55,176 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 17:47:56,192 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 17:47:56,199 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 17:48:16,782 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-04-17 17:48:16,869 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 17:48:18,011 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 17:48:18,017 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 17:48:40,611 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-04-17 17:48:40,690 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 17:48:41,717 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 17:48:41,722 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 17:51:54,201 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-04-17 17:51:54,303 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 17:51:55,386 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 17:51:55,392 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 17:52:06,735 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:52:06] "GET / HTTP/1.1" 200 -
+2020-04-17 17:52:08,844 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:52:08] "POST /login HTTP/1.1" 200 -
+2020-04-17 17:52:08,866 - INFO - Website - Function name: dashboard | message: got users
+2020-04-17 17:52:08,881 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:52:08] "GET / HTTP/1.1" 200 -
+2020-04-17 17:52:15,164 - INFO - XLSX - Function name: getToranim | message: created an excel file
+2020-04-17 17:52:15,165 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:52:15] "POST /getToranim HTTP/1.1" 200 -
+2020-04-17 17:52:16,288 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 17:52:16] "GET /toranuyot-table?filename=2020-06-04_2020-06-06.csv HTTP/1.1" 200 -
+2020-04-17 18:01:22,955 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-04-17 18:01:23,067 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 18:01:24,058 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 18:01:24,065 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 18:03:13,003 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-04-17 18:03:13,088 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 18:03:13,988 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 18:03:13,998 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 18:04:19,788 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-04-17 18:04:19,887 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 18:04:20,571 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 18:04:20,576 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 18:05:33,363 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-04-17 18:05:33,447 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 18:05:34,498 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 18:05:34,506 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 18:06:16,382 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-17 18:06:16,384 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 18:06:16,975 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 18:06:16,986 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 18:06:19,547 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:06:19] "GET / HTTP/1.1" 200 -
+2020-04-17 18:06:19,592 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:06:19] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-17 18:06:19,592 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:06:19] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-17 18:06:19,592 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:06:19] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-17 18:06:19,594 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:06:19] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-17 18:06:19,715 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:06:19] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-17 18:06:19,755 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:06:19] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-17 18:06:19,933 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:06:19] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-17 18:06:21,506 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:06:21] "POST /login HTTP/1.1" 200 -
+2020-04-17 18:06:21,545 - INFO - Website - Function name: dashboard | message: got users
+2020-04-17 18:06:21,561 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:06:21] "GET / HTTP/1.1" 200 -
+2020-04-17 18:06:27,770 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:06:27] "POST /getToranim HTTP/1.1" 500 -
+2020-04-17 18:07:22,867 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-04-17 18:07:22,965 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 18:07:24,004 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 18:07:24,010 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 18:07:46,525 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-17 18:07:46,529 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 18:07:47,746 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 18:07:47,755 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 18:07:49,310 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:07:49] "GET / HTTP/1.1" 200 -
+2020-04-17 18:07:49,341 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:07:49] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-17 18:07:49,347 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:07:49] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-17 18:07:49,347 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:07:49] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-17 18:07:49,347 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:07:49] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-17 18:07:49,474 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:07:49] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-17 18:07:49,521 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:07:49] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-17 18:07:49,643 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:07:49] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-17 18:07:50,687 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:07:50] "POST /login HTTP/1.1" 200 -
+2020-04-17 18:07:50,711 - INFO - Website - Function name: dashboard | message: got users
+2020-04-17 18:07:50,727 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:07:50] "GET / HTTP/1.1" 200 -
+2020-04-17 18:07:54,712 - INFO - XLSX - Function name: getToranim | message: created an excel file
+2020-04-17 18:07:54,712 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:07:54] "POST /getToranim HTTP/1.1" 200 -
+2020-04-17 18:07:55,623 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:07:55] "GET /toranuyot-table?filename=2020-06-25_2020-06-27.csv HTTP/1.1" 200 -
+2020-04-17 18:09:09,117 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-04-17 18:09:09,204 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 18:09:10,232 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 18:09:10,239 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 18:10:10,957 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-04-17 18:10:11,054 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 18:10:12,107 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 18:10:12,117 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 18:12:18,858 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/get_toranim.py', reloading
+2020-04-17 18:12:18,975 - INFO - werkzeug -  * Restarting with stat
+2020-04-17 18:12:20,012 - WARNING - werkzeug -  * Debugger is active!
+2020-04-17 18:12:20,022 - INFO - werkzeug -  * Debugger PIN: 281-623-865
+2020-04-17 18:16:51,766 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:16:51] "GET / HTTP/1.1" 200 -
+2020-04-17 18:16:51,887 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:16:51] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-17 18:16:51,892 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:16:51] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-17 18:16:51,900 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:16:51] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-17 18:16:51,904 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:16:51] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-17 18:16:52,115 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:16:52] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-17 18:16:52,182 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:16:52] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-17 18:16:52,361 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:16:52] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-17 18:16:54,167 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:16:54] "POST /login HTTP/1.1" 200 -
+2020-04-17 18:16:54,203 - INFO - Website - Function name: dashboard | message: got users
+2020-04-17 18:16:54,219 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:16:54] "GET / HTTP/1.1" 200 -
+2020-04-17 18:17:03,103 - INFO - XLSX - Function name: getToranim | message: created an excel file
+2020-04-17 18:17:03,103 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:17:03] "POST /getToranim HTTP/1.1" 200 -
+2020-04-17 18:17:04,364 - INFO - werkzeug - 127.0.0.1 - - [17/Apr/2020 18:17:04] "GET /toranuyot-table?filename=2020-07-12_2020-07-13.csv HTTP/1.1" 200 -
