@@ -6,17 +6,13 @@ from lib.log import get_log, log_message
 import os
 import json
 from datetime import datetime
+import ast
 
 import pandas as pd
 #import modin.pandas as pd
 
 xlsx_log = get_log('XLSX')
 users_df = cnf.get_users_df()
-
-def writes_to_json(data_written, edited_file):
-    """Takes data to write and puts it in the file"""
-    with open(edited_file, "w", encoding='utf-8') as json_file:
-        json.dump(data_written, json_file, ensure_ascii=False, indent=1)
 
 def update_last_toranut_date(new_date, user_id, is_weekday):
     user_mask = users_df['id'] == user_id
@@ -27,11 +23,15 @@ def update_last_toranut_date(new_date, user_id, is_weekday):
 
 def update_user_toranuyot(user_id, date, toranut_name):
     user_mask = users_df['id'] == user_id
-    toranuyot_history = users_df[user_mask]['toranuyot_history'].values[0]
+    try:
+        toranuyot_history = ast.literal_eval(users_df[user_mask]['toranuyot_history'].values[0])
+    except:
+        toranuyot_history = users_df[user_mask]['toranuyot_history'].values[0]
     
-    toranuyot_history[date] = toranut_name
-    breakpoint()
-    users_df.loc[user_mask, ['toranuyot_history']] = json.dumps(str(toranuyot_history))    
+    finally:    
+        toranuyot_history[date] = toranut_name
+
+    users_df.loc[user_mask, ['toranuyot_history']] = [toranuyot_history]
     
 def was_toran_yesterday(date, user) -> bool:
     weekday_delta = datetime.strptime(date,'%Y-%m-%d')\
@@ -99,7 +99,7 @@ def set_weekday_toranim(final_csv, index, row):
         final_csv.loc[index: index, [toranut_name]] = text_to_fill
         update_last_toranut_date(new_date=row['date'],\
                             user_id=str(list(user_id), is_weekday=True))
-        #update_user_toranuyot(user_id, row['date'], toranut_name)
+        update_user_toranuyot(user_id, row['date'], toranut_name)
 
 def set_weekend_toranim(final_csv, index, row):
     for toranut_name in cnf.WEEKEND_TORANUYOT.keys():
@@ -128,7 +128,7 @@ def set_weekend_toranim(final_csv, index, row):
         text_to_fill = f"{chosen_user['name'].values[0]} | {user_id} | {chosen_user['unit'].values[0]}"
         final_csv.loc[index: index, [toranut_name]] = text_to_fill
         update_last_toranut_date(row['date'], user_id, False)
-        #update_user_toranuyot(user_id, row['date'], toranut_name)
+        update_user_toranuyot(user_id, row['date'], toranut_name)
 
 def add_toranim(final_csv):
     for index, row in final_csv.iterrows():
