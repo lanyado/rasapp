@@ -78,10 +78,11 @@ def get_oldest_worker(available_users_df, is_weekday):
         last_date = 'last_weekday'
     else:
         last_date = 'last_weekend'
-
+    #breakpoint()
     mask = available_users_df[last_date] == available_users_df[last_date].min()
-    if len(available_users_df[mask])>0:
-        chosen_user = available_users_df[mask].sample(n=1)
+    available_workers = available_users_df[mask]
+    if len(available_workers)>0:
+        chosen_user = available_workers.sample(n=1)
         return chosen_user
     else:
         raise Exception('No available workers')

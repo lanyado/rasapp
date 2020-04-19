@@ -1,4 +1,4 @@
-(function (){
+(() => {
   $('#dtBasicExample, #dtBasicExample-1, #dt-more-columns, #dt-less-columns').mdbEditor();
   $('.dataTables_length').addClass('bs-select');
   window.domain = 'http://127.0.0.1:5000/'
@@ -88,20 +88,20 @@ function editUser (table, row){
         cache: false,
         contentType: false
     })
-        .done((response) => {
-            if (response.success){
-              swal(response.message, "מעולה", "success").then(() => {
-                    // refresh the page to see the changes
-                    window.location = window.location;
-              });
-            }
-            else
-              swal(response.message, "", "error");
-        })
-        .fail((jqXhr) => {
-            console.log(jqXhr.responseJSON)
-            swal('','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
-      });
+    .done((response) => {
+        if (response.success){
+          swal(response.message, "מעולה", "success").then(() => {
+                // refresh the page to see the changes
+                window.location = window.location;
+          });
+        }
+        else
+          swal(response.message, "", "error");
+    })
+    .fail((jqXhr) => {
+        console.log(jqXhr.responseJSON)
+        swal('','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
+    });
 }
 
 function removeUser (table, row){
@@ -117,59 +117,65 @@ function removeUser (table, row){
         cache: false,
         contentType: false,
     })
-        .done((response) => {
-          if (response.success){
-            swal(response.message, "מעולה", "success");
-              // remove the user from the users html table
-              table.row($(row)).remove().draw();
-          }
-          else
-            swal(response.message, "", "error");
-        })
-        .fail((jqXhr) => {
-            console.log(jqXhr.responseJSON)
-            swal('','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
-      });
+    .done((response) => {
+      if (response.success){
+        swal(response.message, "מעולה", "success");
+          // remove the user from the users html table
+          table.row($(row)).remove().draw();
+      }
+      else
+        swal(response.message, "", "error");
+    })
+    .fail((jqXhr) => {
+        console.log(jqXhr.responseJSON)
+        swal('','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
+    });
 }
 
 function getWorkers (){
-  const formData = new FormData();
-  formData.append('dates', JSON.stringify(window.dates))
+    // detect if the user didn't select dates
+    if ($('.calendar_content .selected').length===0){
+        swal("לא נבחרו תאריכים", "", "error");
+        return;
+    }
+      
+    const formData = new FormData();
+    formData.append('dates', JSON.stringify(window.dates))
 
-   $.ajax({
-       url: '/getWorkers',
-       type: 'POST',
-       dataType: 'json',
-       data: formData,
-       processData: false,
-       cache: false,
-       contentType: false,
-   })
-       .done((response) => {
-         if (response.success){
-            swal(response.message, "מעולה", "success")
-            .then(() => {
-                // open it in a new tab
-                showExcel(response.filename);
-            })
-            .then(() => {
-                // refresh the dashboard
-                window.location = window.location;
-            });
-         }
-         else
-           swal(response.message, "", "error");
-       })
-       .fail((jqXhr) => {
-           console.log(jqXhr.responseJSON)
-           swal('','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
-      });
+    $.ajax({
+        url: '/getWorkers',
+        type: 'POST',
+        dataType: 'json',
+        data: formData,
+        processData: false,
+        cache: false,
+        contentType: false,
+    })
+    .done((response) => {
+      if (response.success){
+        swal(response.message, "מעולה", "success")
+        .then(() => {
+            // open it in a new tab
+            showExcel(response.filename);
+        })
+        .then(() => {
+            // refresh the dashboard
+            window.location = window.location;
+        });
+      }
+      else
+        swal(response.message, "", "error");
+    })
+    .fail((jqXhr) => {
+        console.log(jqXhr.responseJSON)
+        swal('','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
+    });
 }
-$('#get-workers').on('click',function(){
+$('#get-workers').on('click',() => {
   getWorkers();
 })
 
-function showExcel(filename){
+function showExcel (filename){
     let promise = new Promise((resolve, reject) => {
         const url = `${window.domain}duties-table?filename=${filename}`
         window.open(url, '_blank');
@@ -178,9 +184,9 @@ function showExcel(filename){
     return promise;
 }
 
-$('#view-excel').on('click',function(){
-  let filename = $('#select-excel').val();
-  filename = filename.replace(' הכי חדש','');
-  showExcel(filename);
+$('#view-excel').on('click', () => {
+    let filename = $('#select-excel').val();
+    filename = filename.replace(' הכי חדש','');
+    showExcel(filename);
 })
 

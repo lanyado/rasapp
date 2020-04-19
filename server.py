@@ -90,7 +90,9 @@ def dashboard ():
 def addUser():
     new_user = request.form.to_dict()
     new_user['exemptions'] = ast.literal_eval(new_user['exemptions'])
-
+    new_user['weekday_history'] = ast.literal_eval(new_user['weekday_history'])
+    new_user['weekend_history'] = ast.literal_eval(new_user['weekend_history'])
+    
     users_df = cnf.get_users_df()
 
     if new_user['id'] not in users_df['id'].unique(): # if its a new id
@@ -218,7 +220,7 @@ def getWorkers ():
     except Exception as e:
         error_message = getattr(e, 'message', str(e))
         print(error_message)
-        if error_message == 'no available workers':
+        if error_message == 'No available workers':
             resp = {'success': False,\
                     'message': 'אין מספיק תורנים'}
             xlsx_log.error(log_message(str(e)))

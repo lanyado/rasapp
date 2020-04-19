@@ -15,10 +15,10 @@ function formatDate (date) {
 function getExemptions (){
     $.post( "/getExemptions", {
         id: $($('#editInputs').find('#inputId2')).val()
-      },function(response){
+      },(response) => {
         $(".exemptions-table-body").html("") // clear the exemptions table
             const exemptions = response.exemptions;
-            Object.keys(exemptions).forEach(function (key) {
+            Object.keys(exemptions).forEach((key) => {
                 const name = key;
                 const date = exemptions[name];
                 const exemptionsTable = $(".exemptions-table-body")[1]
@@ -27,7 +27,7 @@ function getExemptions (){
     });
 }
 
-function getExemptionTr (exemptionsTable, name, date) {
+ function getExemptionTr (exemptionsTable, name, date) {
     // add the exemption name selector
     let tr = '<td><select class="form-control">';
 
@@ -40,7 +40,7 @@ function getExemptionTr (exemptionsTable, name, date) {
         const otherExemptions = $(exemptionsTable).find("select :selected")
         let ALREADY_EXEMPTIONS = []
         if (otherExemptions.length>0){
-            ALREADY_EXEMPTIONS =  otherExemptions.map(function(i, el) {
+            ALREADY_EXEMPTIONS =  otherExemptions.map((i, el) => {
                 return $(el).val();
             }).get();
         }
@@ -80,7 +80,7 @@ function removeExemption (){  // remove the last exemption on REMOVE BUTTON clic
 }
 $("body").on('click', '.remove', removeExemption);
 
-(function (){
+(() => {
     const element1 = $('#exemptions-table').clone();
     $("#exemptions-table-warpper1" ).html(element1);
     const element2 = $('#exemptions-table').clone();
