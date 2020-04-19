@@ -2,20 +2,20 @@ import pandas as pd
 import os
 
 
-WEEKDAY_TORANUYOT = {
+WEEKDAY_DUTIES = {
     'kitchen1': "פטור מטבחים אמצש",
     'kitchen2': "פטור מטבחים אמצש",
     'shmirot1': "פטור שמירות אמצש",
     'shmirot2': "פטור שמירות אמצש"
 }
 
-WEEKEND_TORANUYOT = {
+WEEKEND_DUTIES = {
     'kitchen1': "פטור מטבחים סופש",
     'shmirot1': "פטור שמירות סופש"
 }
 
-MIN_DAYS_BETWEEN_WEEKDAY_TORANUTS = 2
-MIN_DAYS_BETWEEN_WEEKEND_TORANUTS = 4
+MIN_DAYS_BETWEEN_WEEKDAY_DUTIES = 2
+MIN_DAYS_BETWEEN_WEEKEND_DUTIES = 4
 
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 USERS_JSON_FILE = os.path.join(CURRENT_DIR, 'db/users.json')

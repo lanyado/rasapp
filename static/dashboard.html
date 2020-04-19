@@ -283,7 +283,7 @@
       </tfoot>
     </table>
   </div>
-  <img id="get-toranim" class="final-icon" src="{{ url_for('static', filename='img/excel.png') }}">
+  <img id="get-workers" class="final-icon" src="{{ url_for('static', filename='img/excel.png') }}">
   
   <hr>
 
@@ -292,7 +292,7 @@
 
   <div class="select">
     <select id="select-excel">
-      {% for file_name in toranuyot_tables %}
+      {% for file_name in duty_tables %}
           {% if file_name.endswith(' הכי חדש') %}
               <option selected>{{file_name}}</option>
           {% else %}

@@ -15,6 +15,9 @@ details > summary:first-of-type {
 #logo {
     width: 30%;
 }
+.md-form label{
+    right: 0;
+}
 .glyphicon {
     position: relative;
     top: 1px;

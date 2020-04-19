@@ -10,9 +10,9 @@ import glob
 from datetime import datetime
 
 from lib.dates import get_dates, get_day_of_week, get_date_type
-from get_toranim import add_toranim
+from get_workers import add_workers
 
-from flask import Flask, render_template, request, jsonify, send_from_directory, url_for
+from flask import Flask, render_template, request, jsonify, send_from_directory, url_for, get_template_attribute
 import pandas as pd
 #import modin.pandas as pd
 
@@ -27,7 +27,7 @@ xlsx_log = get_log('XLSX')
 
 loged_in = False
 
-def checkUser(func):
+def checkUser (func):
     """Checks whether user is logged in or send him to the login page"""
     @wraps(func)
     def wrapper(*args, **kwargs):
@@ -36,7 +36,7 @@ def checkUser(func):
         return func(*args, **kwargs)
     return wrapper
 
-def remove_exemptions(exemptions):
+def remove_exemptions (exemptions):
     new_exemptions = {}
     if len(exemptions)>0:
         for name, date in exemptions.items():
@@ -44,12 +44,12 @@ def remove_exemptions(exemptions):
                 new_exemptions[name] = date
     return new_exemptions
 
-def remove_expired_exemptions():
+def remove_expired_exemptions ():
     users_df = cnf.get_users_df()
     users_df['exemptions'] = users_df['exemptions'].apply(remove_exemptions)
     cnf.update_users_file(users_df)
 
-def get_toranuyot_table_names():
+def get_duty_table_names ():
     filenames = glob.glob('results/*') # * means all if need specific format then *.csv
     filenames.sort(key=os.path.getctime)
     filenames[-1] = f'{filenames[-1]} הכי חדש'
@@ -57,8 +57,7 @@ def get_toranuyot_table_names():
     filenames = [file_name.split('/')[1] for file_name in filenames]
     return filenames
 
-# =========================== login finction ============================
-
+# =========================== login function ============================
 @app.route('/login', methods = ['POST'])
 def login():
     password = request.form.to_dict()['password']
@@ -66,7 +65,7 @@ def login():
         global loged_in
         loged_in = True
         resp = {'auth': True,\
-                'redirect_url':url_for('dashboard')}
+                'redirect_url': url_for('dashboard')}
     else:
         resp = {'auth':False}
 
@@ -75,14 +74,15 @@ def login():
 # =========================== landing page rander ============================
 @app.route("/")  # Opens index.html when the user searches for http://127.0.0.1:5000/
 @checkUser
-def dashboard():
+def dashboard ():
+    # preperations before rendering the page
     remove_expired_exemptions()
+
     users = json.load(codecs.open(cnf.USERS_JSON_FILE, 'r', 'utf-8-sig'))
+    duty_tables = get_duty_table_names()
 
-    toranuyot_tables = get_toranuyot_table_names()
-
-    site_log.info(log_message('got users'))
-    return render_template('dashboard.html', users=users, toranuyot_tables=toranuyot_tables)
+    site_log.info(log_message('randering dashboard'))
+    return render_template('dashboard.html', users=users, duty_tables=duty_tables)
 
 # =========================== Add User ================================
 @app.route('/addUser', methods=['POST'])
@@ -119,7 +119,7 @@ def addUser():
 # =========================== Remove User =============================
 @app.route('/removeUser', methods=['POST']) # from mdb-editor2.js
 @checkUser
-def removeUser():
+def removeUser ():
     user_id = request.form.to_dict()['id']
     try:
         users_df = cnf.get_users_df()
@@ -143,7 +143,7 @@ def removeUser():
 # =========================== Edit user ===============================
 @app.route('/editUser', methods=['POST']) # from mdb-editor2.js
 @checkUser
-def editUser():
+def editUser ():
     form_data = request.form.to_dict()
     user = ast.literal_eval(form_data['user'])
     exemptions = ast.literal_eval(form_data['exemptions'])
@@ -188,7 +188,7 @@ def editUser():
 # =========================== get Exemptions =========================
 @app.route('/getExemptions', methods=['POST'])
 @checkUser
-def getExemptions():
+def getExemptions ():
     id = request.form['id']
     users_df = cnf.get_users_df()
     user_mask = users_df['id']==id
@@ -203,27 +203,27 @@ def getExemptions():
     return jsonify(resp)
 
 # =========================== Give final excel ========================
-@app.route('/getToranim', methods=['POST'])
+@app.route('/getWorkers', methods=['POST'])
 @checkUser
-def getToranim():
+def getWorkers ():
     form_data = request.form.to_dict()
     dates = get_dates(ast.literal_eval(form_data['dates']))
 
-    toranuyot_df = pd.DataFrame({'date': map(str, dates),\
+    duties_df = pd.DataFrame({'date': map(str, dates),\
                                  'day_of_week': map(str, get_day_of_week(dates)),\
                                  'date_type': map(str, get_date_type(dates)),\
                                  'kitchen1': '', 'kitchen2': '', 'shmirot1': '', 'shmirot2': ''})
     try:
-        toranuyot_df = add_toranim(toranuyot_df) # add the toranim
+        duties_df = add_workers(duties_df) # add the workers
     except Exception as e:
         error_message = getattr(e, 'message', str(e))
         print(error_message)
-        if error_message == 'no available toranim':
+        if error_message == 'no available workers':
             resp = {'success': False,\
                     'message': 'אין מספיק תורנים'}
             xlsx_log.error(log_message(str(e)))
     else:
-        toranuyot_df.rename(inplace = True,\
+        duties_df.rename(inplace = True,\
                             columns={'date': 'תאריך',\
                                      'day_of_week': 'יום בשבוע',\
                                      'date_type': 'סוג תאריך',\
@@ -231,9 +231,9 @@ def getToranim():
 
         file_name = f'{dates[0]}_{dates[-1]}.csv'
 
-        toranuyot_df.to_csv(f'results/{file_name}', index=False, header=True, encoding='utf-8-sig')
+        duties_df.to_csv(f'results/{file_name}', index=False, header=True, encoding='utf-8-sig')
         xlsx_log.info(log_message('created an excel file'))
-        
+
         resp = {'success': True,\
                 'message': 'חלוקת התורנים התבצעה בהצלחה',\
                 'filename':file_name}
@@ -241,14 +241,13 @@ def getToranim():
     finally:
         return jsonify(resp)
 
-# =========================== toranuyot table ============================
-
-@app.route("/toranuyot-table", methods=['GET'])
+# =========================== duties table ============================
+@app.route("/duties-table", methods=['GET'])
 @checkUser
-def last_toranuyot_table():
+def open_duties_table ():
     filename = request.args.get('filename', None)
     df = pd.read_csv('results/'+filename)
-    return render_template('toranuyot-table.html', table = df.to_html(), min_date = min(df['תאריך']), max_date = max(df['תאריך']))
+    return render_template('duties-table.html', table = df.to_html(), min_date = min(df['תאריך']), max_date = max(df['תאריך']))
 
 if __name__ == "__main__":
     app.run(debug=True)

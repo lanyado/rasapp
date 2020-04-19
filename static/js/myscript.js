@@ -7,7 +7,7 @@
 function addUser (table, row){
     for(let i=0; i<3; i++){ // chack that all all the must input are full
        if(row[i] === "" || row[i] === null) {
-            swal("שגיאה", "יש למלא את כל השדות", "error");
+            swal("יש למלא את כל השדות", "","error");
             return 1;
        }
     }
@@ -27,6 +27,8 @@ function addUser (table, row){
     formData.append('unit', row[2])
     formData.append('last_weekday', '2000-01-01')
     formData.append('last_weekend', '2000-01-01')
+    formData.append('weekday_history', JSON.stringify({}))
+    formData.append('weekend_history', JSON.stringify({}))
     formData.append('exemptions', JSON.stringify(exemptions))
 
     $.ajax({
@@ -40,17 +42,16 @@ function addUser (table, row){
     })
     .done((response) => {
         if (response.success){
-          table.row.add(row).draw(); // add the new user to the users html table
-          swal(response.message, "מעולה", "success").then(function() {
+          swal(response.message, "מעולה", "success").then(() => {
                   window.location = window.location;
-            });
+          });
         }
         else
-          swal(response.message, "שגיאה", "error");
+          swal(response.message, "", "error");
     })
     .fail((jqXhr) => {
         console.log(jqXhr.responseJSON)
-        swal('שגיאה','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
+        swal('','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
     });
 }
 
@@ -89,17 +90,17 @@ function editUser (table, row){
     })
         .done((response) => {
             if (response.success){
-              swal(response.message, "מעולה", "success").then(function() {
+              swal(response.message, "מעולה", "success").then(() => {
                     // refresh the page to see the changes
                     window.location = window.location;
               });
             }
             else
-              swal(response.message, "שגיאה", "error");
+              swal(response.message, "", "error");
         })
         .fail((jqXhr) => {
             console.log(jqXhr.responseJSON)
-            swal('שגיאה','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
+            swal('','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
       });
 }
 
@@ -119,24 +120,24 @@ function removeUser (table, row){
         .done((response) => {
           if (response.success){
             swal(response.message, "מעולה", "success");
-            // remove the user from the users html table
-            table.row($(row)).remove().draw();
+              // remove the user from the users html table
+              table.row($(row)).remove().draw();
           }
           else
-            swal(response.message, "שגיאה", "error");
+            swal(response.message, "", "error");
         })
         .fail((jqXhr) => {
             console.log(jqXhr.responseJSON)
-            swal('שגיאה','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
+            swal('','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
       });
 }
 
-function getToranim (){
+function getWorkers (){
   const formData = new FormData();
   formData.append('dates', JSON.stringify(window.dates))
 
    $.ajax({
-       url: '/getToranim',
+       url: '/getWorkers',
        type: 'POST',
        dataType: 'json',
        data: formData,
@@ -146,26 +147,35 @@ function getToranim (){
    })
        .done((response) => {
          if (response.success){
-          swal(response.message, "מעולה", "success").then(function() {
-              // open it in a new tab
-              showExcel(response.filename);
-           });
+            swal(response.message, "מעולה", "success")
+            .then(() => {
+                // open it in a new tab
+                showExcel(response.filename);
+            })
+            .then(() => {
+                // refresh the dashboard
+                window.location = window.location;
+            });
          }
          else
-           swal(response.message, "שגיאה", "error");
+           swal(response.message, "", "error");
        })
        .fail((jqXhr) => {
            console.log(jqXhr.responseJSON)
-           swal('שגיאה','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
+           swal('','נראה שיש בעיית תקשורת, כדאי לנסות שוב בעוד זמן קצר','error');
       });
 }
-$('#get-toranim').on('click',function(){
-  getToranim();
+$('#get-workers').on('click',function(){
+  getWorkers();
 })
 
 function showExcel(filename){
-  const url = `${window.domain}toranuyot-table?filename=${filename}`
-  window.open(url, '_blank');
+    let promise = new Promise((resolve, reject) => {
+        const url = `${window.domain}duties-table?filename=${filename}`
+        window.open(url, '_blank');
+        resolve("open the duties table")
+    });
+    return promise;
 }
 
 $('#view-excel').on('click',function(){
