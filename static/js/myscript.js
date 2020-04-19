@@ -25,10 +25,6 @@ function addUser (table, row){
     formData.append('id', row[0])
     formData.append('name', row[1])
     formData.append('unit', row[2])
-    formData.append('last_weekday', '2000-01-01')
-    formData.append('last_weekend', '2000-01-01')
-    formData.append('weekday_history', JSON.stringify({}))
-    formData.append('weekend_history', JSON.stringify({}))
     formData.append('exemptions', JSON.stringify(exemptions))
 
     $.ajax({

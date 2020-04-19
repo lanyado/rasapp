@@ -14,7 +14,7 @@ function formatDate (date) {
 
 function getExemptions (){
     $.post( "/getExemptions", {
-        id: $($('#editInputs').find('#inputId2')).val()
+        id: $($('.tr-color-selected').find('td[name=id]')[0]).text()
       },(response) => {
         $(".exemptions-table-body").html("") // clear the exemptions table
             const exemptions = response.exemptions;

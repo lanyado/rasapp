@@ -10,6 +10,8 @@ import glob
 from datetime import datetime
 
 from lib.dates import get_dates, get_day_of_week, get_date_type
+from lib.helpers import remove_expired_exemptions, get_duty_table_names, new_user_hundle
+
 from get_workers import add_workers
 
 from flask import Flask, render_template, request, jsonify, send_from_directory, url_for, get_template_attribute
@@ -35,27 +37,6 @@ def checkUser (func):
             return render_template('login.html')
         return func(*args, **kwargs)
     return wrapper
-
-def remove_exemptions (exemptions):
-    new_exemptions = {}
-    if len(exemptions)>0:
-        for name, date in exemptions.items():
-            if datetime.strptime(date,'%Y-%m-%d') >= datetime.today():
-                new_exemptions[name] = date
-    return new_exemptions
-
-def remove_expired_exemptions ():
-    users_df = cnf.get_users_df()
-    users_df['exemptions'] = users_df['exemptions'].apply(remove_exemptions)
-    cnf.update_users_file(users_df)
-
-def get_duty_table_names ():
-    filenames = glob.glob('results/*') # * means all if need specific format then *.csv
-    filenames.sort(key=os.path.getctime)
-    filenames[-1] = f'{filenames[-1]} הכי חדש'
-
-    filenames = [file_name.split('/')[1] for file_name in filenames]
-    return filenames
 
 # =========================== login function ============================
 @app.route('/login', methods = ['POST'])
@@ -85,13 +66,14 @@ def dashboard ():
     return render_template('dashboard.html', users=users, duty_tables=duty_tables)
 
 # =========================== Add User ================================
+
+
 @app.route('/addUser', methods=['POST'])
 @checkUser
 def addUser():
     new_user = request.form.to_dict()
     new_user['exemptions'] = ast.literal_eval(new_user['exemptions'])
-    new_user['weekday_history'] = ast.literal_eval(new_user['weekday_history'])
-    new_user['weekend_history'] = ast.literal_eval(new_user['weekend_history'])
+    new_user = new_user_hundle(new_user)
     
     users_df = cnf.get_users_df()
 
@@ -140,7 +122,8 @@ def removeUser ():
                 'message': 'המשתמש נמחק בהצלחה'}
         site_log.info(log_message('removed user from json'))
 
-    return jsonify(resp)
+    finally:
+        return jsonify(resp)
 
 # =========================== Edit user ===============================
 @app.route('/editUser', methods=['POST']) # from mdb-editor2.js
@@ -149,14 +132,15 @@ def editUser ():
     form_data = request.form.to_dict()
     user = ast.literal_eval(form_data['user'])
     exemptions = ast.literal_eval(form_data['exemptions'])
-    original_id = form_data['original_id']
-
     user['exemptions'] = exemptions
+
+    original_id = form_data['original_id']
+    
     try:
         users_df = cnf.get_users_df()
         user_mask = users_df['id'] == original_id
 
-        #update the user with keys it hasn't have
+        # update the user with keys it hasn't have
         for column_name in set(users_df.columns):
             if column_name not in user.keys():
                 new_value = users_df[user_mask][column_name]
@@ -194,14 +178,11 @@ def getExemptions ():
     id = request.form['id']
     users_df = cnf.get_users_df()
     user_mask = users_df['id']==id
-    exemptions = users_df[user_mask]['exemptions']
-    if len(exemptions)> 0:
-        exemptions = exemptions.values[0]
-        resp = {'exemptions': exemptions}
-    else:
-        resp = {'exemptions': {}}
-
-    site_log.info(log_message('got ptorim'))
+    exemptions = users_df[user_mask]['exemptions'].values[0]
+    
+    resp = {'exemptions': exemptions}
+   
+    site_log.info(log_message('got exemptions'))
     return jsonify(resp)
 
 # =========================== Give final excel ========================

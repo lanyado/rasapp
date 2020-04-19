@@ -210,7 +210,7 @@
     <!-- {{users|safe}} -->
         {% for user in users %}
             <tr>
-              <td>{{ user.id }}</td>
+              <td name='id'>{{ user.id }}</td>
               <td>{{ user.name }}</td>
               <td>{{ user.unit }}</td>
               <td> {% for exemption, date in user.exemptions.items() %}{{ exemption }} ({{ date }})<br>{% endfor %}</td>

@@ -18430,3 +18430,276 @@
 2020-04-19 21:54:48,515 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 21:54:48] "GET / HTTP/1.1" 200 -
 2020-04-19 21:54:49,119 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 21:54:49] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
 2020-04-19 21:54:49,156 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 21:54:49] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-19 23:39:29,778 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-19 23:39:29,783 - INFO - werkzeug -  * Restarting with stat
+2020-04-19 23:39:31,211 - WARNING - werkzeug -  * Debugger is active!
+2020-04-19 23:39:31,219 - INFO - werkzeug -  * Debugger PIN: 593-437-140
+2020-04-19 23:39:36,488 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:39:36] "GET / HTTP/1.1" 200 -
+2020-04-19 23:39:36,583 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:39:36] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-19 23:39:36,584 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:39:36] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-19 23:39:36,585 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:39:36] "GET /static/css/login.css HTTP/1.1" 200 -
+2020-04-19 23:39:36,585 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:39:36] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-19 23:39:36,733 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:39:36] "GET /static/js/login.js HTTP/1.1" 200 -
+2020-04-19 23:39:36,788 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:39:36] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-19 23:39:36,989 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:39:36] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-19 23:39:38,159 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:39:38] "POST /login HTTP/1.1" 200 -
+2020-04-19 23:39:38,209 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-19 23:39:38,242 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:39:38] "GET / HTTP/1.1" 200 -
+2020-04-19 23:39:38,749 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:39:38] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-19 23:39:38,754 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:39:38] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-19 23:40:20,428 - INFO - Website - Function name: addUser | message: added user 5678797 to json
+2020-04-19 23:40:20,430 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:40:20] "POST /addUser HTTP/1.1" 200 -
+2020-04-19 23:40:21,601 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-19 23:40:21,605 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:40:21] "GET / HTTP/1.1" 200 -
+2020-04-19 23:40:22,152 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:40:22] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-19 23:40:22,156 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:40:22] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-19 23:40:34,953 - ERROR - Website - tried to add a user that already exist on the db
+2020-04-19 23:40:34,954 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:40:34] "POST /addUser HTTP/1.1" 200 -
+2020-04-19 23:40:59,594 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-19 23:41:27,031 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:41:27] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:41:29,217 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:41:29] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:41:46,333 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-19 23:41:46,339 - INFO - werkzeug -  * Restarting with stat
+2020-04-19 23:41:47,835 - WARNING - werkzeug -  * Debugger is active!
+2020-04-19 23:41:47,843 - INFO - werkzeug -  * Debugger PIN: 593-437-140
+2020-04-19 23:41:48,961 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:41:48] "GET / HTTP/1.1" 200 -
+2020-04-19 23:41:50,553 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:41:50] "POST /login HTTP/1.1" 200 -
+2020-04-19 23:41:50,591 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-19 23:41:50,626 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:41:50] "GET / HTTP/1.1" 200 -
+2020-04-19 23:41:51,112 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:41:51] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-19 23:41:51,112 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:41:51] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-19 23:41:52,926 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:41:52] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:41:54,546 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:41:54] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:42:15,907 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-19 23:42:42,267 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:42:42] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:42:45,798 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-19 23:42:45,801 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:42:45] "GET / HTTP/1.1" 200 -
+2020-04-19 23:42:46,279 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:42:46] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-19 23:42:46,284 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:42:46] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-19 23:42:58,078 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:42:58] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:43:18,484 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:43:18] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:43:57,415 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:43:57] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:44:05,607 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:44:05] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:44:41,620 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:44:41] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:44:59,192 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:44:59] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:46:03,212 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-19 23:46:03,214 - INFO - werkzeug -  * Restarting with stat
+2020-04-19 23:46:04,828 - WARNING - werkzeug -  * Debugger is active!
+2020-04-19 23:46:04,835 - INFO - werkzeug -  * Debugger PIN: 593-437-140
+2020-04-19 23:46:04,968 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:46:04] "GET / HTTP/1.1" 200 -
+2020-04-19 23:46:07,696 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:46:07] "POST /login HTTP/1.1" 200 -
+2020-04-19 23:46:07,732 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-19 23:46:07,765 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:46:07] "GET / HTTP/1.1" 200 -
+2020-04-19 23:46:08,147 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:46:08] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-19 23:46:08,413 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:46:08] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-19 23:46:10,467 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:46:10] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:46:58,779 - INFO - werkzeug -  * Detected change in '/Users/rotemlanyado/projects/rasapp/server.py', reloading
+2020-04-19 23:46:59,758 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-19 23:46:59,760 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:46:59] "GET / HTTP/1.1" 200 -
+2020-04-19 23:47:00,290 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:47:00] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-19 23:47:00,293 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:47:00] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-19 23:47:04,217 - INFO - werkzeug - 127.0.0.1 - - [19/Apr/2020 23:47:04] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-19 23:48:24,268 - INFO - werkzeug -  * Restarting with stat
+2020-04-20 00:00:09,281 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-20 00:00:09,287 - INFO - werkzeug -  * Restarting with stat
+2020-04-20 00:00:10,670 - WARNING - werkzeug -  * Debugger is active!
+2020-04-20 00:00:10,677 - INFO - werkzeug -  * Debugger PIN: 593-437-140
+2020-04-20 00:00:12,704 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:12] "GET / HTTP/1.1" 200 -
+2020-04-20 00:00:13,304 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:13] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-20 00:00:14,565 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:14] "POST /login HTTP/1.1" 200 -
+2020-04-20 00:00:14,603 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-20 00:00:14,636 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:14] "GET / HTTP/1.1" 200 -
+2020-04-20 00:00:14,864 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:14] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-20 00:00:14,951 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:14] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-20 00:00:17,352 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:00:17,353 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:17] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:00:20,008 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:00:20,009 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:20] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:00:22,524 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:00:22,524 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:22] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:00:30,070 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:00:30,072 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:30] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:00:33,353 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:00:33,354 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:33] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:00:35,954 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:00:35,955 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:35] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:00:37,899 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:00:37,899 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:00:37] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:02:15,362 - INFO - werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-04-20 00:02:15,365 - INFO - werkzeug -  * Restarting with stat
+2020-04-20 00:02:21,225 - WARNING - werkzeug -  * Debugger is active!
+2020-04-20 00:02:21,238 - INFO - werkzeug -  * Debugger PIN: 593-437-140
+2020-04-20 00:02:21,281 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:21] "GET / HTTP/1.1" 200 -
+2020-04-20 00:02:21,294 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:21] "GET / HTTP/1.1" 200 -
+2020-04-20 00:02:21,293 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:21] "GET / HTTP/1.1" 200 -
+2020-04-20 00:02:21,833 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:21] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-20 00:02:23,800 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:23] "POST /login HTTP/1.1" 200 -
+2020-04-20 00:02:23,834 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-20 00:02:23,871 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:23] "GET / HTTP/1.1" 200 -
+2020-04-20 00:02:24,164 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:24] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-20 00:02:24,167 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:24] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-20 00:02:32,817 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:32] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-20 00:02:34,795 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:02:34,795 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:34] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:02:42,334 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:02:42,335 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:42] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:02:48,330 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-20 00:02:48,333 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET / HTTP/1.1" 200 -
+2020-04-20 00:02:48,390 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-20 00:02:48,391 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-20 00:02:48,534 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-20 00:02:48,554 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-20 00:02:48,556 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-20 00:02:48,558 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-20 00:02:48,566 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-20 00:02:48,574 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-20 00:02:48,575 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-20 00:02:48,583 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-20 00:02:48,600 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-20 00:02:48,601 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-20 00:02:48,607 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-20 00:02:48,619 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-20 00:02:48,622 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-20 00:02:48,623 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-20 00:02:48,678 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-20 00:02:48,686 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-20 00:02:48,688 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-20 00:02:48,689 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-20 00:02:48,731 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-20 00:02:48,736 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:48] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-20 00:02:49,835 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:49] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-20 00:02:51,382 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:51] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-20 00:02:51,532 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:51] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-20 00:02:53,022 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:02:53,024 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:02:53] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:03:00,179 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:03:00,180 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:03:00] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:03:02,012 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:03:02,013 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:03:02] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:03:10,925 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:03:10,926 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:03:10] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:03:13,426 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:03:13,427 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:03:13] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:05:34,083 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-20 00:05:34,147 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET / HTTP/1.1" 200 -
+2020-04-20 00:05:34,228 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-20 00:05:34,232 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-20 00:05:34,483 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-20 00:05:34,532 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-20 00:05:34,547 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-20 00:05:34,550 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-20 00:05:34,693 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-20 00:05:34,707 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-20 00:05:34,763 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-20 00:05:34,765 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-20 00:05:34,766 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-20 00:05:34,815 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-20 00:05:34,816 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-20 00:05:34,842 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-20 00:05:34,882 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-20 00:05:34,883 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-20 00:05:34,890 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-20 00:05:34,979 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:34] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-20 00:05:35,001 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:35] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-20 00:05:35,015 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:35] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-20 00:05:35,016 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:35] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-20 00:05:35,042 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:35] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-20 00:05:35,905 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:05:35] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-20 00:06:25,129 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:06:25] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-20 00:06:25,260 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:06:25] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-20 00:08:33,255 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-20 00:08:33,263 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET / HTTP/1.1" 200 -
+2020-04-20 00:08:33,376 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-20 00:08:33,393 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-20 00:08:33,394 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-20 00:08:33,402 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-20 00:08:33,419 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-20 00:08:33,427 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-20 00:08:33,436 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-20 00:08:33,446 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-20 00:08:33,719 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-20 00:08:33,722 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-20 00:08:33,727 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-20 00:08:33,738 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-20 00:08:33,746 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-20 00:08:33,756 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-20 00:08:33,757 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-20 00:08:33,775 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-20 00:08:33,783 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-20 00:08:33,785 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-20 00:08:33,796 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-20 00:08:33,800 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-20 00:08:33,865 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:33] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-20 00:08:34,046 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:34] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-20 00:08:34,586 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:34] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-20 00:08:35,684 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-20 00:08:35,688 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:35] "GET / HTTP/1.1" 200 -
+2020-04-20 00:08:35,758 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:35] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-20 00:08:35,765 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:35] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-20 00:08:36,059 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-20 00:08:36,096 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-20 00:08:36,104 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-20 00:08:36,110 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-20 00:08:36,114 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-20 00:08:36,122 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-20 00:08:36,132 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-20 00:08:36,143 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-20 00:08:36,150 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-20 00:08:36,176 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-20 00:08:36,179 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-20 00:08:36,187 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-20 00:08:36,194 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-20 00:08:36,306 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-20 00:08:36,319 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-20 00:08:36,334 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-20 00:08:36,338 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-20 00:08:36,355 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-20 00:08:36,380 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-20 00:08:36,510 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-20 00:08:36,854 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:36] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-20 00:08:38,156 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:38] "POST /getExemptions HTTP/1.1" 500 -
+2020-04-20 00:08:38,287 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:38] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-20 00:08:39,864 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:08:39,865 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:39] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:08:43,948 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:08:43,950 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:43] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:08:45,448 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:08:45,449 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:08:45] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:09:03,989 - INFO - Website - Function name: dashboard | message: randering dashboard
+2020-04-20 00:09:03,995 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:03] "GET / HTTP/1.1" 200 -
+2020-04-20 00:09:04,062 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/fonts/fontawesome.css HTTP/1.1" 200 -
+2020-04-20 00:09:04,069 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/css/libraries/bootstrap.min.css HTTP/1.1" 200 -
+2020-04-20 00:09:04,325 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/css/libraries/mdb/mdb.css HTTP/1.1" 200 -
+2020-04-20 00:09:04,392 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/css/libraries/mdb/datatables.css HTTP/1.1" 200 -
+2020-04-20 00:09:04,399 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/css/libraries/calender.css HTTP/1.1" 200 -
+2020-04-20 00:09:04,417 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-04-20 00:09:04,417 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/js/libraries/jquery-3.3.1.min.js HTTP/1.1" 200 -
+2020-04-20 00:09:04,437 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/js/libraries/popper.min.js HTTP/1.1" 200 -
+2020-04-20 00:09:04,441 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/js/libraries/bootstrap.min.js HTTP/1.1" 200 -
+2020-04-20 00:09:04,469 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/js/libraries/mdb/mdb.js HTTP/1.1" 200 -
+2020-04-20 00:09:04,481 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/js/libraries/mdb/datatables.min.js HTTP/1.1" 200 -
+2020-04-20 00:09:04,491 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/js/libraries/mdb/mdb-editor.js HTTP/1.1" 200 -
+2020-04-20 00:09:04,502 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/js/libraries/bootstrap.min.js.map HTTP/1.1" 404 -
+2020-04-20 00:09:04,522 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/js/libraries/sweetalert.min.js HTTP/1.1" 200 -
+2020-04-20 00:09:04,524 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/js/libraries/calender.js HTTP/1.1" 200 -
+2020-04-20 00:09:04,530 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/js/myscript.js HTTP/1.1" 200 -
+2020-04-20 00:09:04,653 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/css/libraries/bootstrap.min.css.map HTTP/1.1" 404 -
+2020-04-20 00:09:04,675 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2020-04-20 00:09:04,678 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/img/logo.png HTTP/1.1" 200 -
+2020-04-20 00:09:04,704 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/js/exemptions.js HTTP/1.1" 200 -
+2020-04-20 00:09:04,846 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/img/excel.png HTTP/1.1" 200 -
+2020-04-20 00:09:04,860 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:04] "GET /static/img/search.png HTTP/1.1" 200 -
+2020-04-20 00:09:05,186 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:05] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-20 00:09:06,666 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:09:06,668 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:06] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:09:06,817 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:06] "GET /static/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2020-04-20 00:09:08,605 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:09:08,607 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:08] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:09:11,266 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:09:11,268 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:11] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:09:22,870 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:09:22,871 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:22] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:09:25,608 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:09:25,609 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:25] "POST /getExemptions HTTP/1.1" 200 -
+2020-04-20 00:09:27,267 - INFO - Website - Function name: getExemptions | message: got exemptions
+2020-04-20 00:09:27,268 - INFO - werkzeug - 127.0.0.1 - - [20/Apr/2020 00:09:27] "POST /getExemptions HTTP/1.1" 200 -
