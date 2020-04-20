@@ -1,7 +1,7 @@
 (() => {
   $('#dtBasicExample, #dtBasicExample-1, #dt-more-columns, #dt-less-columns').mdbEditor();
   $('.dataTables_length').addClass('bs-select');
-  window.domain = 'http://127.0.0.1:5000/'
+  window.domain = 'http://127.0.0.1:5000/';
 })()
 
 function addUser (table, row){
@@ -22,10 +22,10 @@ function addUser (table, row){
 
     const formData = new FormData();
 
-    formData.append('id', row[0])
-    formData.append('name', row[1])
-    formData.append('unit', row[2])
-    formData.append('exemptions', JSON.stringify(exemptions))
+    formData.append('id', row[0]);
+    formData.append('name', row[1]);
+    formData.append('unit', row[2]);
+    formData.append('exemptions', JSON.stringify(exemptions));
 
     $.ajax({
         url: '/addUser',
@@ -39,11 +39,10 @@ function addUser (table, row){
     .done((response) => {
         if (response.success){
           swal(response.message, "מעולה", "success").then(() => {
-                  window.location = window.location;
+              window.location = window.location;
           });
         }
-        else
-          swal(response.message, "", "error");
+        else swal(response.message, "", "error");
     })
     .fail((jqXhr) => {
         console.log(jqXhr.responseJSON)
@@ -71,9 +70,9 @@ function editUser (table, row){
 
     const formData = new FormData();
 
-    formData.append('user', JSON.stringify(user))
-    formData.append('exemptions', JSON.stringify(exemptions))
-    formData.append('original_id', $(row).children()[0].textContent)
+    formData.append('user', JSON.stringify(user));
+    formData.append('exemptions', JSON.stringify(exemptions));
+    formData.append('original_id', $(row).children()[0].textContent);
 
     $.ajax({
         url: '/editUser',
@@ -91,8 +90,7 @@ function editUser (table, row){
                 window.location = window.location;
           });
         }
-        else
-          swal(response.message, "", "error");
+        else swal(response.message, "", "error");
     })
     .fail((jqXhr) => {
         console.log(jqXhr.responseJSON)
@@ -102,7 +100,7 @@ function editUser (table, row){
 
 function removeUser (table, row){
     const formData = new FormData();
-    formData.append('id', $(row).children()[0].textContent)
+    formData.append('id', $(row).children()[0].textContent);
 
     $.ajax({
         url: '/removeUser',
@@ -119,8 +117,7 @@ function removeUser (table, row){
           // remove the user from the users html table
           table.row($(row)).remove().draw();
       }
-      else
-        swal(response.message, "", "error");
+      else swal(response.message, "", "error");
     })
     .fail((jqXhr) => {
         console.log(jqXhr.responseJSON)
@@ -136,7 +133,7 @@ function getWorkers (){
     }
       
     const formData = new FormData();
-    formData.append('dates', JSON.stringify(window.dates))
+    formData.append('dates', JSON.stringify(window.dates));
 
     $.ajax({
         url: '/getWorkers',
@@ -159,8 +156,7 @@ function getWorkers (){
             window.location = window.location;
         });
       }
-      else
-        swal(response.message, "", "error");
+      else swal(response.message, "", "error");
     })
     .fail((jqXhr) => {
         console.log(jqXhr.responseJSON)
@@ -169,7 +165,7 @@ function getWorkers (){
 }
 $('#get-workers').on('click',() => {
   getWorkers();
-})
+});
 
 function showExcel (filename){
     let promise = new Promise((resolve, reject) => {
@@ -184,5 +180,5 @@ $('#view-excel').on('click', () => {
     let filename = $('#select-excel').val();
     filename = filename.replace(' הכי חדש','');
     showExcel(filename);
-})
+});
 

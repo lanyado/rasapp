@@ -1,5 +1,5 @@
-function formatDate (date) {
-    let d = new Date(date),
+function formatDate (given_date) {
+    let date = new Date(given_date),
         month = '' + (d.getMonth() + 1),
         day = '' + d.getDate(),
         year = d.getFullYear();
@@ -21,8 +21,8 @@ function getExemptions (){
             Object.keys(exemptions).forEach((key) => {
                 const name = key;
                 const date = exemptions[name];
-                const exemptionsTable = $(".exemptions-table-body")[1]
-                addExemptions(exemptionsTable, name, date)
+                const exemptionsTable = $(".exemptions-table-body")[1];
+                addExemptions(exemptionsTable, name, date);
             });
     });
 }
@@ -33,7 +33,7 @@ function getExemptions (){
 
     // add the options to the exemption select
     if (name.length>0){
-        tr+= `<option selected>${name}</option>`
+        tr+= `<option selected>${name}</option>`;
     }
     else{
         const ALL_EXEMPTIONS = ['פטור מטבחים אמצש', 'פטור מטבחים סופש','פטור שמירות אמצש','פטור שמירות סופש'];
@@ -45,10 +45,10 @@ function getExemptions (){
             }).get();
         }
         const EXEMPTIONS_TO_ADD = ALL_EXEMPTIONS.filter(x => !ALREADY_EXEMPTIONS.includes(x) );
-        if (EXEMPTIONS_TO_ADD.length>0)
+        if (EXEMPTIONS_TO_ADD.length>0){
             EXEMPTIONS_TO_ADD.forEach((exemptionName) => {tr+= `<option>${exemptionName}</option>`});
-        else
-            return ''
+        }
+        else return ''
     }
     // add the date picker and the remove button
     tr += `</select></td><td><input type="date" value = "${date}" class="form-control" /></td>'
@@ -60,8 +60,9 @@ function addExemptions (exemptionsTable, name, date){
     let tr = $("<tr/>");
     tr.html(getExemptionTr(exemptionsTable, name, date));
 
-    if (Text.html!='')
+    if (Text.html!=''){
         $(exemptionsTable).append(tr);
+    }
 }
 
 function btnAdd (){
@@ -69,7 +70,7 @@ function btnAdd (){
     const TODAY = new Date();
     const DEFAULT_DATE = TODAY.setFullYear(TODAY.getFullYear() + 10); // today + 1 month
     
-    const exemptionsTable = $(this).closest("#exemptions-table")[0]
+    const exemptionsTable = $(this).closest("#exemptions-table")[0];
     $(exemptionsTable).find('option').not('select :selected').remove();
     addExemptions(exemptionsTable,"",formatDate(DEFAULT_DATE));
 }

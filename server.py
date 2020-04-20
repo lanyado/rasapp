@@ -2,6 +2,7 @@
 import config as cnf
 from lib.log import get_log, log_message
 
+import sys
 import os
 import json
 import codecs
@@ -18,9 +19,12 @@ from flask import Flask, render_template, request, jsonify, send_from_directory,
 import pandas as pd
 #import modin.pandas as pd
 
-import ast
+from ast import literal_eval as json_to_dict
 
 from functools import wraps
+
+if not sys.version_info > (3, 7):
+    raise Exception('Please update your Python version')
 
 app = Flask(__name__, template_folder=os.path.join(cnf.CURRENT_DIR, 'static'))  # Runs the HTML from the static folder
 
@@ -72,7 +76,7 @@ def dashboard ():
 @checkUser
 def addUser():
     new_user = request.form.to_dict()
-    new_user['exemptions'] = ast.literal_eval(new_user['exemptions'])
+    new_user['exemptions'] = json_to_dict(new_user['exemptions'])
     new_user = new_user_hundle(new_user)
     
     users_df = cnf.get_users_df()
@@ -130,9 +134,9 @@ def removeUser ():
 @checkUser
 def editUser ():
     form_data = request.form.to_dict()
-    user = ast.literal_eval(form_data['user'])
-    exemptions = ast.literal_eval(form_data['exemptions'])
-    user['exemptions'] = exemptions
+    edited_user = json_to_dict(form_data['user'])
+    exemptions = json_to_dict(form_data['exemptions'])
+    edited_user['exemptions'] = exemptions
 
     original_id = form_data['original_id']
     
@@ -141,19 +145,12 @@ def editUser ():
         user_mask = users_df['id'] == original_id
 
         # update the user with keys it hasn't have
-        for column_name in set(users_df.columns):
-            if column_name not in user.keys():
-                new_value = users_df[user_mask][column_name]
-                if len(new_value)>0:
-                    new_value = new_value.values[0]
-                else:
-                    new_value = ""
-                user[column_name] = new_value
-
+        exist_user = users_df[user_mask].to_dict('records')[0]
+        edited_user = { **exist_user, **edited_user }
         # delete from users_df
         users_df = users_df[users_df.id != original_id]
         # insert to users_df
-        users_df = users_df.append(user, ignore_index = True)
+        users_df = users_df.append(edited_user, ignore_index = True)
 
         cnf.update_users_file(users_df)
 
@@ -190,7 +187,7 @@ def getExemptions ():
 @checkUser
 def getWorkers ():
     form_data = request.form.to_dict()
-    dates = get_dates(ast.literal_eval(form_data['dates']))
+    dates = get_dates(json_to_dict(form_data['dates']))
 
     duties_df = pd.DataFrame({'date': map(str, dates),\
                                  'day_of_week': map(str, get_day_of_week(dates)),\
