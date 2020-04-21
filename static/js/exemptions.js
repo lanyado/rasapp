@@ -1,8 +1,8 @@
 function formatDate (given_date) {
     let date = new Date(given_date),
-        month = '' + (d.getMonth() + 1),
-        day = '' + d.getDate(),
-        year = d.getFullYear();
+        month = '' + (date.getMonth() + 1),
+        day = '' + date.getDate(),
+        year = date.getFullYear();
 
     if (month.length < 2)
         month = '0' + month;
@@ -58,9 +58,9 @@ function getExemptions (){
 
 function addExemptions (exemptionsTable, name, date){
     let tr = $("<tr/>");
-    tr.html(getExemptionTr(exemptionsTable, name, date));
-
-    if (Text.html!=''){
+    const trContent = getExemptionTr(exemptionsTable, name, date);
+    if (trContent){
+        tr.html(trContent);
         $(exemptionsTable).append(tr);
     }
 }

@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-
+import json
 
 WEEKDAY_DUTIES = {
     'kitchen1': "פטור מטבחים אמצש",
@@ -29,4 +29,4 @@ def get_users_df():
 def update_users_file(df):
     """Takes data to write and puts it in the file"""
     with open(USERS_JSON_FILE, 'w', encoding='utf-8') as users_file:
-        df.to_json(users_file, force_ascii=False, orient='records')
+        df.to_json(users_file, force_ascii=False, orient='records', indent=1)        
