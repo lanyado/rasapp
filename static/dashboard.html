@@ -61,19 +61,19 @@
                   <p for="inputUnit1">אגף</p>
                   <select id="inputUnit1" class="form-control match-content">
                       <option value="מודיעין">מודיעין</option>
-                      <option value='חימוש'>חימוש</option>
-                      <option value='מחנה'>מחנה</option>
-                      <option value='קשר'>קשר</option>
-                      <option value='אגם'>אגם</option>
-                      <option value='מקשאפ'>מקשאפ </option>
-                      <option value='5410'>5410</option>
-                      <option value='בם'>בם</option>
-                      <option value='רפואה'>רפואה</option>
-                      <option value='תקציבים'>תקציבים</option>
-                      <option value='שלישות'>שלישות</option>
-                      <option value='לוגיסטיקה'>לוגיסטיקה</option>
-                      <option value='אביב'>ענ אביב</option>
-                      <option value='אבן יקרה'>אבן יקרה</option>
+                      <option value="חימוש">חימוש</option>
+                      <option value="מחנה">מחנה</option>
+                      <option value="קשר">קשר</option>
+                      <option value="אגם">אגם</option>
+                      <option value="מקשאפ">מקשאפ </option>
+                      <option value="5410">5410</option>
+                      <option value="בם">בם</option>
+                      <option value="רפואה">רפואה</option>
+                      <option value="תקציבים">תקציבים</option>
+                      <option value="שלישות">שלישות</option>
+                      <option value="לוגיסטיקה">לוגיסטיקה</option>
+                      <option value="אביב">ענ אביב</option>
+                      <option value="אבן יקרה">אבן יקרה</option>
                   </select>
                 </div>
                 <div class="md-form mb-5">
@@ -123,19 +123,19 @@
                   <p for="inputUnit2">אגף</p>
                   <select id="inputUnit2" class="form-control match-content">
                       <option value="מודיעין">מודיעין</option>
-                      <option value='חימוש'>חימוש</option>
-                      <option value='מחנה'>מחנה</option>
-                      <option value='קשר'>קשר</option>
-                      <option value='אגם'>אגם</option>
-                      <option value='מקשאפ'>מקשאפ </option>
-                      <option value='5410'>5410</option>
-                      <option value='בם'>בם</option>
-                      <option value='רפואה'>רפואה</option>
-                      <option value='תקציבים'>תקציבים</option>
-                      <option value='שלישות'>שלישות</option>
-                      <option value='לוגיסטיקה'>לוגיסטיקה</option>
-                      <option value='אביב'>ענ אביב</option>
-                      <option value='אבן יקרה'>אבן יקרה</option>
+                      <option value="חימוש">חימוש</option>
+                      <option value="מחנה">מחנה</option>
+                      <option value="קשר">קשר</option>
+                      <option value="אגם">אגם</option>
+                      <option value="מקשאפ">מקשאפ </option>
+                      <option value="5410">5410</option>
+                      <option value="בם">בם</option>
+                      <option value="רפואה">רפואה</option>
+                      <option value="תקציבים">תקציבים</option>
+                      <option value="שלישות">שלישות</option>
+                      <option value="לוגיסטיקה">לוגיסטיקה</option>
+                      <option value="אביב">ענ אביב</option>
+                      <option value="אבן יקרה">אבן יקרה</option>
                   </select>
                 </div>
                 <div class="md-form mb-5">
@@ -157,7 +157,7 @@
 
         <div class="text-center buttonEditWrapper">
           <button class="btn btn-info btn-rounded btn-sm buttonEdit" onclick="getExemptions()" data-toggle="modal" data-target="#modalEdit"
-            disabled>ערוך<i class="fas fa-pen-square ml-1"></i></a>
+            disabled>ערוך<i class="fas fa-pen-square ml-1"></i></button>
         </div>
         <!--
         =========================================
@@ -187,8 +187,8 @@
             </div>
           </div>
         </div>
-          <button class="btn btn-danger btn-sm btn-rounded buttonDelete" data-toggle="modal" disabled data-target="#modalDelete"
-                  disabled>מחק<i class="fas fa-times ml-1"></i></a>
+          <button class="btn btn-danger btn-sm btn-rounded buttonDelete" data-toggle="modal" data-target="#modalDelete"
+                  disabled>מחק<i class="fas fa-times ml-1"></i></button>
       </div>
 <!--
 =========================================
@@ -210,7 +210,7 @@
     <!-- {{users|safe}} -->
         {% for user in users %}
             <tr>
-              <td name='id'>{{ user.id }}</td>
+              <td name="id">{{ user.id }}</td>
               <td>{{ user.name }}</td>
               <td>{{ user.unit }}</td>
               <td> {% for exemption, date in user.exemptions.items() %}{{ exemption }} ({{ date }})<br>{% endfor %}</td>
@@ -278,7 +278,7 @@
       <tfoot>
         <tr>
           <th colspan="3">
-          <button class="btnAdd" type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Add more controls"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp; הוסף פטור&nbsp;</button></th>
+          <button type="button" class="btn btn-primary btnAdd" data-toggle="tooltip" data-original-title="Add more controls"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp; הוסף פטור&nbsp;</button></th>
         </tr>
       </tfoot>
     </table>
