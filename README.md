@@ -8,7 +8,7 @@ run server.py, then enter to http://127.0.0.1:5000/
 You need to login the website.
 
 Then:
-You can addUser (as long as his id is not used already), editUser and removeUser.
+You can `addUser` (as long as his id is not used already), `editUser` and `removeUser`.
 
 A user has <exemptions>:
 An exemption is for <weekday> or <weekend>.
@@ -29,4 +29,4 @@ A user will become a worker if:
 Then:
 1. His info will be in the spesific cell of the duties table.
 2. The duty's date will be set in his  <last_weekday> or <last_weekend>.
-3. His <last_weekday> or <last_weekend> will be extend with "duty date" : "duty type".
+3. His <last_weekday> or <last_weekend> will be extend with `"duty date" : "duty type"`.
