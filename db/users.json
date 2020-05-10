@@ -8,13 +8,14 @@
   },
   "weekend_history":{
    "2020-08-08":"kitchen1",
-   "2020-09-19":"shmirot1"
+   "2020-09-19":"shmirot1",
+   "2022-05-12":"kitchen1"
   },
   "weekday_history":{
    "2021-04-20":"shmirot2"
   },
   "last_weekday":"2021-04-20",
-  "last_weekend":"2020-09-19"
+  "last_weekend":"2022-05-12"
  },
  {
   "id":"654546",
@@ -27,13 +28,14 @@
    "2020-08-15":"kitchen1",
    "2020-08-29":"kitchen1",
    "2020-09-12":"kitchen1",
-   "2020-12-25":"shmirot1"
+   "2020-12-25":"shmirot1",
+   "2021-09-09":"shmirot1"
   },
   "weekday_history":{
    "2021-04-20":"kitchen2"
   },
   "last_weekday":"2021-04-20",
-  "last_weekend":"2020-12-25"
+  "last_weekend":"2021-09-09"
  },
  {
   "id":"6757656",
@@ -73,23 +75,6 @@
   "last_weekend":"2021-02-27"
  },
  {
-  "id":"12312",
-  "name":"sasd",
-  "unit":"מודיעין",
-  "exemptions":{
-
-  },
-  "weekend_history":{
-   "2020-08-08":"shmirot1",
-   "2020-10-03":"shmirot1"
-  },
-  "weekday_history":{
-   "2021-04-20":"kitchen1"
-  },
-  "last_weekday":"2021-04-20",
-  "last_weekend":"2020-10-03"
- },
- {
   "id":"65567567",
   "name":"fdsdfs",
   "unit":"מחנה",
@@ -119,13 +104,14 @@
   },
   "weekend_history":{
    "2020-07-25":"kitchen1",
-   "2020-10-03":"kitchen1"
+   "2020-10-03":"kitchen1",
+   "2021-09-09":"kitchen1"
   },
   "weekday_history":{
    "2021-02-22":"kitchen2"
   },
   "last_weekday":"2021-02-22",
-  "last_weekend":"2020-10-03"
+  "last_weekend":"2021-09-09"
  },
  {
   "id":"1111111",
@@ -137,18 +123,57 @@
   "weekend_history":{
    "2020-05-23":"shmirot1",
    "2020-06-06":"kitchen1",
-   "2020-06-18":"shmirot1"
+   "2020-06-18":"shmirot1",
+   "2021-05-06":"kitchen1"
   },
   "weekday_history":{
    "2020-08-16":"kitchen1",
    "2021-04-21":"shmirot1"
   },
   "last_weekday":"2021-04-21",
-  "last_weekend":"2020-06-18"
+  "last_weekend":"2021-05-06"
+ },
+ {
+  "id":"9999999",
+  "name":"לחלחשגמחלגחלכשמחגדמחכגמדגכמדכגד",
+  "unit":"מקשאפ",
+  "exemptions":{
+
+  },
+  "weekend_history":{
+   "2020-05-23":"kitchen1",
+   "2020-06-06":"shmirot1",
+   "2020-06-18":"kitchen1",
+   "2021-05-06":"shmirot1"
+  },
+  "weekday_history":{
+   "2020-08-16":"kitchen2",
+   "2021-04-21":"shmirot2"
+  },
+  "last_weekday":"2021-04-21",
+  "last_weekend":"2021-05-06"
+ },
+ {
+  "id":"12312",
+  "name":"נויה",
+  "unit":"מודיעין",
+  "exemptions":{
+
+  },
+  "weekend_history":{
+   "2020-08-08":"shmirot1",
+   "2020-10-03":"shmirot1",
+   "2022-05-12":"shmirot1"
+  },
+  "weekday_history":{
+   "2021-04-20":"kitchen1"
+  },
+  "last_weekday":"2021-04-20",
+  "last_weekend":"2022-05-12"
  },
  {
   "id":"89897",
-  "name":"oonoi1",
+  "name":"חופית",
   "unit":"מודיעין",
   "exemptions":{
    "פטור מטבחים אמצש":"2030-03-25",
@@ -164,24 +189,5 @@
   },
   "last_weekday":"2000-01-01",
   "last_weekend":"2000-10-22"
- },
- {
-  "id":"9999999",
-  "name":"לחלחשגמחלגחלכשמחגדמחכגמדגכמדכגד",
-  "unit":"מקשאפ",
-  "exemptions":{
-
-  },
-  "weekend_history":{
-   "2020-05-23":"kitchen1",
-   "2020-06-06":"shmirot1",
-   "2020-06-18":"kitchen1"
-  },
-  "weekday_history":{
-   "2020-08-16":"kitchen2",
-   "2021-04-21":"shmirot2"
-  },
-  "last_weekday":"2021-04-21",
-  "last_weekend":"2020-06-18"
  }
 ]
