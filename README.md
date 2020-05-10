@@ -9,7 +9,7 @@ You need to login the website.
 
 Then:
 You can addUser (as long as his id is not used already), editUser and removeUser.
-![alt text](https://github.com/lanyado/rasapp/tree/master/general/images/user_actions.png "User actions")
+![alt text](https://github.com/lanyado/rasapp/raw/master/general/images/user_actions.png "User actions")
 
 A user has <exemptions>:
 An exemption is for <weekday> or <weekend>.
