@@ -18,7 +18,7 @@ An exemption has has an <expire date>, when the expire date has past, the exempt
 
 You can pick up dates from the calendar and create a <duties table>.
 As long as there are enugh <available workers>.
-![alt text](https://github.com/lanyado/rasapp/tree/master/general/images/calendar.png "Calendar")
+![alt text](https://github.com/lanyado/rasapp/raw/master/general/images/calendar.png "Calendar")
 
 A user will become a worker if:
 1. He's the user with the oldest <last_weekday> / <last_weekend>.
