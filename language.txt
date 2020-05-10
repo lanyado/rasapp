@@ -1,5 +1,0 @@
-weekend = סופש
-weekday = אמצש
-user [soldier]
-toranut
-exemption [ptor]
