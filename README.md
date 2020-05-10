@@ -11,12 +11,12 @@ Then:
 You can addUser (as long as his id is not used already), editUser and removeUser.
 ![alt text](https://github.com/lanyado/rasapp/raw/master/general/images/user_actions.png "User actions")
 
-A user has <exemptions>:
-An exemption is for <weekday> or <weekend>.
-An exemption is for a duty type (kitchen, gaurd).
-An exemption has has an <expire date>, when the expire date has past, the exemption gets deleted.
+A user has <exemptions>: <br>
+An exemption is for <weekday> or <weekend>.<br>
+An exemption is for a duty type (kitchen, gaurd).<br>
+An exemption has an <expire date>, when the expire date has past, the exemption gets deleted.<br>
 
-You can pick up dates from the calendar and create a <duties table>.
+You can pick up dates from the calendar and create a <duties table>.<br>
 As long as there are enugh <available workers>.
 ![alt text](https://github.com/lanyado/rasapp/raw/master/general/images/calendar.png "Calendar")
 
