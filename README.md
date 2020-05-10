@@ -15,7 +15,7 @@ A user has <b>exemptions</b>:<br>
 An exemption is for <b>weekday</b> or <b>weekend</b>.<br>
 An exemption is for a duty type (kitchen, gaurd).<br>
 An exemption has an <b>expire date</b>, when the expire date has past, the exemption gets deleted.<br>
-<img alt='exemptions' src="https://github.com/lanyado/rasapp/raw/master/general/images/exemptions.png" data-canonical-src="https://github.com/lanyado/rasapp/raw/master/general/images/exemptions.png" width="300" height="300" />
+<img alt='exemptions' src="https://github.com/lanyado/rasapp/raw/master/general/images/exemptions.png" data-canonical-src="https://github.com/lanyado/rasapp/raw/master/general/images/exemptions.png" width="350" height="400" />
 
 You can pick up dates from the calendar and create a <b>duties table</b>.<br>
 As long as there are enugh <b>available workers</b>.
