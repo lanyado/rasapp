@@ -1,23 +1,5 @@
 [
  {
-  "id":"321",
-  "name":"שלומית",
-  "unit":"מודיעין",
-  "exemptions":{
-
-  },
-  "weekend_history":{
-   "2020-08-08":"kitchen1",
-   "2020-09-19":"shmirot1",
-   "2022-05-12":"kitchen1"
-  },
-  "weekday_history":{
-   "2021-04-20":"shmirot2"
-  },
-  "last_weekday":"2021-04-20",
-  "last_weekend":"2022-05-12"
- },
- {
   "id":"654546",
   "name":"אוריה",
   "unit":"מודיעין",
@@ -151,5 +133,23 @@
   },
   "last_weekday":"2000-01-01",
   "last_weekend":"2000-10-22"
+ },
+ {
+  "id":"321",
+  "name":"שלומית1",
+  "unit":"מודיעין",
+  "exemptions":{
+
+  },
+  "weekend_history":{
+   "2020-08-08":"kitchen1",
+   "2020-09-19":"shmirot1",
+   "2022-05-12":"kitchen1"
+  },
+  "weekday_history":{
+   "2021-04-20":"shmirot2"
+  },
+  "last_weekday":"2021-04-20",
+  "last_weekend":"2022-05-12"
  }
 ]

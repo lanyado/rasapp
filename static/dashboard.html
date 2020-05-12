@@ -93,7 +93,7 @@
           </div>
         </div>
         <div class="text-center wrapperToBtnModalAdd">
-          <a href="" class="btn btn-info btn-rounded btn-sm btnToModalAdd" data-toggle="modal" data-target="#modalAdd" onclick=" $('.exemptions-table-body').html('')">הוסף<i
+          <a href="" class="btn btn-success btn-rounded btn-sm btnToModalAdd" data-toggle="modal" data-target="#modalAdd" onclick=" $('.exemptions-table-body').html('')">הוסף <i
               class="fas fa-plus-square ml-1"></i></a>
         </div>
         <!--
@@ -147,7 +147,7 @@
                 </div>
               </div>
               <div class="modal-footer d-flex justify-content-center editInsideWrapper">
-                <button id="edit" class="btn btn-outline-secondary btn-block editInside" data-dismiss="modal">ערוך חייל
+                <button id="edit" class="btn btn-outline-secondary btn-block editInside" data-dismiss="modal">ערוך חייל 
                   <i class="far fa-paper-plane ml-1"></i>
                 </button>
               </div>
@@ -156,8 +156,8 @@
         </div>
 
         <div class="text-center buttonEditWrapper">
-          <button class="btn btn-info btn-rounded btn-sm buttonEdit" onclick="getExemptions()" data-toggle="modal" data-target="#modalEdit"
-            disabled>ערוך<i class="fas fa-pen-square ml-1"></i></button>
+          <button class="btn btn-warning btn-rounded btn-sm buttonEdit" onclick="getExemptions()" data-toggle="modal" data-target="#modalEdit"
+            disabled>ערוך <i class="fas fa-pen-square ml-1"></i></button>
         </div>
         <!--
         =========================================
@@ -188,7 +188,27 @@
           </div>
         </div>
           <button class="btn btn-danger btn-sm btn-rounded buttonDelete" data-toggle="modal" data-target="#modalDelete"
-                  disabled>מחק<i class="fas fa-times ml-1"></i></button>
+                  disabled>מחק <i class="fas fa-times ml-1"></i></button>
+          
+          <div class="modal fade modalEditClass" id="modalWatch" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h4 class="modal-title w-100 font-weight-bold text-secondary ml-5">היסטורת התורנויות של החייל</h4>
+                </div>  
+                  <div class="modal-body mx-3 modal-inputs">
+                    <div class="md-form mb-5">
+                      <p id="info-last-weekday"></p>
+                      <p id="info-last-weekend"></p>
+                      <div id="info-weekday-history"></div>
+                      <div id="info-weekend-history"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-info btn-sm btn-rounded buttonShow" onclick="getUserInfo()" data-toggle="modal" data-target="#modalWatch"
+                  disabled>צפה <i class="fas fa-eye ml-1"></i></button>
       </div>
 <!--
 =========================================

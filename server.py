@@ -182,6 +182,27 @@ def getExemptions ():
     site_log.info(log_message('got exemptions'))
     return jsonify(resp)
 
+# =========================== get Exemptions =========================
+@app.route('/getUserInfo', methods=['POST'])
+@checkUser
+def getUserInfo ():
+    id = request.form['id']
+    users_df = cnf.get_users_df()
+    user_mask = users_df['id']==id
+    weekday_history = users_df[user_mask]['weekday_history'].values[0]
+    weekend_history = users_df[user_mask]['weekend_history'].values[0]
+    last_weekday = users_df[user_mask]['last_weekday'].values[0]
+    last_weekend = users_df[user_mask]['last_weekend'].values[0]
+
+    resp = {'weekday_history': weekday_history,
+            'weekend_history': weekend_history,
+            'last_weekday': last_weekday,
+            'last_weekend': last_weekend
+    }
+   
+    site_log.info(log_message('got info'))
+    return jsonify(resp)
+
 # =========================== Give final excel ========================
 @app.route('/getWorkers', methods=['POST'])
 @checkUser

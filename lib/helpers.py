@@ -37,7 +37,7 @@ def get_duty_table_names ():
     filenames = glob.glob('results/*') # * means all if need specific format then *.csv
     filenames.sort(key=os.path.getctime)
     filenames[-1] = f'{filenames[-1]} הכי חדש'
-
+    filenames = [file_name.replace('\\','/') for file_name in filenames]
     filenames = [file_name.split('/')[1] for file_name in filenames]
     return filenames
 

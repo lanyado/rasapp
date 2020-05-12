@@ -134,6 +134,29 @@ function removeUser (table, row) {
 		});
 }
 
+function getUserInfo () {
+	$.post('/getUserInfo', {
+		id: $($('.tr-color-selected').find('td[name=id]')[0]).text(),
+	}, (response) => {
+		console.log(response);
+		const { exemptions } = response;
+		$('#info-last-weekday').html(`תורנות אמצש אחרונה : ${response.last_weekday}`)
+		$('#info-last-weekend').html(`תורנות סופש אחרונה : ${response.last_weekend}`)
+
+		let weekdayHistoryList = ''
+		for (const [key, value] of Object.entries(response.weekday_history)) {
+			weekdayHistoryList += `<li><p>${key} : ${value}</p></li>`;
+		}
+		$('#info-weekday-history').html(`<h5> היסטורית תורנויות אמצש: </h5> <ul> ${weekdayHistoryList} </ul>`);
+
+		let weekendHistoryList = ''
+		for (const [key, value] of Object.entries(response.weekend_history)) {
+			weekendHistoryList += `<li><p>${key} : ${value}</p></li>`;
+		}
+		$('#info-weekend-history').html(`<h5> היסטורית תורנויות סופש: </h5> <ul> ${weekendHistoryList} </ul>`);
+	});
+}
+
 function getWorkers () {
 	// detect if the user didn't select dates
 	if ($('.calendar_content .selected').length === 0) {

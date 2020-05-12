@@ -15,6 +15,7 @@
           $createShowP = $wrapperModalEditor.find('.createShowP'),
           $buttonEdit = $wrapperModalEditor.find('.buttonEdit'),
           $buttonDelete = $wrapperModalEditor.find('.buttonDelete'),
+          $buttonShow = $wrapperModalEditor.find('.buttonShow'),
           $buttonAddFormWrapper = $wrapperModalEditor.find('.buttonAddFormWrapper'),
           $buttonEditWrapper = $wrapperModalEditor.find('.buttonEditWrapper'),
           $editInsideWrapper = $wrapperModalEditor.find('.editInsideWrapper'),
@@ -54,11 +55,13 @@
 
           $buttonEdit.prop('disabled', false);
           $buttonDelete.prop('disabled', false);
+          $buttonShow.prop('disabled', false);
           $createShowP.html('1 row selected');
         } else if (!$('tr').hasClass('tr-color-selected')) {
 
           $buttonEdit.prop('disabled', true);
           $buttonDelete.prop('disabled', true);
+          $buttonShow.prop('disabled', true);
           $createShowP.html('0 row selected');
         }
       },
@@ -86,6 +89,7 @@
 
         $buttonEdit.prop('disabled', true);
         $buttonDelete.prop('disabled', true);
+        $buttonShow.prop('disabled', true);
       },
           selectedZeroRowsNews = function selectedZeroRowsNews() {
 
@@ -98,6 +102,7 @@
                 removeUser($table, trColorSelected);
                 $buttonEdit.prop('disabled', true);
                 $buttonDelete.prop('disabled', true);
+                $buttonShow.prop('disabled', true);
                 $createShowP.html('0 row selected');
             }, 20);
       },
