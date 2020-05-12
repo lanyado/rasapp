@@ -48,7 +48,7 @@ function getExemptionTr (exemptionsTable, name, date) {
 	}
 	// add the date picker and the remove button
 	tr += `</select></td><td><input type="date" value = "${date}" class="form-control" /></td>'
-           <td><button type="button" class="btnAdd btn btn-outline-danger remove">הסר</button></td>`;
+           <td><button type="button" class="btn btn-outline-danger remove">הסר</button></td>`;
 	return tr;
 }
 
