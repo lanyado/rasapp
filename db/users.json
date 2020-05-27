@@ -11,13 +11,15 @@
    "2020-08-29":"kitchen1",
    "2020-09-12":"kitchen1",
    "2020-12-25":"shmirot1",
-   "2021-09-09":"shmirot1"
+   "2021-09-09":"shmirot1",
+   "2022-04-07":"shmirot1",
+   "2022-06-16":"shmirot1"
   },
   "weekday_history":{
    "2021-04-20":"kitchen2"
   },
   "last_weekday":"2021-04-20",
-  "last_weekend":"2021-09-09"
+  "last_weekend":"2022-06-16"
  },
  {
   "id":"6757656",
@@ -31,13 +33,14 @@
    "2020-09-05":"shmirot1",
    "2020-11-05":"shmirot1",
    "2021-02-27":"shmirot1",
-   "2022-03-10":"shmirot1"
+   "2022-03-10":"shmirot1",
+   "2022-06-16":"kitchen1"
   },
   "weekday_history":{
    "2021-02-22":"kitchen1"
   },
   "last_weekday":"2021-02-22",
-  "last_weekend":"2022-03-10"
+  "last_weekend":"2022-06-16"
  },
  {
   "id":"65756765",
@@ -50,52 +53,14 @@
    "2020-07-25":"kitchen1",
    "2020-09-19":"kitchen1",
    "2021-02-27":"kitchen1",
-   "2022-03-10":"kitchen1"
+   "2022-03-10":"kitchen1",
+   "2022-05-12":"shmirot1"
   },
   "weekday_history":{
    "2021-02-22":"shmirot2"
   },
   "last_weekday":"2021-02-22",
-  "last_weekend":"2022-03-10"
- },
- {
-  "id":"65567567",
-  "name":"fdsdfs",
-  "unit":"מחנה",
-  "exemptions":{
-
-  },
-  "weekend_history":{
-   "2020-06-25":"shmirot1",
-   "2020-07-25":"shmirot1",
-   "2020-09-12":"kitchen1",
-   "2021-04-22":"kitchen1"
-  },
-  "weekday_history":{
-   "2020-05-30":"shmirot1",
-   "2020-07-12":"kitchen1",
-   "2021-02-22":"shmirot1"
-  },
-  "last_weekday":"2021-02-22",
-  "last_weekend":"2021-04-22"
- },
- {
-  "id":"657543322",
-  "name":"חיים חיים",
-  "unit":"קשר",
-  "exemptions":{
-   "פטור שמירות סופש":"2030-04-12"
-  },
-  "weekend_history":{
-   "2020-07-25":"kitchen1",
-   "2020-10-03":"kitchen1",
-   "2021-09-09":"kitchen1"
-  },
-  "weekday_history":{
-   "2021-02-22":"kitchen2"
-  },
-  "last_weekday":"2021-02-22",
-  "last_weekend":"2021-09-09"
+  "last_weekend":"2022-05-12"
  },
  {
   "id":"12312",
@@ -150,6 +115,47 @@
    "2021-04-20":"shmirot2"
   },
   "last_weekday":"2021-04-20",
+  "last_weekend":"2022-05-12"
+ },
+ {
+  "id":"65567567",
+  "name":"נוי",
+  "unit":"מודיעין",
+  "exemptions":{
+
+  },
+  "weekend_history":{
+   "2020-06-25":"shmirot1",
+   "2020-07-25":"shmirot1",
+   "2020-09-12":"kitchen1",
+   "2021-04-22":"kitchen1",
+   "2022-04-07":"kitchen1"
+  },
+  "weekday_history":{
+   "2020-05-30":"shmirot1",
+   "2020-07-12":"kitchen1",
+   "2021-02-22":"shmirot1"
+  },
+  "last_weekday":"2021-02-22",
+  "last_weekend":"2022-04-07"
+ },
+ {
+  "id":"657543322",
+  "name":"חיים",
+  "unit":"מודיעין",
+  "exemptions":{
+   "פטור שמירות סופש":"2030-04-12"
+  },
+  "weekend_history":{
+   "2020-07-25":"kitchen1",
+   "2020-10-03":"kitchen1",
+   "2021-09-09":"kitchen1",
+   "2022-05-12":"kitchen1"
+  },
+  "weekday_history":{
+   "2021-02-22":"kitchen2"
+  },
+  "last_weekday":"2021-02-22",
   "last_weekend":"2022-05-12"
  }
 ]

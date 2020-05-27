@@ -134,6 +134,17 @@ function removeUser (table, row) {
 		});
 }
 
+function translate (word){
+	const translateDict = {
+		'kitchen' : 'מטבח',
+		'shmirot' : 'שמירה',
+	}
+
+	for (const [key, value] of Object.entries(translateDict)) {
+		if (word.includes(key)) return value; 
+	}
+}
+
 function getUserInfo () {
 	$.post('/getUserInfo', {
 		id: $($('.tr-color-selected').find('td[name=id]')[0]).text(),
@@ -143,14 +154,17 @@ function getUserInfo () {
 		$('#info-last-weekday').html(`תורנות אמצש אחרונה : ${response.last_weekday}`)
 		$('#info-last-weekend').html(`תורנות סופש אחרונה : ${response.last_weekend}`)
 
+		
 		let weekdayHistoryList = ''
-		for (const [key, value] of Object.entries(response.weekday_history)) {
+		for (let [key, value] of Object.entries(response.weekday_history)) {
+			value = translate(value);
 			weekdayHistoryList += `<li><p>${key} : ${value}</p></li>`;
 		}
 		$('#info-weekday-history').html(`<h5> היסטורית תורנויות אמצש: </h5> <ul> ${weekdayHistoryList} </ul>`);
 
 		let weekendHistoryList = ''
-		for (const [key, value] of Object.entries(response.weekend_history)) {
+		for (let [key, value] of Object.entries(response.weekend_history)) {
+			value = translate(value);
 			weekendHistoryList += `<li><p>${key} : ${value}</p></li>`;
 		}
 		$('#info-weekend-history').html(`<h5> היסטורית תורנויות סופש: </h5> <ul> ${weekendHistoryList} </ul>`);

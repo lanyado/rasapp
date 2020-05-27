@@ -12,7 +12,7 @@ import pandas as pd
 #import modin.pandas as pd
 
 xlsx_log = get_log('XLSX')
-users_df = cnf.get_users_df()
+#users_df = cnf.get_users_df()
 
 def update_user_duties (user_id, date, duty_name, is_weekday):
     user_mask = users_df['id'] == user_id
@@ -132,6 +132,8 @@ def set_weekend_workers(final_csv, index, row):
         update_user_duties(user_id, row['date'], duty_name, False)
 
 def add_workers(final_csv):
+    global users_df
+    users_df = cnf.get_users_df()
     for index, row in final_csv.iterrows():
         if row['date_type'] == 'אמצש':
             set_weekday_workers(final_csv, index, row)
