@@ -1,14 +1,21 @@
 # rasapp
 Roster distribution flask app
 
-run server.py, then enter to http://127.0.0.1:5000/
+## Installation
+
+* Clone the project `git clone https://github.com/lanyado/rasapp.git`
+* Install the last python from google
+* Open cmd with administrator right and navigate to the project folder
+* Install dependencies: `pip install -r requirements.txt`
+* Run the server: `run server.py`
+* Browse to http://127.0.0.1:5000/
 
 ## Tutorial
 
-You need to login the website.
+You need login to the website.
 
 Then:
-You can addUser (as long as his id is not used already), editUser and removeUser.
+You can addUser (as long as the ID is not used already), editUser and removeUser.
 ![alt text](https://github.com/lanyado/rasapp/raw/master/general/images/user_actions.png "user actions")
 
 A user has <b>exemptions</b>:<br>
